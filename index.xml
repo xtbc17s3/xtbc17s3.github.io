@@ -452,7 +452,7 @@
 
 &lt;p&gt;For serious customization, click the link to open &lt;em&gt;keybindings.js&lt;/em&gt;. That opens two panes: the default keybindings, and your custom bindings. My keybindings appear below. I&amp;rsquo;ll talk about a few of them.&lt;/p&gt;
 
-&lt;p&gt;
+
 &lt;pre class=&#34;line-numbers language-js&#34; rel=&#34;js&#34;&gt;
 &lt;code class=&#34;language-js&#34;&gt;
 
@@ -480,41 +480,52 @@
   },
 
   {
-        &#34;key&#34;: &#34;ctrl+k ctrl+e&#34;,
-        &#34;command&#34;: &#34;extension.embraceParenthesis&#34;,
-        &#34;when&#34;: &#34;editorHasSelection &amp;&amp; editorTextFocus&#34;
-    },
-    {
-        &#34;key&#34;: &#34;ctrl+k ctrl+[&#34;,
-        &#34;command&#34;: &#34;extension.embraceSquareBrackets&#34;,
-        &#34;when&#34;: &#34;editorHasSelection &amp;&amp; editorTextFocus&#34;
-    },
-    {
-        &#34;key&#34;: &#34;ctrl+k ctrl+l&#34;,
-        &#34;command&#34;: &#34;extension.embraceCurlyBrackets&#34;,
-        &#34;when&#34;: &#34;editorHasSelection &amp;&amp; editorTextFocus&#34;
-    },
-    {
-        &#34;key&#34;: &#34;ctrl+k ctrl+a&#34;,
-        &#34;command&#34;: &#34;extension.embraceAngleBrackets&#34;,
-        &#34;when&#34;: &#34;editorHasSelection &amp;&amp; editorTextFocus&#34;
-    },
-    {
-        &#34;key&#34;: &#34;ctrl+k ctrl+&#39;&#34;,
-        &#34;command&#34;: &#34;extension.embraceSingleQuotes&#34;,
-        &#34;when&#34;: &#34;editorHasSelection &amp;&amp; editorTextFocus&#34;
-    },
-    {
-        &#34;key&#34;: &#34;ctrl+k ctrl+o&#34;,
-        &#34;command&#34;: &#34;extension.embraceDoubleQuotes&#34;,
-        &#34;when&#34;: &#34;editorHasSelection &amp;&amp; editorTextFocus&#34;
-    }
+      &#34;key&#34;: &#34;ctrl+shift+space&#34;,
+      &#34;command&#34;: &#34;editor.emmet.action.splitJoinTag&#34;,
+      &#34;when&#34;: &#34;editorTextFocus &amp;&amp; !editorHasMultipleSelections &amp;&amp; !editorHasSelection &amp;&amp; !editorReadonly&#34;
+  },
+
+  {
+      &#34;key&#34;: &#34;ctrl+k ctrl+e&#34;,
+      &#34;command&#34;: &#34;extension.embraceParenthesis&#34;,
+      &#34;when&#34;: &#34;editorHasSelection &amp;&amp; editorTextFocus&#34;
+  },
+
+  {
+      &#34;key&#34;: &#34;ctrl+k ctrl+[&#34;,
+      &#34;command&#34;: &#34;extension.embraceSquareBrackets&#34;,
+      &#34;when&#34;: &#34;editorHasSelection &amp;&amp; editorTextFocus&#34;
+  },
+
+  {
+      &#34;key&#34;: &#34;ctrl+k ctrl+l&#34;,
+      &#34;command&#34;: &#34;extension.embraceCurlyBrackets&#34;,
+      &#34;when&#34;: &#34;editorHasSelection &amp;&amp; editorTextFocus&#34;
+  },
+
+  {
+      &#34;key&#34;: &#34;ctrl+k ctrl+a&#34;,
+      &#34;command&#34;: &#34;extension.embraceAngleBrackets&#34;,
+      &#34;when&#34;: &#34;editorHasSelection &amp;&amp; editorTextFocus&#34;
+  },
+
+  {
+      &#34;key&#34;: &#34;ctrl+k ctrl+&#39;&#34;,
+      &#34;command&#34;: &#34;extension.embraceSingleQuotes&#34;,
+      &#34;when&#34;: &#34;editorHasSelection &amp;&amp; editorTextFocus&#34;
+  },
+
+  {
+      &#34;key&#34;: &#34;ctrl+k ctrl+o&#34;,
+      &#34;command&#34;: &#34;extension.embraceDoubleQuotes&#34;,
+      &#34;when&#34;: &#34;editorHasSelection &amp;&amp; editorTextFocus&#34;
+  }
 ]
 
 &lt;/code&gt;
 &lt;/pre&gt;
 
-&lt;/p&gt;
+
 
 &lt;h3 id=&#34;emmet&#34;&gt;Emmet&lt;/h3&gt;
 
@@ -541,7 +552,24 @@
 
 &lt;p&gt;By default, IntelliSense will suggest Emmet expansion just like any other autocompletion. Sometimes that&amp;rsquo;s fine, but other times it can be a real pain in the neck. Thus, I prefer to set a custom shortcut: &lt;kbd&gt;ctrl&lt;/kbd&gt;+&lt;kbd&gt;space&lt;/kbd&gt;.&lt;/p&gt;
 
+&lt;p&gt;When Emmet expands an abbreviation for a React component, it adds both a closing and opening tag.  Sometimes, we just want a single, self-closing tag.  In the keybindings listed in the previous section, we added one for &lt;code&gt;&amp;quot;editor.emmet.action.splitJoinTag&amp;quot;&lt;/code&gt;.  This toggles between the open / closing tag and self-closing tag by pressing &lt;kbd&gt;ctrl&lt;/kbd&gt;+&lt;kbd&gt;shift&lt;/kbd&gt;+&lt;kbd&gt;space&lt;/kbd&gt;&lt;/p&gt;
+
 &lt;p&gt;There&amp;rsquo;s another really handy Emmet feature to which I&amp;rsquo;ve assigned a shortcut: &lt;em&gt;wrap with abbreviation&lt;/em&gt;. It allows you to wrap a selection inside an HTML element identified by an Emmet abbreviation. Select the text you want to wrap and hit the shortcut. You&amp;rsquo;ll be presented with a box to type the abbreviation into. Magic! I&amp;rsquo;ve assigned this command to &lt;kbd&gt;shift&lt;/kbd&gt;+&lt;kbd&gt;⌘&lt;/kbd&gt;+&lt;kbd&gt;A&lt;/kbd&gt;.&lt;/p&gt;
+
+&lt;p&gt;To make sure Emmet will work with JSX files suffixed with &lt;code&gt;.js&lt;/code&gt;, add the following lines to your VSCode settings (&lt;kbd&gt;Code &amp;gt; Preferences &amp;gt; Settings&lt;/kbd&gt;):&lt;/p&gt;
+
+
+&lt;pre class=&#34;line-numbers language-json&#34; rel=&#34;json&#34;&gt;
+&lt;code class=&#34;language-json&#34;&gt;
+
+&#34;emmet.syntaxProfiles&#34;: {
+    &#34;javascript&#34;: &#34;jsx&#34;
+}
+
+&lt;/code&gt;
+&lt;/pre&gt;
+
+
 
 &lt;h3 id=&#34;esquotes&#34;&gt;ESQuotes&lt;/h3&gt;
 

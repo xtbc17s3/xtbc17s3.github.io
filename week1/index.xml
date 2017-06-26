@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Week1s on XTERN Bootcamp 2017</title>
+    <link>http://xternbootcamp17.github.io/week1/index.xml</link>
+    <description>Recent content in Week1s on XTERN Bootcamp 2017</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 26 Jun 2017 10:57:03 -0400</lastBuildDate>
+    <atom:link href="http://xternbootcamp17.github.io/week1/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Week One</title>
+      <link>http://xternbootcamp17.github.io/week1/</link>
+      <pubDate>Mon, 26 Jun 2017 10:57:03 -0400</pubDate>
+      
+      <guid>http://xternbootcamp17.github.io/week1/</guid>
+      <description>
+
+&lt;h1 id=&#34;week-one&#34;&gt;Week One&lt;/h1&gt;
+
+&lt;p&gt;An overview of the course and web technologies, some vanilla JavaScript, and basic DOM manipulation.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Day 1: Introduction</title>
+      <link>http://xternbootcamp17.github.io/week1/day1/</link>
+      <pubDate>Mon, 26 Jun 2017 10:57:12 -0400</pubDate>
+      
+      <guid>http://xternbootcamp17.github.io/week1/day1/</guid>
+      <description>
+
+&lt;p&gt;&lt;date&gt;Monday, June 26, 2017&lt;/date&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;lecture-videos&#34;&gt;Lecture Videos&lt;/h2&gt;
+
+&lt;p&gt;Morning:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/playlist?list=PLuT2TqJuwaY882Figl-Tr-VXWweaeS45B&#34;&gt;Playlist&lt;/a&gt; | &lt;a href=&#34;https://www.youtube.com/watch?v=Djz4b6mYOqE&amp;amp;index=1&amp;amp;list=PLuT2TqJuwaY882Figl-Tr-VXWweaeS45B&#34;&gt;Day 1, part 1&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Afternoon:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/playlist?list=PLuT2TqJuwaY_yOPNQJLn2Ya_hfes8g2fv&#34;&gt;Playlist&lt;/a&gt; | &lt;a href=&#34;https://www.youtube.com/watch?v=F3WcGMNqdME&amp;amp;list=PLuT2TqJuwaY_yOPNQJLn2Ya_hfes8g2fv&amp;amp;index=1&#34;&gt;Day 1, part 1&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;topics&#34;&gt;Topics&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;History of JavaScript and the Web&lt;/li&gt;
+&lt;li&gt;Getting the most out of a coding bootcamp&lt;/li&gt;
+&lt;li&gt;Starting a project with git&lt;/li&gt;
+&lt;li&gt;Anatomy of an HTML element (&lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/HTML/Element&#34;&gt;tags&lt;/a&gt;, &lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes&#34;&gt;attributes&lt;/a&gt;, &lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/API/Node/textContent&#34;&gt;text content&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Basic CSS selector syntax
+
+&lt;ul&gt;
+&lt;li&gt;Element name (&lt;code&gt;div&lt;/code&gt;, &lt;code&gt;h1&lt;/code&gt;, &lt;code&gt;p&lt;/code&gt;, etc.)&lt;/li&gt;
+&lt;li&gt;Element ID (&lt;code&gt;#theID&lt;/code&gt;, &lt;code&gt;div#theID&lt;/code&gt;, etc.)&lt;/li&gt;
+&lt;li&gt;Class name (&lt;code&gt;.theClass&lt;/code&gt;, &lt;code&gt;p.theClass&lt;/code&gt;, etc.)&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Basic DOM manipulation
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;document.querySelector&lt;/code&gt;/&lt;code&gt;document.querySelectorAll&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;.textContent&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;.innerHTML&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Developer console
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;console.log&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;debugger&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Basic &lt;a href=&#34;https://www.w3schools.com/js/js_events.asp&#34;&gt;event&lt;/a&gt; handling
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.kirupa.com/html5/javascript_events.htm&#34;&gt;Events in JavaScript&lt;/a&gt; - blog post with more detail than we discussed in class&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;.addEventListener()&lt;/code&gt; - &lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener&#34;&gt;MDN docs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;.preventDefault()&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;.target&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;examples&#34;&gt;Examples&lt;/h2&gt;
+
+&lt;h3 id=&#34;git&#34;&gt;Git&lt;/h3&gt;
+
+&lt;h4 id=&#34;starting-a-new-project-with-a-git-repository&#34;&gt;Starting a new project with a git repository&lt;/h4&gt;
+
+&lt;p&gt;First make a new directory and then navigate into the new directory.  Then start a new repository with &lt;code&gt;git init&lt;/code&gt;.&lt;/p&gt;
+
+
+
+
+
+
+
+
+&lt;div class=&#34;shell macos&#34;&gt;
+&lt;div class=&#34;bar&#34;&gt;
+  &lt;div class=&#34;controls&#34;&gt;
+    &lt;div class=&#34;windows icon&#34;&gt;
+      &lt;img src=&#34;http://xternbootcamp17.github.io/images/git-bash.png&#34; alt=&#34;&#34;&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;dot red&#34;&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;dot yellow&#34;&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;dot green&#34;&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  user@localhost ~
+  &lt;div class=&#34;windows-controls&#34;&gt;
+    &amp;nbsp;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;shell-body&#34;&gt;
+
+&lt;pre&gt;&lt;span class=&#34;terminal-commands&#34;
+&gt;&lt;span class=&#34;command-line-prompt&#34;&gt;&lt;span data-prompt=&#34;$&#34;&gt;&lt;/span&gt;&lt;span data-prompt=&#34;$&#34;&gt;&lt;/span&gt;&lt;span data-prompt=&#34;$&#34;&gt;&lt;/span&gt;&lt;/span&gt;mkdir my_new_project
+cd my_new_project
+git init
+&lt;/span&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;To be able to make our first commit, we need to first add something to our empty project folder.  A common first choice is a &lt;code&gt;README.md&lt;/code&gt; file, which is a document written in &lt;a href=&#34;https://guides.github.com/features/mastering-markdown/&#34;&gt;markdown&lt;/a&gt; that provides information about the project.&lt;/p&gt;
+
+
+
+
+
+
+
+
+&lt;div class=&#34;shell macos&#34;&gt;
+&lt;div class=&#34;bar&#34;&gt;
+  &lt;div class=&#34;controls&#34;&gt;
+    &lt;div class=&#34;windows icon&#34;&gt;
+      &lt;img src=&#34;http://xternbootcamp17.github.io/images/git-bash.png&#34; alt=&#34;&#34;&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;dot red&#34;&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;dot yellow&#34;&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;dot green&#34;&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  user@localhost ~
+  &lt;div class=&#34;windows-controls&#34;&gt;
+    &amp;nbsp;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;shell-body&#34;&gt;
+
+&lt;pre&gt;&lt;span class=&#34;terminal-commands&#34;
+&gt;&lt;span class=&#34;command-line-prompt&#34;&gt;&lt;span data-prompt=&#34;$&#34;&gt;&lt;/span&gt;&lt;span data-prompt=&#34;$&#34;&gt;&lt;/span&gt;&lt;span data-prompt=&#34;$&#34;&gt;&lt;/span&gt;&lt;/span&gt;echo &amp;#34;# My New Project&amp;#34; &amp;gt;&amp;gt; README.md
+git add .
+git commit -m &amp;#34;Initial commit&amp;#34;
+&lt;/span&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Once we have our first commit, we can add a &amp;lsquo;remote&amp;rsquo; for our repository, like &lt;a href=&#34;https://github.com&#34;&gt;github&lt;/a&gt; or &lt;a href=&#34;https://bitbucket.org/&#34;&gt;bitbucket&lt;/a&gt;.  For github, log in to github.com, then hit the &amp;lsquo;+&amp;rsquo; button in the top right of the screen to add a new repository.  Then, it will give you the following commands to run from the command line.&lt;/p&gt;
+
+
+
+
+
+
+
+
+&lt;div class=&#34;shell macos&#34;&gt;
+&lt;div class=&#34;bar&#34;&gt;
+  &lt;div class=&#34;controls&#34;&gt;
+    &lt;div class=&#34;windows icon&#34;&gt;
+      &lt;img src=&#34;http://xternbootcamp17.github.io/images/git-bash.png&#34; alt=&#34;&#34;&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;dot red&#34;&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;dot yellow&#34;&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;dot green&#34;&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  user@localhost ~
+  &lt;div class=&#34;windows-controls&#34;&gt;
+    &amp;nbsp;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;shell-body&#34;&gt;
+
+&lt;pre&gt;&lt;span class=&#34;terminal-commands&#34;
+&gt;&lt;span class=&#34;command-line-prompt&#34;&gt;&lt;span data-prompt=&#34;$&#34;&gt;&lt;/span&gt;&lt;span data-prompt=&#34;$&#34;&gt;&lt;/span&gt;&lt;/span&gt;git remote add origin git@github.com:myusername/my_new_project.git
+git push -u origin master
+&lt;/span&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;This adds the github remote as &amp;lsquo;origin&amp;rsquo; and sets it as the default for when you push your changes.  From this point forward, just type &lt;code&gt;git push&lt;/code&gt; to push your changes to the remote.&lt;/p&gt;
+
+&lt;h3 id=&#34;dom-manipulation&#34;&gt;DOM Manipulation&lt;/h3&gt;
+
+
+&lt;pre class=&#34;line-numbers language-html&#34; rel=&#34;html&#34;&gt;
+&lt;code class=&#34;language-html&#34;&gt;
+
+&amp;lt;div class=&amp;quot;person&amp;quot;&amp;gt;
+  &amp;lt;h2 id=&amp;quot;firstName&amp;quot;&gt;Han&amp;lt;/h2&amp;gt;
+  &amp;lt;h2 id=&amp;quot;lastName&amp;quot;&gt;Solo&amp;lt;/h2&amp;gt;
+  &amp;lt;p&gt;Made the Kessel Run in less than 12 parsecs&amp;lt;/p&amp;gt;
+  &amp;lt;button&gt;Click here to hire me!&amp;lt;/button&amp;gt;
+&amp;lt;/div&amp;gt;
+
+&lt;/code&gt;
+&lt;/pre&gt;
+
+
+
+
+&lt;pre class=&#34;line-numbers language-js&#34; rel=&#34;js&#34;&gt;
+&lt;code class=&#34;language-js&#34;&gt;
+
+// Get all h2 elements with querySelectorAll. Returns a NodeList
+const headings = document.querySelectorAll(&#39;.person h2&#39;)
+console.log(headings)     // [h2#firstName, h2#lastName]
+
+// Get a single element with querySelector
+const heading = document.querySelector(&#39;.person h2&#39;)
+console.log(heading)      // h2#firstName
+
+// Do something when a click event occurs
+const button = document.querySelector(&#39;button&#39;)
+button.addEventListener(&#39;click&#39;, (ev) =&gt; {
+  alert(&#39;clicked!&#39;)
+  console.log(ev.target)  // button
+})
+
+&lt;/code&gt;
+&lt;/pre&gt;
+
+
+
+&lt;h2 id=&#34;presentations&#34;&gt;Presentations&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a target=&#34;_blank&#34; href=&#34;http://xternbootcamp17.github.io/history-of-the-web.pdf&#34;&gt;JavaScript History&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a target=&#34;_blank&#34; href=&#34;http://xternbootcamp17.github.io/bootcamp-success.pdf&#34;&gt;Bootcamp Expectations and Tips for Success&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://developer.mozilla.org/en-US/&#34;&gt;Mozilla Developer Network (MDN)&lt;/a&gt; - An excellent documentation and learning resource for all your HTML/CSS/JS needs&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;projects&#34;&gt;Projects&lt;/h2&gt;
+
+&lt;h3 id=&#34;first-js&#34;&gt;First JS&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://codepen.io/dstrus/professor/dRVBXr/&#34;&gt;CodePen&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;person-stats&#34;&gt;Person Stats&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/xtbc17s3/person-stats/tree/a928c088e5b7f7d11c4ded626148867efefcb9ef&#34;&gt;Morning&lt;/a&gt; | &lt;a href=&#34;https://github.com/xtbc17s3/person-stats/tree/f102e5b7f2a39384f34512ad04b2344234faa709&#34;&gt;Afternoon&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;homework&#34;&gt;Homework&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Update the new &lt;em&gt;stats&lt;/em&gt; div with the value of the text input.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;bonus-credit&#34;&gt;Bonus Credit&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Add the name to a &lt;em&gt;paragraph&lt;/em&gt; inside the &lt;em&gt;stats&lt;/em&gt; div.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;super-mega-bonus-credit&#34;&gt;Super Mega Bonus Credit&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Add another input to the form.&lt;/li&gt;
+&lt;li&gt;Display the value of that input alongside the name in the &lt;code&gt;div&lt;/code&gt; (or &lt;code&gt;p&lt;/code&gt;).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;super-mega-bonus-credit-hyper-fighting&#34;&gt;Super Mega Bonus Credit Hyper Fighting&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Change the appearance of the paragraph (think CSS) based on a value from the form.  &lt;em&gt;e.g.&lt;/em&gt; Turn the text blue if the user types &amp;ldquo;blue&amp;rdquo; in the form field.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -10,7 +10,7 @@
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 
     
-    <title>Git</title>
+    <title>Day 3: Arrays and Objects</title>
     <link href="http://xternbootcamp17.github.io//css/nucleus.css" rel="stylesheet">
     <link href="http://xternbootcamp17.github.io//css/font-awesome.min.css" rel="stylesheet">
     
@@ -25,7 +25,7 @@
     <link href="/css/prism.css" rel="stylesheet">
 <link href="/css/xtern.css" rel="stylesheet">
   </head>
-  <body class="" data-url="/prereqs/git/">
+  <body class="" data-url="/week1/day3/">
     
     <nav id="sidebar">
   <div id="header-wrapper">
@@ -43,7 +43,7 @@
       
       
 
-      <li class="dd-item  parent" data-nav-id="/prereqs/">
+      <li class="dd-item  " data-nav-id="/prereqs/">
         <a href="/prereqs/">
           <span>
             
@@ -81,7 +81,7 @@
           
           
           
-            <li class="dd-item active" data-nav-id="/prereqs/git/">
+            <li class="dd-item " data-nav-id="/prereqs/git/">
               <a href="/prereqs/git/">
                 <span>Git     </i></span>
               </a>
@@ -307,7 +307,7 @@
       
       
 
-      <li class="dd-item  " data-nav-id="/week1/">
+      <li class="dd-item  parent" data-nav-id="/week1/">
         <a href="/week1/">
           <span>
             
@@ -337,7 +337,7 @@
           
           
           
-            <li class="dd-item " data-nav-id="/week1/day3/">
+            <li class="dd-item active" data-nav-id="/week1/day3/">
               <a href="/week1/day3/">
                 <span>Day 3: Arrays and Objects     </i></span>
               </a>
@@ -380,11 +380,11 @@
                   
                     
                     
-                <a href="/prereqs/" itemprop="url"><span itemprop="title">Prerequisites</span></a> <i class="fa fa-angle-right"></i>
+                <a href="/week1/" itemprop="url"><span itemprop="title">Week One</span></a> <i class="fa fa-angle-right"></i>
                     
                   
                 
-                <span itemprop="title"> Git</span>
+                <span itemprop="title"> Day 3: Arrays and Objects</span>
               </div>
               
                   <div class="progress">
@@ -393,10 +393,34 @@
 <ul>
 <li>
 <ul>
-<li>
+<li><a href="#lecture-videos">Lecture Videos</a></li>
+<li><a href="#topics">Topics</a>
 <ul>
-<li><a href="#learn-git-from-codecademy">Learn Git from Codecademy</a></li>
-<li><a href="#try-git-from-code-school">Try Git from Code School</a></li>
+<li><a href="#arrays">Arrays</a></li>
+<li><a href="#objects">Objects</a></li>
+<li><a href="#handling-exceptions">Handling exceptions</a></li>
+<li><a href="#this"><code>this</code></a></li>
+<li><a href="#foundation">Foundation</a></li>
+<li><a href="#markdown">Markdown</a></li>
+</ul></li>
+<li><a href="#examples">Examples</a>
+<ul>
+<li><a href="#arrays-1">Arrays</a></li>
+<li><a href="#objects-1">Objects</a></li>
+<li><a href="#handling-exceptions-1">Handling exceptions</a></li>
+<li><a href="#this-1"><code>this</code></a></li>
+<li><a href="#foundation-1">Foundation</a></li>
+</ul></li>
+<li><a href="#projects">Projects</a>
+<ul>
+<li><a href="#person-stats">Person Stats</a></li>
+</ul></li>
+<li><a href="#homework">Homework</a>
+<ul>
+<li><a href="#bonus-credit">Bonus Credit</a></li>
+<li><a href="#mega-bonus-credit">Mega Bonus Credit</a></li>
+<li><a href="#super-mega-bonus-credit">Super Mega Bonus Credit</a></li>
+<li><a href="#super-mega-bonus-credit-hyper-fighting">Super Mega Bonus Credit Hyper Fighting</a></li>
 </ul></li>
 </ul></li>
 </ul>
@@ -410,33 +434,299 @@
             
               <div id="body-inner">
                 
-                <h1>Git</h1>
+                <h1>Day 3: Arrays and Objects</h1>
                 
 
 
 
-<p>We will be using Git for source code management&ndash;and hosting our repositories on <a href="https://github.com">GitHub</a>&ndash;throughout the bootcamp. It will help if you&rsquo;re not seeing it for the first time.</p>
+<p><date>Wednesday, June 28, 2017</date></p>
+
+<h2 id="lecture-videos">Lecture Videos</h2>
+
+<p>Morning:</p>
+
+<p><a href="https://www.youtube.com/watch?v=1tMQlcsg0jc&amp;index=19&amp;list=PLuT2TqJuwaY882Figl-Tr-VXWweaeS45B">Playlist</a> | <a href="https://www.youtube.com/watch?v=1tMQlcsg0jc&amp;index=19&amp;list=PLuT2TqJuwaY882Figl-Tr-VXWweaeS45B">Day 3, Part 1</a></p>
+
+<p>Afternoon:</p>
+
+<p><a href="https://www.youtube.com/playlist?list=PLuT2TqJuwaY_yOPNQJLn2Ya_hfes8g2fv">Playlist</a> | <a href="https://www.youtube.com/watch?v=JtEbzz4-n9Q&amp;index=23&amp;list=PLuT2TqJuwaY_yOPNQJLn2Ya_hfes8g2fv">Day 3, Part 1</a></p>
+
+<h2 id="topics">Topics</h2>
+
+<h3 id="arrays">Arrays</h3>
+
+<ul>
+<li><code>Array.map</code> - <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map?v=control">Docs on MDN</a></li>
+<li><a href="https://www.discovermeteor.com/blog/understanding-javascript-map/">Understanding JavaScript&rsquo;s <code>map()</code></a> blog post</li>
+</ul>
+
+<h3 id="objects">Objects</h3>
+
+<ul>
+<li>Object literals</li>
+<li>Property Naming</li>
+<li>Retrieving property values</li>
+<li>Setting property values</li>
+</ul>
+
+<h3 id="handling-exceptions">Handling exceptions</h3>
+
+<ul>
+<li><code>try</code></li>
+<li><code>catch</code></li>
+<li><code>finally</code></li>
+</ul>
+
+<h3 id="this"><code>this</code></h3>
+
+<ul>
+<li><em>default</em> binding through function invocation</li>
+<li><em>implicit</em> binding through method calls</li>
+<li><em>explicit</em> binding with <code>.bind</code></li>
+</ul>
+
+<h3 id="foundation">Foundation</h3>
+
+<ul>
+<li>The grid system</li>
+<li>Responsive design (adjusting style based on window size)</li>
+<li><a href="http://foundation.zurb.com/sites/docs/">Foundation Docs</a></li>
+</ul>
+
+<h3 id="markdown">Markdown</h3>
+
+<ul>
+<li><a href="http://assemble.io/docs/Cheatsheet-Markdown.html">Markdown Cheatsheet</a></li>
+<li><a href="https://guides.github.com/features/mastering-markdown/">Mastering Markdown</a></li>
+</ul>
+
+<h2 id="examples">Examples</h2>
+
+<h3 id="arrays-1">Arrays</h3>
+
+<p>Arrays are extremely useful data structures in JavaScript, as they can be easily iterated and transformed through methods like <code>map</code>, <code>filter</code>, and <code>reduce</code>.  Sometimes, you may have an &lsquo;array-like&rsquo; collection (like a <code>NodeList</code> or function arguments) that you would need to convert to an actual Array before you could use these methods.  This can be done using <code>Array.from</code></p>
+
+
+<pre class="line-numbers language-js" rel="js">
+<code class="language-js">
+
+let paragraphs = document.querySelectorAll('p')
+paragraphs.map((p) => {
+  p.textContent = "This won't work because paragraphs is a NodeList, not Array!"
+})
+// => Uncaught TypeError: paragraphs.map is not a function
+
+let actualArrayOfParagraphs = Array.from(paragraphs)
+actualArrayOfParagraphs.map((p) => {
+  p.textContent = "This totally does work because we created an Array from our NodeList!"
+})
+
+</code>
+</pre>
+
+
 
 
   <div class="aside aside-info">
   
-    <h4>Note</h4>
+    <h4>Requirements for &#39;Array.from&#39;</h4>
     
   
   <div class="body">
-  <p>Once again, one of these courses or the other should be plenty of preparation.</p>
+  <p>What objects can you convert to an Array using &lsquo;Array.from&rsquo;?</p>
+
+<ul>
+<li>Any array-like object with a &lsquo;length&rsquo; property and indexed elements</li>
+<li>Iterable objects (like Map or Set)</li>
+</ul>
+
+<p>For more info, check out <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/from?v=control">this article</a> on MDN.</p>
 
   </div>
 </div>
 
 
-<h3 id="learn-git-from-codecademy">Learn Git from Codecademy</h3>
+<h3 id="objects-1">Objects</h3>
 
-<p><a href="https://www.codecademy.com/learn/learn-git">Learn Git</a> is a free interactive course from Codecademy covering the fundamentals of version control with Git. As with the previous lessons, this can be completed entirely within the browser. This is the best browser-based introduction to Git that I&rsquo;ve seen.</p>
+<p>Almost everything in JavaScript is an Object.  The easiest way to create new Objects is with the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Object_initializer">object initializer</a>, more commonly known as &lsquo;object literal&rsquo; syntax.  Basically, use curly braces to make an object <code>{}</code> and fill in the properties that you want.</p>
 
-<h3 id="try-git-from-code-school">Try Git from Code School</h3>
+<p>Objects contain <code>key</code>/<code>value</code> pairs that allow you to set and retrieve values from them.</p>
 
-<p><a href="https://try.github.io/">Try Git</a>, created by Code School in partnership with GitHub, is another good intro to Git. It doesn&rsquo;t have you do quite as much yourself as the Codecademy course, so I don&rsquo;t like it quite as well. It does not, however, require you to sign up for anything&mdash;not even a free account.</p>
+
+<pre class="line-numbers language-js" rel="js">
+<code class="language-js">
+
+// create a new object and assign some properties
+const myObject = {
+  prop1: 'Hello there',
+  prop2: 42
+}
+
+// access the values in several ways, usually 'dot' or 'square bracket' notation
+myObject.prop1 // => 'Hello there'
+myObject['prop1'] //=> 'Hello there'
+
+// new key/value pairs can also be assigned with these notations
+myObject.prop3 = 'New Value!'
+myObject['prop4'] = 'Newest Value!'
+
+console.log(myObject)
+// { 
+//   prop1: 'Hello there',
+//   prop2: 42,
+//   prop3: 'New Value!',
+//   prop4: 'Newest Value!'
+// }
+
+</code>
+</pre>
+
+
+
+<p>We know that we can iterate through an Array using <code>map</code> or <code>forEach</code>.  Can we do something similar with objects?  There are a few ways to do it, but one of the newest and easiest is the <code>Object.keys</code> method.  It iterates through the enumerable properties of an object, returning an array of the property keys. Once we have an array of keys, we can <code>map</code> over <em>that</em> and access each of the object properties individually.</p>
+
+
+<pre class="line-numbers language-js" rel="js">
+<code class="language-js">
+
+const myObj = {
+  a: 'hi',
+  b: 42,
+  c: [1, 2, 3]
+}
+
+const myObjKeys = Object.keys(myObj)    // ['a', 'b', 'c']
+
+myObjKeys.map(key => myObj[key])        // ['hi', 42, [1, 2, 3]]
+
+</code>
+</pre>
+
+
+
+<h3 id="handling-exceptions-1">Handling exceptions</h3>
+
+<p>In JavaScript (as in many languages), there is a way to &lsquo;try&rsquo; a block of code that may produce an exception, and if it <em>does</em> produce an exception, &lsquo;catch&rsquo; it and execute a different block of code.  The catch block receives the exception as an argument.  There is also an optional &lsquo;finally&rsquo; block, which will <em>always</em> run, regardless of whether there was an exception.</p>
+
+
+<pre class="line-numbers language-js" rel="js">
+<code class="language-js">
+
+try {
+  // try running this code first
+  somethingThatMightBlowUp()
+} catch (e) {
+  // executes if the 'try' block produced an exception
+  logMyErrors(e)
+} finally {
+  // always executes after the previous blocks have run
+  console.log("Done!  Maybe there was an exception, maybe there wasn't.")
+}
+
+</code>
+</pre>
+
+
+
+<p>For more info, read <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch">this MDN article</a>.</p>
+
+<h3 id="this-1"><code>this</code></h3>
+
+<p>The same function can have different values for <code>this</code> depending on how the function is called/invoked.</p>
+
+<p><a href="https://codepen.io/dstrus/pen/XgmLyv">Try this example live on CodePen.</a></p>
+
+
+<pre class="line-numbers language-js" rel="js">
+<code class="language-js">
+
+const app = {
+  sayYeah() {
+    console.log(`Yeah, ${this}`)
+  },
+  
+  toString() {
+    return 'app object'
+  }
+}
+
+// When invoked as a method
+app.sayYeah() // "Yeah, app object"
+
+// When invoked as an event handler
+document
+  .querySelector('button')
+  .addEventListener('click', app.sayYeah)
+  // "Yeah, [object HTMLButtonElement]"
+
+// When manually set with bind
+app.sayYeah.bind('w00t')() // "Yeah, w00t"
+
+</code>
+</pre>
+
+
+
+<h3 id="foundation-1">Foundation</h3>
+
+<p>Foundation is a CSS (and JS) framework that makes it easy to create stylish, responsive web pages.  The foundation (get it?) of it is the <a href="http://foundation.zurb.com/grid.html">grid system</a>.  The grid splits the page into 12 equally-sized columns, making it easy to set the alignment of elements on the page by specifying how many columns they span.</p>
+
+<p>In addition, you can add sizes of &lsquo;small&rsquo;, &lsquo;medium&rsquo;, &lsquo;large&rsquo;, etc, to specify different behavior at different screen sizes.  In the following example, the two child divs will be full screen width at small screen sizes (stacked on top of each other), and half of the screen width at medium and larger screen sizes (appearing next to each other).</p>
+
+
+<pre class="line-numbers language-html" rel="html">
+<code class="language-html">
+
+&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;small-12 medium-6 columns&quot;&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;small-12 medium-6 columns&quot;&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+</code>
+</pre>
+
+
+
+<h2 id="projects">Projects</h2>
+
+<h3 id="person-stats">Person Stats</h3>
+
+<p><a href="https://github.com/xtbc17s3/person-stats/tree/930ba46d35c4cd6c90f0e0eb5b460350999e6db4">Final Version</a></p>
+
+<h2 id="homework">Homework</h2>
+
+<ul>
+<li>Store the flicks in an array, as well as in the DOM.</li>
+</ul>
+
+<h3 id="bonus-credit">Bonus Credit</h3>
+
+<ul>
+<li>Add a <em>fav</em> button to each list item.</li>
+<li>Make it change the appearance of that item (<em>e.g.</em> Add a background color.)</li>
+</ul>
+
+<h3 id="mega-bonus-credit">Mega Bonus Credit</h3>
+
+<ul>
+<li>Add a <em>remove</em> button to each list item.</li>
+<li>Make that button actually work.</li>
+</ul>
+
+<h3 id="super-mega-bonus-credit">Super Mega Bonus Credit</h3>
+
+<ul>
+<li>Make sure that both of those buttons affect the array as well.</li>
+<li>Make the <em>fav</em> button toggle the <em>fav</em> status.</li>
+</ul>
+
+<h3 id="super-mega-bonus-credit-hyper-fighting">Super Mega Bonus Credit Hyper Fighting</h3>
+
+<ul>
+<li>Add buttons that move a flick up and down the list.</li>
+</ul>
 
 
       
@@ -448,8 +738,8 @@
 
     <div id="navigation">
         
-        <a class="nav nav-prev" href="/prereqs/javascript"> <i class="fa fa-chevron-left"></i></a>
-        <a class="nav nav-next" href="/prereqs/terminal" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+        <a class="nav nav-prev" href="/week1/day2"> <i class="fa fa-chevron-left"></i></a>
+        
     </div>
 
     </section>

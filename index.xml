@@ -166,6 +166,20 @@ iTerm2 is a popular alternative to Terminal.app. It&amp;rsquo;s free and include
     </item>
     
     <item>
+      <title>Day 4: Cloning Elements and Data Attributes</title>
+      <link>http://xternbootcamp17.github.io/week1/day4/</link>
+      <pubDate>Thu, 29 Jun 2017 13:29:29 -0400</pubDate>
+      
+      <guid>http://xternbootcamp17.github.io/week1/day4/</guid>
+      <description>Thursday, June 29, 2017
+Lecture Videos Morning:
+Playlist | Day 4, Part 1
+Afternoon:
+Playlist | Day 4, Part 1
+Topics DOM Manipulation  data attributes parentElement childNodes firstChild firstElementChild insertBefore closest (experimental)  Array methods  Array.prototype documentation on MDN unshift() reverse()  Foundation  Button Button Group Un-bulleted List  Examples Data Attributes HTML5 gave us a way to save extra information on a standard HTML Element via the data-* attributes.</description>
+    </item>
+    
+    <item>
       <title>Git</title>
       <link>http://xternbootcamp17.github.io/prereqs/git/</link>
       <pubDate>Mon, 10 Apr 2017 22:52:24 -0400</pubDate>

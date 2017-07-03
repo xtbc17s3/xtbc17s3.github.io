@@ -2,14 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Week1s on XTERN Bootcamp 2017</title>
-    <link>http://xternbootcamp17.github.io/week1/</link>
+    <link>http://xternbootcamp17.github.io/week1/index.xml</link>
     <description>Recent content in Week1s on XTERN Bootcamp 2017</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 26 Jun 2017 10:57:03 -0400</lastBuildDate>
-    
-	<atom:link href="http://xternbootcamp17.github.io/week1/index.xml" rel="self" type="application/rss+xml" />
-    
+    <atom:link href="http://xternbootcamp17.github.io/week1/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Week One</title>
@@ -17,7 +15,12 @@
       <pubDate>Mon, 26 Jun 2017 10:57:03 -0400</pubDate>
       
       <guid>http://xternbootcamp17.github.io/week1/</guid>
-      <description>Week One An overview of the course and web technologies, some vanilla JavaScript, and basic DOM manipulation.</description>
+      <description>
+
+&lt;h1 id=&#34;week-one&#34;&gt;Week One&lt;/h1&gt;
+
+&lt;p&gt;An overview of the course and web technologies, some vanilla JavaScript, and basic DOM manipulation.&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -26,10 +29,272 @@
       <pubDate>Mon, 26 Jun 2017 10:57:12 -0400</pubDate>
       
       <guid>http://xternbootcamp17.github.io/week1/day1/</guid>
-      <description>Monday, June 26, 2017
-Lecture Videos Morning:
- Playlist | Day 1, part 1  Afternoon:
- Playlist | Day 1, part 1  Topics  History of JavaScript and the Web Getting the most out of a coding bootcamp Starting a project with git Anatomy of an HTML element (tags, attributes, text content) Basic CSS selector syntax  Element name (div, h1, p, etc.) Element ID (#theID, div#theID, etc.</description>
+      <description>
+
+&lt;p&gt;&lt;date&gt;Monday, June 26, 2017&lt;/date&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;lecture-videos&#34;&gt;Lecture Videos&lt;/h2&gt;
+
+&lt;p&gt;Morning:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/playlist?list=PLuT2TqJuwaY882Figl-Tr-VXWweaeS45B&#34;&gt;Playlist&lt;/a&gt; | &lt;a href=&#34;https://www.youtube.com/watch?v=Djz4b6mYOqE&amp;amp;index=1&amp;amp;list=PLuT2TqJuwaY882Figl-Tr-VXWweaeS45B&#34;&gt;Day 1, part 1&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Afternoon:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/playlist?list=PLuT2TqJuwaY_yOPNQJLn2Ya_hfes8g2fv&#34;&gt;Playlist&lt;/a&gt; | &lt;a href=&#34;https://www.youtube.com/watch?v=F3WcGMNqdME&amp;amp;list=PLuT2TqJuwaY_yOPNQJLn2Ya_hfes8g2fv&amp;amp;index=1&#34;&gt;Day 1, part 1&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;topics&#34;&gt;Topics&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;History of JavaScript and the Web&lt;/li&gt;
+&lt;li&gt;Getting the most out of a coding bootcamp&lt;/li&gt;
+&lt;li&gt;Starting a project with git&lt;/li&gt;
+&lt;li&gt;Anatomy of an HTML element (&lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/HTML/Element&#34;&gt;tags&lt;/a&gt;, &lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes&#34;&gt;attributes&lt;/a&gt;, &lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/API/Node/textContent&#34;&gt;text content&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Basic CSS selector syntax
+
+&lt;ul&gt;
+&lt;li&gt;Element name (&lt;code&gt;div&lt;/code&gt;, &lt;code&gt;h1&lt;/code&gt;, &lt;code&gt;p&lt;/code&gt;, etc.)&lt;/li&gt;
+&lt;li&gt;Element ID (&lt;code&gt;#theID&lt;/code&gt;, &lt;code&gt;div#theID&lt;/code&gt;, etc.)&lt;/li&gt;
+&lt;li&gt;Class name (&lt;code&gt;.theClass&lt;/code&gt;, &lt;code&gt;p.theClass&lt;/code&gt;, etc.)&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Basic DOM manipulation
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;document.querySelector&lt;/code&gt;/&lt;code&gt;document.querySelectorAll&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;.textContent&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;.innerHTML&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Developer console
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;console.log&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;debugger&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Basic &lt;a href=&#34;https://www.w3schools.com/js/js_events.asp&#34;&gt;event&lt;/a&gt; handling
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.kirupa.com/html5/javascript_events.htm&#34;&gt;Events in JavaScript&lt;/a&gt; - blog post with more detail than we discussed in class&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;.addEventListener()&lt;/code&gt; - &lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener&#34;&gt;MDN docs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;.preventDefault()&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;.target&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;examples&#34;&gt;Examples&lt;/h2&gt;
+
+&lt;h3 id=&#34;git&#34;&gt;Git&lt;/h3&gt;
+
+&lt;h4 id=&#34;starting-a-new-project-with-a-git-repository&#34;&gt;Starting a new project with a git repository&lt;/h4&gt;
+
+&lt;p&gt;First make a new directory and then navigate into the new directory.  Then start a new repository with &lt;code&gt;git init&lt;/code&gt;.&lt;/p&gt;
+
+
+
+
+
+
+
+
+&lt;div class=&#34;shell macos&#34;&gt;
+&lt;div class=&#34;bar&#34;&gt;
+  &lt;div class=&#34;controls&#34;&gt;
+    &lt;div class=&#34;windows icon&#34;&gt;
+      &lt;img src=&#34;http://xternbootcamp17.github.io/images/git-bash.png&#34; alt=&#34;&#34;&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;dot red&#34;&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;dot yellow&#34;&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;dot green&#34;&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  user@localhost ~
+  &lt;div class=&#34;windows-controls&#34;&gt;
+    &amp;nbsp;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;shell-body&#34;&gt;
+
+&lt;pre&gt;&lt;span class=&#34;terminal-commands&#34;
+&gt;&lt;span class=&#34;command-line-prompt&#34;&gt;&lt;span data-prompt=&#34;$&#34;&gt;&lt;/span&gt;&lt;span data-prompt=&#34;$&#34;&gt;&lt;/span&gt;&lt;span data-prompt=&#34;$&#34;&gt;&lt;/span&gt;&lt;/span&gt;mkdir my_new_project
+cd my_new_project
+git init
+&lt;/span&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;To be able to make our first commit, we need to first add something to our empty project folder.  A common first choice is a &lt;code&gt;README.md&lt;/code&gt; file, which is a document written in &lt;a href=&#34;https://guides.github.com/features/mastering-markdown/&#34;&gt;markdown&lt;/a&gt; that provides information about the project.&lt;/p&gt;
+
+
+
+
+
+
+
+
+&lt;div class=&#34;shell macos&#34;&gt;
+&lt;div class=&#34;bar&#34;&gt;
+  &lt;div class=&#34;controls&#34;&gt;
+    &lt;div class=&#34;windows icon&#34;&gt;
+      &lt;img src=&#34;http://xternbootcamp17.github.io/images/git-bash.png&#34; alt=&#34;&#34;&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;dot red&#34;&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;dot yellow&#34;&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;dot green&#34;&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  user@localhost ~
+  &lt;div class=&#34;windows-controls&#34;&gt;
+    &amp;nbsp;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;shell-body&#34;&gt;
+
+&lt;pre&gt;&lt;span class=&#34;terminal-commands&#34;
+&gt;&lt;span class=&#34;command-line-prompt&#34;&gt;&lt;span data-prompt=&#34;$&#34;&gt;&lt;/span&gt;&lt;span data-prompt=&#34;$&#34;&gt;&lt;/span&gt;&lt;span data-prompt=&#34;$&#34;&gt;&lt;/span&gt;&lt;/span&gt;echo &amp;#34;# My New Project&amp;#34; &amp;gt;&amp;gt; README.md
+git add .
+git commit -m &amp;#34;Initial commit&amp;#34;
+&lt;/span&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Once we have our first commit, we can add a &amp;lsquo;remote&amp;rsquo; for our repository, like &lt;a href=&#34;https://github.com&#34;&gt;github&lt;/a&gt; or &lt;a href=&#34;https://bitbucket.org/&#34;&gt;bitbucket&lt;/a&gt;.  For github, log in to github.com, then hit the &amp;lsquo;+&amp;rsquo; button in the top right of the screen to add a new repository.  Then, it will give you the following commands to run from the command line.&lt;/p&gt;
+
+
+
+
+
+
+
+
+&lt;div class=&#34;shell macos&#34;&gt;
+&lt;div class=&#34;bar&#34;&gt;
+  &lt;div class=&#34;controls&#34;&gt;
+    &lt;div class=&#34;windows icon&#34;&gt;
+      &lt;img src=&#34;http://xternbootcamp17.github.io/images/git-bash.png&#34; alt=&#34;&#34;&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;dot red&#34;&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;dot yellow&#34;&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;dot green&#34;&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  user@localhost ~
+  &lt;div class=&#34;windows-controls&#34;&gt;
+    &amp;nbsp;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;shell-body&#34;&gt;
+
+&lt;pre&gt;&lt;span class=&#34;terminal-commands&#34;
+&gt;&lt;span class=&#34;command-line-prompt&#34;&gt;&lt;span data-prompt=&#34;$&#34;&gt;&lt;/span&gt;&lt;span data-prompt=&#34;$&#34;&gt;&lt;/span&gt;&lt;/span&gt;git remote add origin git@github.com:myusername/my_new_project.git
+git push -u origin master
+&lt;/span&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;This adds the github remote as &amp;lsquo;origin&amp;rsquo; and sets it as the default for when you push your changes.  From this point forward, just type &lt;code&gt;git push&lt;/code&gt; to push your changes to the remote.&lt;/p&gt;
+
+&lt;h3 id=&#34;dom-manipulation&#34;&gt;DOM Manipulation&lt;/h3&gt;
+
+
+&lt;pre class=&#34;line-numbers language-html&#34; rel=&#34;html&#34;&gt;
+&lt;code class=&#34;language-html&#34;&gt;
+
+&amp;lt;div class=&amp;quot;person&amp;quot;&amp;gt;
+  &amp;lt;h2 id=&amp;quot;firstName&amp;quot;&gt;Han&amp;lt;/h2&amp;gt;
+  &amp;lt;h2 id=&amp;quot;lastName&amp;quot;&gt;Solo&amp;lt;/h2&amp;gt;
+  &amp;lt;p&gt;Made the Kessel Run in less than 12 parsecs&amp;lt;/p&amp;gt;
+  &amp;lt;button&gt;Click here to hire me!&amp;lt;/button&amp;gt;
+&amp;lt;/div&amp;gt;
+
+&lt;/code&gt;
+&lt;/pre&gt;
+
+
+
+
+&lt;pre class=&#34;line-numbers language-js&#34; rel=&#34;js&#34;&gt;
+&lt;code class=&#34;language-js&#34;&gt;
+
+// Get all h2 elements with querySelectorAll. Returns a NodeList
+const headings = document.querySelectorAll(&#39;.person h2&#39;)
+console.log(headings)     // [h2#firstName, h2#lastName]
+
+// Get a single element with querySelector
+const heading = document.querySelector(&#39;.person h2&#39;)
+console.log(heading)      // h2#firstName
+
+// Do something when a click event occurs
+const button = document.querySelector(&#39;button&#39;)
+button.addEventListener(&#39;click&#39;, (ev) =&gt; {
+  alert(&#39;clicked!&#39;)
+  console.log(ev.target)  // button
+})
+
+&lt;/code&gt;
+&lt;/pre&gt;
+
+
+
+&lt;h2 id=&#34;presentations&#34;&gt;Presentations&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a target=&#34;_blank&#34; href=&#34;http://xternbootcamp17.github.io/history-of-the-web.pdf&#34;&gt;JavaScript History&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a target=&#34;_blank&#34; href=&#34;http://xternbootcamp17.github.io/bootcamp-success.pdf&#34;&gt;Bootcamp Expectations and Tips for Success&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://developer.mozilla.org/en-US/&#34;&gt;Mozilla Developer Network (MDN)&lt;/a&gt; - An excellent documentation and learning resource for all your HTML/CSS/JS needs&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;projects&#34;&gt;Projects&lt;/h2&gt;
+
+&lt;h3 id=&#34;first-js&#34;&gt;First JS&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://codepen.io/dstrus/professor/dRVBXr/&#34;&gt;CodePen&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;person-stats&#34;&gt;Person Stats&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/xtbc17s3/person-stats/tree/a928c088e5b7f7d11c4ded626148867efefcb9ef&#34;&gt;Morning&lt;/a&gt; | &lt;a href=&#34;https://github.com/xtbc17s3/person-stats/tree/f102e5b7f2a39384f34512ad04b2344234faa709&#34;&gt;Afternoon&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;homework&#34;&gt;Homework&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Update the new &lt;em&gt;stats&lt;/em&gt; div with the value of the text input.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;bonus-credit&#34;&gt;Bonus Credit&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Add the name to a &lt;em&gt;paragraph&lt;/em&gt; inside the &lt;em&gt;stats&lt;/em&gt; div.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;super-mega-bonus-credit&#34;&gt;Super Mega Bonus Credit&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Add another input to the form.&lt;/li&gt;
+&lt;li&gt;Display the value of that input alongside the name in the &lt;code&gt;div&lt;/code&gt; (or &lt;code&gt;p&lt;/code&gt;).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;super-mega-bonus-credit-hyper-fighting&#34;&gt;Super Mega Bonus Credit Hyper Fighting&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Change the appearance of the paragraph (think CSS) based on a value from the form.  &lt;em&gt;e.g.&lt;/em&gt; Turn the text blue if the user types &amp;ldquo;blue&amp;rdquo; in the form field.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
     </item>
     
     <item>
@@ -38,10 +303,236 @@ Lecture Videos Morning:
       <pubDate>Tue, 27 Jun 2017 09:24:18 -0400</pubDate>
       
       <guid>http://xternbootcamp17.github.io/week1/day2/</guid>
-      <description>Tuesday, June 27, 2017
-Lecture Videos Morning:
- Playlist | Day 2, part 1  Afternoon:
- Playlist | Day 2, part 1  Topics Functions  Function Expressions Function Declarations Functions as Object properties (methods) Variable Scope (var, const, let)  DOM  Adding HTML content to an existing element with someElement.innerHTML Creating elements with document.createElement Setting style properties with someElement.style.stylePropertyName Appending child elements with someElement.appendChild REM vs EM - The Great Debate  Examples Functions // function declaration - use &#39;function&#39; keyword function aMostExcellentFunction() { console.</description>
+      <description>
+
+&lt;p&gt;&lt;date&gt;Tuesday, June 27, 2017&lt;/date&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;lecture-videos&#34;&gt;Lecture Videos&lt;/h2&gt;
+
+&lt;p&gt;Morning:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/playlist?list=PLuT2TqJuwaY882Figl-Tr-VXWweaeS45B&#34;&gt;Playlist&lt;/a&gt; | &lt;a href=&#34;https://www.youtube.com/watch?v=XXy6WXyResk&amp;amp;index=6&amp;amp;list=PLuT2TqJuwaY882Figl-Tr-VXWweaeS45B&#34;&gt;Day 2, part 1&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Afternoon:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/playlist?list=PLuT2TqJuwaY_yOPNQJLn2Ya_hfes8g2fv&#34;&gt;Playlist&lt;/a&gt; | &lt;a href=&#34;https://www.youtube.com/watch?v=YA4_zuVsu5s&amp;amp;index=10&amp;amp;list=PLuT2TqJuwaY_yOPNQJLn2Ya_hfes8g2fv&#34;&gt;Day 2, part 1&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;topics&#34;&gt;Topics&lt;/h2&gt;
+
+&lt;h3 id=&#34;functions&#34;&gt;Functions&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Function Expressions&lt;/li&gt;
+&lt;li&gt;Function Declarations&lt;/li&gt;
+&lt;li&gt;Functions as Object properties (methods)&lt;/li&gt;
+&lt;li&gt;Variable Scope (&lt;code&gt;var&lt;/code&gt;, &lt;code&gt;const&lt;/code&gt;, &lt;code&gt;let&lt;/code&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;dom&#34;&gt;DOM&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Adding HTML content to an existing element with &lt;code&gt;someElement.innerHTML&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Creating elements with &lt;code&gt;document.createElement&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Setting style properties with &lt;code&gt;someElement.style.stylePropertyName&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Appending child elements with &lt;code&gt;someElement.appendChild&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://zellwk.com/blog/rem-vs-em/&#34;&gt;REM vs EM - The Great Debate&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;examples&#34;&gt;Examples&lt;/h2&gt;
+
+&lt;h3 id=&#34;functions-1&#34;&gt;Functions&lt;/h3&gt;
+
+
+&lt;pre class=&#34;line-numbers language-js&#34; rel=&#34;js&#34;&gt;
+&lt;code class=&#34;language-js&#34;&gt;
+
+  // function declaration - use &#39;function&#39; keyword
+  function aMostExcellentFunction() {
+    console.log(&#39;This function is great!&#39;)
+  }
+
+  aMostExcellentFunction() // =&gt; &#39;This function is great!&#39;
+
+  // function expression - defines a function as part of a larger expression syntax
+  // (usually assignment to a variable)
+  const anotherExcellentFunction = () =&gt; {
+    console.log(&#39;This function is also great!&#39;)
+  }
+
+  anotherExcellentFunction() // =&gt; &#39;This function is also great!&#39;
+
+  // functions as object properties (also known as &#39;methods&#39;)
+  const myObject = {
+    myMethod() {
+      console.log(&#39;I am a method!&#39;)
+    }
+  }
+
+  myObject.myMethod() // =&gt; &#39;I am a method!&#39;
+
+&lt;/code&gt;
+&lt;/pre&gt;
+
+
+
+&lt;h3 id=&#34;variable-scope&#34;&gt;Variable Scope&lt;/h3&gt;
+
+&lt;p&gt;The biggest difference between &lt;code&gt;var&lt;/code&gt; and &lt;code&gt;let&lt;/code&gt; is that &lt;code&gt;var&lt;/code&gt; variables are scoped to the &lt;em&gt;function&lt;/em&gt; in which they are declared, while &lt;code&gt;let&lt;/code&gt; variables are scoped to the &lt;em&gt;block&lt;/em&gt; in which they are declared.  One of the easiest examples to see this behavior is in a simple &lt;code&gt;for&lt;/code&gt; loop.&lt;/p&gt;
+
+
+&lt;pre class=&#34;line-numbers language-js&#34; rel=&#34;js&#34;&gt;
+&lt;code class=&#34;language-js&#34;&gt;
+
+function loopStuff() {
+  for (var i = 0; i &lt; 5; i++) {
+    // do stuff in the loop
+  }
+  console.log(i)
+}
+
+loopStuff() // =&gt; 5
+
+function loopMoreStuff() {
+  for (let i = 0; i &lt; 5; i++) {
+    // do stuff in the loop
+  }
+  console.log(i)
+}
+
+loopMoreStuff() // =&gt; Uncaught ReferenceError: i is not defined
+
+&lt;/code&gt;
+&lt;/pre&gt;
+
+
+
+&lt;p&gt;In the function &lt;code&gt;loopStuff&lt;/code&gt;, &lt;code&gt;var i&lt;/code&gt; is still available outside the &lt;code&gt;for&lt;/code&gt; loop so it can be logged to the console.  It is scoped to the function itself.&lt;/p&gt;
+
+&lt;p&gt;In the function &lt;code&gt;loopMoreStuff&lt;/code&gt;, &lt;code&gt;let i&lt;/code&gt; is not available outside the block it is scoped to (the &lt;code&gt;for&lt;/code&gt; loop).&lt;/p&gt;
+
+&lt;p&gt;The main difference between &lt;code&gt;const&lt;/code&gt; and &lt;code&gt;var&lt;/code&gt;/&lt;code&gt;let&lt;/code&gt; is that &lt;code&gt;const&lt;/code&gt; cannot be reassigned.
+
+&lt;pre class=&#34;line-numbers language-js&#34; rel=&#34;js&#34;&gt;
+&lt;code class=&#34;language-js&#34;&gt;
+
+let variableOne = 4
+variableOne = 5
+
+var variableTwo = 4
+variableTwo = 5
+
+const variableThree = 4
+variableThree = 5 // =&gt; Uncaught TypeError: Assignment to constant variable
+
+&lt;/code&gt;
+&lt;/pre&gt;
+
+&lt;/p&gt;
+
+
+  &lt;div class=&#34;aside aside-tip&#34;&gt;
+  
+    &lt;h4&gt;Default to using const&lt;/h4&gt;
+    
+  
+  &lt;div class=&#34;body&#34;&gt;
+  &lt;p&gt;Always use &lt;code&gt;const&lt;/code&gt; as your default way to declare variables, unless you know specifically that you will need to reassign it, in which case use &lt;code&gt;let&lt;/code&gt;.  You should rarely, if ever, use &lt;code&gt;var&lt;/code&gt;.  For further reading, check out &lt;a href=&#34;https://medium.com/javascript-scene/javascript-es6-var-let-or-const-ba58b8dcde75&#34;&gt;this article&lt;/a&gt;&lt;/p&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;h3 id=&#34;dom-1&#34;&gt;DOM&lt;/h3&gt;
+
+&lt;p&gt;If we start with the following markup:
+
+&lt;pre class=&#34;line-numbers language-html&#34; rel=&#34;html&#34;&gt;
+&lt;code class=&#34;language-html&#34;&gt;
+
+&amp;lt;div id=&amp;quot;my-div&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;
+
+&lt;/code&gt;
+&lt;/pre&gt;
+
+
+We can add additional markup to it programmatically using JavaScript.  One way is to create new HTMl elements using &lt;code&gt;document.createElement&lt;/code&gt;, and adding them by using &lt;code&gt;appendChild&lt;/code&gt;.  Styling of the element can even be changed by manipulating the element&amp;rsquo;s &lt;code&gt;style&lt;/code&gt; property.&lt;/p&gt;
+
+
+&lt;pre class=&#34;line-numbers language-js&#34; rel=&#34;js&#34;&gt;
+&lt;code class=&#34;language-js&#34;&gt;
+
+// create an h1 and modify text content and color
+const heading = document.createElement(&#39;h1&#39;)
+heading.textContent = &#34;This is the best heading I&#39;ve ever seen&#34;
+heading.style.color = &#34;red&#34;
+
+// get a reference to the existing div and add the heading as a child element
+const div = document.querySelector(&#39;#my-div&#39;)
+div.appendChild(heading)
+
+&lt;/code&gt;
+&lt;/pre&gt;
+
+
+
+&lt;p&gt;This will produce the following markup:
+
+&lt;pre class=&#34;line-numbers language-html&#34; rel=&#34;html&#34;&gt;
+&lt;code class=&#34;language-html&#34;&gt;
+
+&amp;lt;div id=&amp;quot;my-div&amp;quot;&amp;gt;
+  &amp;lt;h1 style=&amp;quot;color: red;&amp;quot;&amp;gt;This is the best heading I&#39;ve ever seen&amp;lt;/h1&amp;gt;
+&amp;lt;/div&amp;gt;
+
+&lt;/code&gt;
+&lt;/pre&gt;
+
+&lt;/p&gt;
+
+&lt;h2 id=&#34;presentations&#34;&gt;Presentations&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://xternbootcamp17.github.io/02-html-dom.pdf&#34;&gt;Review: HTML and the DOM&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;projects&#34;&gt;Projects&lt;/h2&gt;
+
+&lt;h3 id=&#34;person-stats&#34;&gt;Person Stats&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/xtbc17s3/person-stats/tree/0bf23bc0b2f996a8718ff9d70812902a4ba68a08&#34;&gt;Morning&lt;/a&gt; | &lt;a href=&#34;https://github.com/xtbc17s3/person-stats/tree/6996de3bb9db203a8a0a1417d7fc365e76034916&#34;&gt;Afternoon&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;homework&#34;&gt;Homework&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Create a new function called &lt;code&gt;renderColor&lt;/code&gt; that returns a &lt;code&gt;div&lt;/code&gt; element.&lt;/li&gt;
+&lt;li&gt;Call that function when adding that &lt;code&gt;div&lt;/code&gt; to &lt;code&gt;colorItem&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;bonus-credit&#34;&gt;Bonus Credit&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Create a new function called &lt;code&gt;renderListItem&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Use it to create list items for each stat.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;super-mega-bonus-credit&#34;&gt;Super Mega Bonus Credit&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Create a new function called &lt;code&gt;renderList&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Use it to create the list for each person&amp;rsquo;s stats.&lt;/li&gt;
+&lt;li&gt;Call &lt;code&gt;renderListItem&lt;/code&gt; from &lt;code&gt;renderList&lt;/code&gt;, not directly from &lt;code&gt;handleSubmit&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;super-mega-bonus-credit-hyper-fighting&#34;&gt;Super Mega Bonus Credit Hyper Fighting&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Be Strong!  Do not resort to the use of &lt;code&gt;innerHTML&lt;/code&gt;.  Keep using &lt;code&gt;document.createElement&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
     </item>
     
     <item>
@@ -50,12 +541,297 @@ Lecture Videos Morning:
       <pubDate>Wed, 28 Jun 2017 09:55:32 -0400</pubDate>
       
       <guid>http://xternbootcamp17.github.io/week1/day3/</guid>
-      <description>Wednesday, June 28, 2017
-Lecture Videos Morning:
-Playlist | Day 3, Part 1
-Afternoon:
-Playlist | Day 3, Part 1
-Topics Arrays  Array.map - Docs on MDN Understanding JavaScript&amp;rsquo;s map() blog post  Objects  Object literals Property Naming Retrieving property values Setting property values  Handling exceptions  try catch finally  this  default binding through function invocation implicit binding through method calls explicit binding with .</description>
+      <description>
+
+&lt;p&gt;&lt;date&gt;Wednesday, June 28, 2017&lt;/date&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;lecture-videos&#34;&gt;Lecture Videos&lt;/h2&gt;
+
+&lt;p&gt;Morning:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/playlist?list=PLuT2TqJuwaY882Figl-Tr-VXWweaeS45B&#34;&gt;Playlist&lt;/a&gt; | &lt;a href=&#34;https://www.youtube.com/watch?v=1tMQlcsg0jc&amp;amp;index=19&amp;amp;list=PLuT2TqJuwaY882Figl-Tr-VXWweaeS45B&#34;&gt;Day 3, Part 1&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Afternoon:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/playlist?list=PLuT2TqJuwaY_yOPNQJLn2Ya_hfes8g2fv&#34;&gt;Playlist&lt;/a&gt; | &lt;a href=&#34;https://www.youtube.com/watch?v=JtEbzz4-n9Q&amp;amp;index=23&amp;amp;list=PLuT2TqJuwaY_yOPNQJLn2Ya_hfes8g2fv&#34;&gt;Day 3, Part 1&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;topics&#34;&gt;Topics&lt;/h2&gt;
+
+&lt;h3 id=&#34;arrays&#34;&gt;Arrays&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Array.map&lt;/code&gt; - &lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map?v=control&#34;&gt;Docs on MDN&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.discovermeteor.com/blog/understanding-javascript-map/&#34;&gt;Understanding JavaScript&amp;rsquo;s &lt;code&gt;map()&lt;/code&gt;&lt;/a&gt; blog post&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;objects&#34;&gt;Objects&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Object literals&lt;/li&gt;
+&lt;li&gt;Property Naming&lt;/li&gt;
+&lt;li&gt;Retrieving property values&lt;/li&gt;
+&lt;li&gt;Setting property values&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;handling-exceptions&#34;&gt;Handling exceptions&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;try&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;catch&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;finally&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;this&#34;&gt;&lt;code&gt;this&lt;/code&gt;&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;default&lt;/em&gt; binding through function invocation&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;implicit&lt;/em&gt; binding through method calls&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;explicit&lt;/em&gt; binding with &lt;code&gt;.bind&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;foundation&#34;&gt;Foundation&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;The grid system&lt;/li&gt;
+&lt;li&gt;Responsive design (adjusting style based on window size)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://foundation.zurb.com/sites/docs/&#34;&gt;Foundation Docs&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;markdown&#34;&gt;Markdown&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://assemble.io/docs/Cheatsheet-Markdown.html&#34;&gt;Markdown Cheatsheet&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://guides.github.com/features/mastering-markdown/&#34;&gt;Mastering Markdown&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;examples&#34;&gt;Examples&lt;/h2&gt;
+
+&lt;h3 id=&#34;arrays-1&#34;&gt;Arrays&lt;/h3&gt;
+
+&lt;p&gt;Arrays are extremely useful data structures in JavaScript, as they can be easily iterated and transformed through methods like &lt;code&gt;map&lt;/code&gt;, &lt;code&gt;filter&lt;/code&gt;, and &lt;code&gt;reduce&lt;/code&gt;.  Sometimes, you may have an &amp;lsquo;array-like&amp;rsquo; collection (like a &lt;code&gt;NodeList&lt;/code&gt; or function arguments) that you would need to convert to an actual Array before you could use these methods.  This can be done using &lt;code&gt;Array.from&lt;/code&gt;&lt;/p&gt;
+
+
+&lt;pre class=&#34;line-numbers language-js&#34; rel=&#34;js&#34;&gt;
+&lt;code class=&#34;language-js&#34;&gt;
+
+let paragraphs = document.querySelectorAll(&#39;p&#39;)
+paragraphs.map((p) =&gt; {
+  p.textContent = &#34;This won&#39;t work because paragraphs is a NodeList, not Array!&#34;
+})
+// =&gt; Uncaught TypeError: paragraphs.map is not a function
+
+let actualArrayOfParagraphs = Array.from(paragraphs)
+actualArrayOfParagraphs.map((p) =&gt; {
+  p.textContent = &#34;This totally does work because we created an Array from our NodeList!&#34;
+})
+
+&lt;/code&gt;
+&lt;/pre&gt;
+
+
+
+
+  &lt;div class=&#34;aside aside-info&#34;&gt;
+  
+    &lt;h4&gt;Requirements for &amp;#39;Array.from&amp;#39;&lt;/h4&gt;
+    
+  
+  &lt;div class=&#34;body&#34;&gt;
+  &lt;p&gt;What objects can you convert to an Array using &amp;lsquo;Array.from&amp;rsquo;?&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Any array-like object with a &amp;lsquo;length&amp;rsquo; property and indexed elements&lt;/li&gt;
+&lt;li&gt;Iterable objects (like Map or Set)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;For more info, check out &lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/from?v=control&#34;&gt;this article&lt;/a&gt; on MDN.&lt;/p&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;h3 id=&#34;objects-1&#34;&gt;Objects&lt;/h3&gt;
+
+&lt;p&gt;Almost everything in JavaScript is an Object.  The easiest way to create new Objects is with the &lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Object_initializer&#34;&gt;object initializer&lt;/a&gt;, more commonly known as &amp;lsquo;object literal&amp;rsquo; syntax.  Basically, use curly braces to make an object &lt;code&gt;{}&lt;/code&gt; and fill in the properties that you want.&lt;/p&gt;
+
+&lt;p&gt;Objects contain &lt;code&gt;key&lt;/code&gt;/&lt;code&gt;value&lt;/code&gt; pairs that allow you to set and retrieve values from them.&lt;/p&gt;
+
+
+&lt;pre class=&#34;line-numbers language-js&#34; rel=&#34;js&#34;&gt;
+&lt;code class=&#34;language-js&#34;&gt;
+
+// create a new object and assign some properties
+const myObject = {
+  prop1: &#39;Hello there&#39;,
+  prop2: 42
+}
+
+// access the values in several ways, usually &#39;dot&#39; or &#39;square bracket&#39; notation
+myObject.prop1 // =&gt; &#39;Hello there&#39;
+myObject[&#39;prop1&#39;] //=&gt; &#39;Hello there&#39;
+
+// new key/value pairs can also be assigned with these notations
+myObject.prop3 = &#39;New Value!&#39;
+myObject[&#39;prop4&#39;] = &#39;Newest Value!&#39;
+
+console.log(myObject)
+// { 
+//   prop1: &#39;Hello there&#39;,
+//   prop2: 42,
+//   prop3: &#39;New Value!&#39;,
+//   prop4: &#39;Newest Value!&#39;
+// }
+
+&lt;/code&gt;
+&lt;/pre&gt;
+
+
+
+&lt;p&gt;We know that we can iterate through an Array using &lt;code&gt;map&lt;/code&gt; or &lt;code&gt;forEach&lt;/code&gt;.  Can we do something similar with objects?  There are a few ways to do it, but one of the newest and easiest is the &lt;code&gt;Object.keys&lt;/code&gt; method.  It iterates through the enumerable properties of an object, returning an array of the property keys. Once we have an array of keys, we can &lt;code&gt;map&lt;/code&gt; over &lt;em&gt;that&lt;/em&gt; and access each of the object properties individually.&lt;/p&gt;
+
+
+&lt;pre class=&#34;line-numbers language-js&#34; rel=&#34;js&#34;&gt;
+&lt;code class=&#34;language-js&#34;&gt;
+
+const myObj = {
+  a: &#39;hi&#39;,
+  b: 42,
+  c: [1, 2, 3]
+}
+
+const myObjKeys = Object.keys(myObj)    // [&#39;a&#39;, &#39;b&#39;, &#39;c&#39;]
+
+myObjKeys.map(key =&gt; myObj[key])        // [&#39;hi&#39;, 42, [1, 2, 3]]
+
+&lt;/code&gt;
+&lt;/pre&gt;
+
+
+
+&lt;h3 id=&#34;handling-exceptions-1&#34;&gt;Handling exceptions&lt;/h3&gt;
+
+&lt;p&gt;In JavaScript (as in many languages), there is a way to &amp;lsquo;try&amp;rsquo; a block of code that may produce an exception, and if it &lt;em&gt;does&lt;/em&gt; produce an exception, &amp;lsquo;catch&amp;rsquo; it and execute a different block of code.  The catch block receives the exception as an argument.  There is also an optional &amp;lsquo;finally&amp;rsquo; block, which will &lt;em&gt;always&lt;/em&gt; run, regardless of whether there was an exception.&lt;/p&gt;
+
+
+&lt;pre class=&#34;line-numbers language-js&#34; rel=&#34;js&#34;&gt;
+&lt;code class=&#34;language-js&#34;&gt;
+
+try {
+  // try running this code first
+  somethingThatMightBlowUp()
+} catch (e) {
+  // executes if the &#39;try&#39; block produced an exception
+  logMyErrors(e)
+} finally {
+  // always executes after the previous blocks have run
+  console.log(&#34;Done!  Maybe there was an exception, maybe there wasn&#39;t.&#34;)
+}
+
+&lt;/code&gt;
+&lt;/pre&gt;
+
+
+
+&lt;p&gt;For more info, read &lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch&#34;&gt;this MDN article&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&#34;this-1&#34;&gt;&lt;code&gt;this&lt;/code&gt;&lt;/h3&gt;
+
+&lt;p&gt;The same function can have different values for &lt;code&gt;this&lt;/code&gt; depending on how the function is called/invoked.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://codepen.io/dstrus/pen/XgmLyv&#34;&gt;Try this example live on CodePen.&lt;/a&gt;&lt;/p&gt;
+
+
+&lt;pre class=&#34;line-numbers language-js&#34; rel=&#34;js&#34;&gt;
+&lt;code class=&#34;language-js&#34;&gt;
+
+const app = {
+  sayYeah() {
+    console.log(`Yeah, ${this}`)
+  },
+  
+  toString() {
+    return &#39;app object&#39;
+  }
+}
+
+// When invoked as a method
+app.sayYeah() // &#34;Yeah, app object&#34;
+
+// When invoked as an event handler
+document
+  .querySelector(&#39;button&#39;)
+  .addEventListener(&#39;click&#39;, app.sayYeah)
+  // &#34;Yeah, [object HTMLButtonElement]&#34;
+
+// When manually set with bind
+app.sayYeah.bind(&#39;w00t&#39;)() // &#34;Yeah, w00t&#34;
+
+&lt;/code&gt;
+&lt;/pre&gt;
+
+
+
+&lt;h3 id=&#34;foundation-1&#34;&gt;Foundation&lt;/h3&gt;
+
+&lt;p&gt;Foundation is a CSS (and JS) framework that makes it easy to create stylish, responsive web pages.  The foundation (get it?) of it is the &lt;a href=&#34;http://foundation.zurb.com/grid.html&#34;&gt;grid system&lt;/a&gt;.  The grid splits the page into 12 equally-sized columns, making it easy to set the alignment of elements on the page by specifying how many columns they span.&lt;/p&gt;
+
+&lt;p&gt;In addition, you can add sizes of &amp;lsquo;small&amp;rsquo;, &amp;lsquo;medium&amp;rsquo;, &amp;lsquo;large&amp;rsquo;, etc, to specify different behavior at different screen sizes.  In the following example, the two child divs will be full screen width at small screen sizes (stacked on top of each other), and half of the screen width at medium and larger screen sizes (appearing next to each other).&lt;/p&gt;
+
+
+&lt;pre class=&#34;line-numbers language-html&#34; rel=&#34;html&#34;&gt;
+&lt;code class=&#34;language-html&#34;&gt;
+
+&amp;lt;div class=&amp;quot;row&amp;quot;&amp;gt;
+  &amp;lt;div class=&amp;quot;small-12 medium-6 columns&amp;quot;&amp;gt;
+  &amp;lt;/div&amp;gt;
+  &amp;lt;div class=&amp;quot;small-12 medium-6 columns&amp;quot;&amp;gt;
+  &amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+
+&lt;/code&gt;
+&lt;/pre&gt;
+
+
+
+&lt;h2 id=&#34;projects&#34;&gt;Projects&lt;/h2&gt;
+
+&lt;h3 id=&#34;person-stats&#34;&gt;Person Stats&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/xtbc17s3/person-stats/tree/930ba46d35c4cd6c90f0e0eb5b460350999e6db4&#34;&gt;Final Version&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;homework&#34;&gt;Homework&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Store the flicks in an array, as well as in the DOM.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;bonus-credit&#34;&gt;Bonus Credit&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Add a &lt;em&gt;fav&lt;/em&gt; button to each list item.&lt;/li&gt;
+&lt;li&gt;Make it change the appearance of that item (&lt;em&gt;e.g.&lt;/em&gt; Add a background color.)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;mega-bonus-credit&#34;&gt;Mega Bonus Credit&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Add a &lt;em&gt;remove&lt;/em&gt; button to each list item.&lt;/li&gt;
+&lt;li&gt;Make that button actually work.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;super-mega-bonus-credit&#34;&gt;Super Mega Bonus Credit&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Make sure that both of those buttons affect the array as well.&lt;/li&gt;
+&lt;li&gt;Make the &lt;em&gt;fav&lt;/em&gt; button toggle the &lt;em&gt;fav&lt;/em&gt; status.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;super-mega-bonus-credit-hyper-fighting&#34;&gt;Super Mega Bonus Credit Hyper Fighting&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Add buttons that move a flick up and down the list.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
     </item>
     
     <item>
@@ -64,12 +840,222 @@ Topics Arrays  Array.map - Docs on MDN Understanding JavaScript&amp;rsquo;s map(
       <pubDate>Thu, 29 Jun 2017 13:29:29 -0400</pubDate>
       
       <guid>http://xternbootcamp17.github.io/week1/day4/</guid>
-      <description>Thursday, June 29, 2017
-Lecture Videos Morning:
-Playlist | Day 4, Part 1
-Afternoon:
-Playlist | Day 4, Part 1
-Topics DOM Manipulation  data attributes parentElement childNodes firstChild firstElementChild insertBefore closest (experimental)  Array methods  Array.prototype documentation on MDN unshift() reverse()  Foundation  Button Button Group Un-bulleted List  Examples Data Attributes HTML5 gave us a way to save extra information on a standard HTML Element via the data-* attributes.</description>
+      <description>
+
+&lt;p&gt;&lt;date&gt;Thursday, June 29, 2017&lt;/date&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;lecture-videos&#34;&gt;Lecture Videos&lt;/h2&gt;
+
+&lt;p&gt;Morning:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=1tMQlcsg0jc&amp;amp;index=19&amp;amp;list=PLuT2TqJuwaY882Figl-Tr-VXWweaeS45B&#34;&gt;Playlist&lt;/a&gt; | &lt;a href=&#34;https://www.youtube.com/watch?v=6VZmXEDS9Xo&amp;amp;list=PLuT2TqJuwaY882Figl-Tr-VXWweaeS45B&amp;amp;index=35&#34;&gt;Day 4, Part 1&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Afternoon:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/playlist?list=PLuT2TqJuwaY_yOPNQJLn2Ya_hfes8g2fv&#34;&gt;Playlist&lt;/a&gt; | &lt;a href=&#34;https://www.youtube.com/watch?v=OgEhC3PwpMQ&amp;amp;index=40&amp;amp;list=PLuT2TqJuwaY_yOPNQJLn2Ya_hfes8g2fv&#34;&gt;Day 4, Part 1&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;topics&#34;&gt;Topics&lt;/h2&gt;
+
+&lt;h3 id=&#34;dom-manipulation&#34;&gt;DOM Manipulation&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes&#34;&gt;data attributes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/API/Node/parentElement&#34;&gt;parentElement&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/API/Node/childNodes&#34;&gt;childNodes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/API/Node/firstChild&#34;&gt;firstChild&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/API/ParentNode/firstElementChild&#34;&gt;firstElementChild&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/API/Node/insertBefore&#34;&gt;insertBefore&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/API/Element/closest&#34;&gt;closest&lt;/a&gt; (experimental)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;array-methods&#34;&gt;Array methods&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/prototype?v=control&#34;&gt;&lt;code&gt;Array.prototype&lt;/code&gt; documentation on MDN&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/unshift?v=control&#34;&gt;&lt;code&gt;unshift()&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reverse?v=control&#34;&gt;&lt;code&gt;reverse()&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;foundation&#34;&gt;Foundation&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://foundation.zurb.com/sites/docs/button.html&#34;&gt;Button&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://foundation.zurb.com/sites/docs/button-group.html&#34;&gt;Button Group&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://foundation.zurb.com/sites/docs/typography-helpers.html#un-bulleted-list&#34;&gt;Un-bulleted List&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;examples&#34;&gt;Examples&lt;/h2&gt;
+
+&lt;h3 id=&#34;data-attributes&#34;&gt;Data Attributes&lt;/h3&gt;
+
+&lt;p&gt;HTML5 gave us a way to save extra information on a standard HTML Element via the &lt;code&gt;data-*&lt;/code&gt; attributes. Basically, you can add any arbitrary information you want, prefixing the name of the attribute with &lt;code&gt;data-&lt;/code&gt;.  This data is then accessible through JavaScript via the &lt;code&gt;someElement.dataset&lt;/code&gt; object, or through CSS via &lt;code&gt;attr(data-*)&lt;/code&gt;.&lt;/p&gt;
+
+
+&lt;pre class=&#34;line-numbers language-html&#34; rel=&#34;html&#34;&gt;
+&lt;code class=&#34;language-html&#34;&gt;
+
+&amp;lt;div
+  id=&#34;my-div&#34;
+  data-name=&#34;Awesome div&#34;
+  data-id=&#34;div-1234&#34;
+  data-color=&#34;blue&#34;
+  data-marshmallows=&#34;yummy&#34;&amp;gt;
+&amp;lt;/div&amp;gt;
+
+&lt;/code&gt;
+&lt;/pre&gt;
+
+
+
+
+&lt;pre class=&#34;line-numbers language-js&#34; rel=&#34;js&#34;&gt;
+&lt;code class=&#34;language-js&#34;&gt;
+
+const myDiv = document.querySelector(&#39;#my-div&#39;)
+
+myDiv.dataset.name            // &#34;Awesome div&#34;
+myDiv.dataset.data-id         // &#34;div-1234&#34;
+myDiv.dataset.color           // &#34;blue&#34;
+myDiv.dataset.marshmallows    // &#34;yummy&#34;
+
+&lt;/code&gt;
+&lt;/pre&gt;
+
+
+
+
+&lt;pre class=&#34;line-numbers language-css&#34; rel=&#34;css&#34;&gt;
+&lt;code class=&#34;language-css&#34;&gt;
+
+#my-div {
+  background-color: attr(data-color);
+}
+
+div[data-id=&#39;div-1234&#39;] {
+  height: 400px;
+  width: 400px;
+}
+
+&lt;/code&gt;
+&lt;/pre&gt;
+
+
+
+&lt;h3 id=&#34;clonenode&#34;&gt;&lt;code&gt;.cloneNode&lt;/code&gt;&lt;/h3&gt;
+
+&lt;p&gt;Sometimes it may be easier to clone an existing node rather than build an entirely new one, especially if the markup is complex.  In our &amp;lsquo;Michael Bay-watch&amp;rsquo; project, we kept a hidden &lt;code&gt;li&lt;/code&gt; in the DOM that we cloned every time we needed to render a new list item.&lt;/p&gt;
+
+
+&lt;pre class=&#34;line-numbers language-html&#34; rel=&#34;html&#34;&gt;
+&lt;code class=&#34;language-html&#34;&gt;
+
+&amp;lt;li class=&#34;flick grid-x align-middle template&#34;&amp;gt;
+  &amp;lt;span class=&#34;flick-name cell auto&#34;&amp;gt;sdfkjhgds&amp;lt;/span&amp;gt;
+  &amp;lt;span class=&#34;actions button-group cell shrink&#34;&amp;gt;
+    &amp;lt;button class=&#34;fav button warning&#34;&amp;gt;fav&amp;lt;/button&amp;gt;
+    &amp;lt;button class=&#34;remove button alert&#34;&amp;gt;del&amp;lt;/button&amp;gt;
+  &amp;lt;/span&amp;gt;
+&amp;lt;/li&amp;gt;
+
+&lt;/code&gt;
+&lt;/pre&gt;
+
+
+
+
+&lt;pre class=&#34;line-numbers language-css&#34; rel=&#34;css&#34;&gt;
+&lt;code class=&#34;language-css&#34;&gt;
+
+/* hides any &#39;li&#39; with a &#39;template&#39; class */
+li.template {
+  display: none;
+}
+
+&lt;/code&gt;
+&lt;/pre&gt;
+
+
+
+
+&lt;pre class=&#34;line-numbers language-js&#34; rel=&#34;js&#34;&gt;
+&lt;code class=&#34;language-js&#34;&gt;
+
+const list = document.querySelector(&#39;ul&#39;)
+const templateItem = document.querySelector(&#39;li.template&#39;)
+
+// Make a copy of the templateItem
+// Pass &#39;true&#39; as an argument to clone all children as well
+const newItem = templateItem.cloneNode(true)
+
+// remove &#39;template&#39; class so it is no longer hidden
+newItem.classList.remove(&#39;template&#39;)
+
+list.appendChild(newItem)
+
+&lt;/code&gt;
+&lt;/pre&gt;
+
+
+
+&lt;h3 id=&#34;array-methods-1&#34;&gt;Array methods&lt;/h3&gt;
+
+
+&lt;pre class=&#34;line-numbers language-js&#34; rel=&#34;js&#34;&gt;
+&lt;code class=&#34;language-js&#34;&gt;
+
+const ary = [1, 2, 3, 4, 5]
+
+ary.unshift(0)
+
+console.log(ary)    // [0, 1, 2, 3, 4, 5]
+
+ary.shift()         // 0
+
+console.log(ary)    // [1, 2, 3, 4, 5]
+
+ary.reverse()
+
+console.log(ary)    // [5, 4, 3, 2, 1]
+
+&lt;/code&gt;
+&lt;/pre&gt;
+
+
+
+&lt;h2 id=&#34;presentations&#34;&gt;Presentations&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://xternbootcamp17.github.io/awesomeness.pdf&#34;&gt;Scale of Awesomeness&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;projects&#34;&gt;Projects&lt;/h2&gt;
+
+&lt;p&gt;Michael Bay-watch: &lt;a href=&#34;https://github.com/xtbc17s3/baywatch/tree/40397999bcca7d670908c4c048be3f55c042b4c1&#34;&gt;Morning&lt;/a&gt; | &lt;a href=&#34;https://github.com/xtbc17s3/baywatch/tree/3466cb3ee0120eafc4413eb8e496c66c861be4e1&#34;&gt;Afternoon&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;homework&#34;&gt;Homework&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Finish implementing &lt;em&gt;move up&lt;/em&gt; and &lt;em&gt;move down&lt;/em&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;bonus-credit&#34;&gt;Bonus Credit&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Allow users to edit the names of existing flicks. Wouldn&amp;rsquo;t it be nice if we could make that &lt;code&gt;span&lt;/code&gt;&amp;rsquo;s &lt;strong&gt;content editable&lt;/strong&gt;?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;super-mega-bonus-credit&#34;&gt;Super Mega Bonus Credit&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Persist the data using &lt;code&gt;localStorage&lt;/code&gt;. When you refresh the page, your flicks should still be there.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;super-mega-bonus-credit-hyper-fighting&#34;&gt;Super Mega Bonus Credit Hyper Fighting&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Allow users to filter the list of flicks.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
     </item>
     
   </channel>

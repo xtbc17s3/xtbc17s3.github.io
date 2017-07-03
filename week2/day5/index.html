@@ -1,6 +1,3 @@
-
-
-
 <!DOCTYPE html>
 <html lang="en" class="js csstransforms3d">
   <head>
@@ -13,7 +10,7 @@
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 
     
-    <title>Setup for Windows</title>
+    <title>Day 5: Intro to React</title>
     <link href="http://xternbootcamp17.github.io//css/nucleus.css" rel="stylesheet">
     <link href="http://xternbootcamp17.github.io//css/font-awesome.min.css" rel="stylesheet">
     
@@ -28,7 +25,7 @@
     <link href="/css/prism.css" rel="stylesheet">
 <link href="/css/xtern.css" rel="stylesheet">
   </head>
-  <body class="" data-url="/setup-windows/">
+  <body class="" data-url="/week2/day5/">
     
     <nav id="sidebar">
   <div id="header-wrapper">
@@ -186,7 +183,7 @@
       
       
 
-      <li class="dd-item active parent" data-nav-id="/setup-windows/">
+      <li class="dd-item  " data-nav-id="/setup-windows/">
         <a href="/setup-windows/">
           <span>
             
@@ -363,7 +360,7 @@
       
       
 
-      <li class="dd-item  " data-nav-id="/week2/">
+      <li class="dd-item  parent" data-nav-id="/week2/">
         <a href="/week2/">
           <span>
             
@@ -377,7 +374,7 @@
           
           
           
-            <li class="dd-item " data-nav-id="/week2/day5/">
+            <li class="dd-item active" data-nav-id="/week2/day5/">
               <a href="/week2/day5/">
                 <span>Day 5: Intro to React     </i></span>
               </a>
@@ -420,14 +417,49 @@
                   
                     
                     
+                <a href="/week2/" itemprop="url"><span itemprop="title">Week Two</span></a> <i class="fa fa-angle-right"></i>
+                    
                   
                 
-                <span itemprop="title"> Setup for Windows</span>
+                <span itemprop="title"> Day 5: Intro to React</span>
               </div>
               
                   <div class="progress">
     <div class="wrapper">
-
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#lecture-videos">Lecture Videos</a></li>
+<li><a href="#topics">Topics</a>
+<ul>
+<li><a href="#wrapping-up-michael-baywatch">Wrapping up Michael Baywatch</a></li>
+<li><a href="#es2015-es6">ES2015+ (ES6+)</a></li>
+<li><a href="#react-https-facebook-github-io-react"><a href="https://facebook.github.io/react/">React</a></a></li>
+</ul></li>
+<li><a href="#examples">Examples</a>
+<ul>
+<li><a href="#dom-manipulation">DOM Manipulation</a></li>
+<li><a href="#react">React</a>
+<ul>
+<li><a href="#basic-app">Basic App</a></li>
+<li><a href="#props">Props</a></li>
+<li><a href="#state">State</a></li>
+<li><a href="#modules">Modules</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#presentations">Presentations</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#homework-dwarf-underground">Homework: Dwarf Underground</a>
+<ul>
+<li><a href="#bonus-credit">Bonus Credit</a></li>
+<li><a href="#super-bonus-credit">Super Bonus Credit</a></li>
+<li><a href="#super-mega-bonus-credit">Super Mega Bonus Credit</a></li>
+<li><a href="#super-mega-bonus-credit-hyper-fighting">Super Mega Bonus Credit Hyper Fighting</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
     </div>
 </div>
 
@@ -437,20 +469,348 @@
             
               <div id="body-inner">
                 
-                <h1>Setup for Windows</h1>
+                <h1>Day 5: Intro to React</h1>
                 
 
-<div class="page-heading"><div>
 
 
-<p><i class="fa fa-windows"></i> Setup</p>
+<p><date>Monday, July 3, 2017</date></p>
+
+<h2 id="lecture-videos">Lecture Videos</h2>
+
+<p>Homework review:</p>
+
+<ul>
+<li><a href="https://www.youtube.com/watch?v=HAm_7NbJVGU&amp;index=57&amp;list=PLuT2TqJuwaY_yOPNQJLn2Ya_hfes8g2fv">Day 5, part 1</a></li>
+</ul>
+
+<p>React:</p>
+
+<ul>
+<li><a href="https://www.youtube.com/watch?v=GSVV8AvfHck&amp;index=62&amp;list=PLuT2TqJuwaY9uIH9AFDZUyfalE-tY8REa">Session 2 videos</a></li>
+</ul>
+
+<h2 id="topics">Topics</h2>
+
+<h3 id="wrapping-up-michael-baywatch">Wrapping up Michael Baywatch</h3>
+
+<ul>
+<li><code>contentEditable</code> (<a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Editable_content">MDN: Making content editable</a>)</li>
+<li><a href="http://fontawesome.io/">Font Awesome</a></li>
+<li><a href="https://www.w3schools.com/html/html5_webstorage.asp">HTML 5 <code>localStorage</code></a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify">JSON.stringify()</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse">JSON.parse()</a></li>
+</ul>
+
+<h3 id="es2015-es6">ES2015+ (ES6+)</h3>
+
+<ul>
+<li>Inheritance (with the ES2015 <code>class</code> syntax; it&rsquo;s still <em>prototypal</em> inheritance though) - <a href="https://babeljs.io/learn-es2015/#ecmascript-2015-features-classes">ES2015 classes on Babel</a></li>
+<li>Modules (import/export) - <a href="https://babeljs.io/learn-es2015/#ecmascript-2015-features-modules">ES2015 modules on Babel</a></li>
+</ul>
+
+<h3 id="react-https-facebook-github-io-react"><a href="https://facebook.github.io/react/">React</a></h3>
+
+<ul>
+<li><a href="https://tylermcginnis.com/imperative-vs-declarative-programming/">Imperative vs. Declarative</a></li>
+<li>Components
+
+<ul>
+<li>JSX - <a href="https://facebook.github.io/react/docs/introducing-jsx.html">Docs: Introducing JSX</a></li>
+<li>Props - <a href="https://facebook.github.io/react/docs/components-and-props.html">Docs: Components and Props</a></li>
+<li>State - <a href="https://facebook.github.io/react/docs/state-and-lifecycle.html">Docs: State and Lifecycle</a></li>
+<li>Events - <a href="https://facebook.github.io/react/docs/handling-events.html">Docs: Handling Events</a></li>
+<li>Refs - <a href="https://facebook.github.io/react/docs/refs-and-the-dom.html">Docs: Refs and the DOM</a></li>
+<li>Keys - <a href="https://facebook.github.io/react/docs/lists-and-keys.html">Docs: Lists and Keys</a></li>
+</ul></li>
+<li><a href="https://github.com/facebookincubator/create-react-app">create-react-app</a></li>
+</ul>
+
+<h2 id="examples">Examples</h2>
+
+<h3 id="dom-manipulation">DOM Manipulation</h3>
+
+<p><code>contentEditable</code> is a property that, like the name suggests, allows the content of an HTML element to be edited through user interaction with the DOM (similar to a text input field).</p>
 
 
-</div></div>
+<pre class="line-numbers language-html" rel="html">
+<code class="language-html">
 
-<p>With this guide, you can prepare your laptop with everything you&rsquo;ll need to get started with the Xtern Bootcamp. This guide is written specifically for Windows 10, but most of it will work on Windows 7 or higher.</p>
+&lt;div class=&quot;person-name&quot;&gt;Mark&lt;/div&gt;
+&lt;button&gt;Click to Edit Name&lt;/button&gt;
 
-<p>If you have trouble at any point, please contact <a href="mailto:dave@getfretless.com">Davey</a> or <a href="mailto:seth@getfretless.com">Seth</a>.</p>
+</code>
+</pre>
+
+
+
+
+<pre class="line-numbers language-js" rel="js">
+<code class="language-js">
+
+const nameDiv = document.querySelector('.person-name')
+console.log(nameDiv.isContentEditable) // => false
+
+const button = document.querySelector('button')
+button.addEventListener('click', (ev) => {
+  nameDiv.contentEditable = true
+  console.log(nameDiv.isContentEditable)
+})
+
+button.click() // => true (and div content will be editable)
+
+</code>
+</pre>
+
+
+
+<h3 id="react">React</h3>
+
+<h4 id="basic-app">Basic App</h4>
+
+<p>A basic React application requires a minimum of four things:</p>
+
+<ol>
+<li>An HTML file with at least one empty element</li>
+<li>The React library</li>
+<li>One or more React Component(s)</li>
+<li>A JavaScript call to attach the React Component to the empty element in step one</li>
+</ol>
+
+<p>A minimal example:</p>
+
+
+<pre class="line-numbers language-html" rel="html">
+<code class="language-html">
+
+&lt;-- index.html --&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Basic React App&lt;/title&gt;
+    &lt;script src=&quot;App.js&quot;&gt;&lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;div id=&quot;app&quot;&gt;&lt;/div&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+
+</code>
+</pre>
+
+
+
+
+<pre class="line-numbers language-jsx" rel="jsx">
+<code class="language-jsx">
+
+// App.js
+class App extends React.Component {
+  render() {
+    return (
+      &lt;h1&gt;Hello, world!&lt;/h1&gt;
+    )
+  }
+}
+
+ReactDOM.render(&lt;App /&gt;, document.querySelector('#app'))
+
+</code>
+</pre>
+
+
+
+<p>The body of the HTML above contains only an empty <code>div</code> with an id of &lsquo;app&rsquo;.  This is where we will tell React to render our app. The <code>App.js</code> file defines the <code>App</code> component, and also makes the call to <code>ReactDOM.render</code>, which attaches <code>&lt;App /&gt;</code> to the <code>div#app</code> element.</p>
+
+<p>React will &lsquo;fill in&rsquo; the div with the return result of the <code>App</code> component&rsquo;s <code>render</code> method, in this case, the markup <code>&lt;h1&gt;Hello, world!&lt;/h1&gt;</code>.</p>
+
+<h4 id="props">Props</h4>
+
+<p>React components can be thought of as JavaScript functions.  They take in arguments, called <code>props</code>, and return markup that gets rendered to the page. Props can be just about anything, including strings, booleans, functions, objects, etc&hellip;</p>
+
+
+<pre class="line-numbers language-jsx" rel="jsx">
+<code class="language-jsx">
+
+class App extends React.Component {
+  render() {
+    return (
+      &lt;h1&gt;Hello, {this.props.name}!&lt;/h1&gt;
+    )
+  }
+}
+
+&lt;App name=&quot;Bob&quot; /&gt;
+
+</code>
+</pre>
+
+
+
+<p>By passing in the string <code>&quot;Bob&quot;</code> to the <code>App</code> component, we can access that value from within the <code>App</code> class as a property on <code>this.props</code>.</p>
+
+<p>Our rendered output would then be:</p>
+
+
+<pre class="line-numbers language-html" rel="html">
+<code class="language-html">
+
+&lt;h1&gt;Hello, Bob!&lt;/h1&gt;
+
+</code>
+</pre>
+
+
+
+<h4 id="state">State</h4>
+
+<p>Components receive <em>props</em> as arguments and cannot change their values. Data that needs to change belongs in <em>state</em>.</p>
+
+<p>State should be initialized in the constructor and updated via <code>setState</code>.</p>
+
+
+  <div class="aside aside-danger">
+  
+    <h4>Do</h4>
+    
+      <div class="emoji">
+        <i class="fa fa-Not"></i>
+      </div>
+    
+  
+  <div class="body">
+  <p>Always use <code>setState</code> to modify a component&rsquo;s state. The only time you should set state directly is in the constructor.</p>
+
+  </div>
+</div>
+
+
+
+<pre class="line-numbers language-jsx" rel="jsx">
+<code class="language-jsx">
+
+class App extends React.Component {
+  constructor() {
+    super()
+    this.state = {
+      count: 0
+    }
+  }
+
+  increment(ev) {
+    count = this.state.count + 1
+    this.setState({ count })
+  }
+
+  render() {
+    return (
+      &lt;button type="button" onClick={this.increment.bind(this)}&gt;
+        Click to Increment
+      &lt;/button&gt;
+      &lt;p&gt;
+        Button has been clicked {this.state.count} times
+      &lt;p&gt;
+    )
+  }
+}
+
+&lt;App /&gt;
+
+</code>
+</pre>
+
+
+
+<h4 id="modules">Modules</h4>
+
+<p>With <a href="https://babeljs.io/learn-es2015/#ecmascript-2015-features-modules">modules</a>, you can define each component in separate files, importing them as needed.</p>
+
+<p><strong>Header.js</strong></p>
+
+
+<pre class="line-numbers language-jsx" rel="jsx">
+<code class="language-jsx">
+
+class Header extends React.Component {
+  render() {
+    return (
+      &lt;h1&gt;Hello, {this.props.name}!&lt;/h1&gt;
+    )
+  }
+}
+
+export default Header
+
+</code>
+</pre>
+
+
+
+<p><strong>App.js</strong></p>
+
+
+<pre class="line-numbers language-jsx" rel="jsx">
+<code class="language-jsx">
+
+import Header from './Header'
+
+class App extends React.Component {
+  render() {
+    return (
+      &lt;Header name=&quot;Bob&quot; /&gt;
+    )
+  }
+}
+
+export default App
+
+</code>
+</pre>
+
+
+
+<h2 id="presentations">Presentations</h2>
+
+<ul>
+<li><a href="/05-intro-to-react.pdf">Intro to React</a></li>
+</ul>
+
+<h2 id="projects">Projects</h2>
+
+<ul>
+<li><a href="https://github.com/xtbc17s3/baywatch/tree/ed918925683dfe87065111dff21f2e411a8d6157">Michael Baywatch</a></li>
+<li><a href="https://github.com/xtbc17s3/dwarf-underground/tree/3da6c4b4447d32404a141344867a457fdb9c3e60">Dwarf Underground</a></li>
+</ul>
+
+<h2 id="homework-dwarf-underground">Homework: Dwarf Underground</h2>
+
+<ul>
+<li>Split the page into at least 6 total components</li>
+</ul>
+
+<h3 id="bonus-credit">Bonus Credit</h3>
+
+<ul>
+<li>Split the page into at least 10 total components, including components <em>in</em> components</li>
+</ul>
+
+<h3 id="super-bonus-credit">Super Bonus Credit</h3>
+
+<ul>
+<li>Render the four article links at the bottom of the screen using <code>map</code> and passing in the props they need</li>
+</ul>
+
+<h3 id="super-mega-bonus-credit">Super Mega Bonus Credit</h3>
+
+<ul>
+<li>Make a component that contains a text field for leaving a comment</li>
+<li>Have the text field appear only when the &lsquo;comments&rsquo; link at the bottom of the article is clicked</li>
+</ul>
+
+<h3 id="super-mega-bonus-credit-hyper-fighting">Super Mega Bonus Credit Hyper Fighting</h3>
+
+<ul>
+<li>Actually display comments that are entered and submitted</li>
+</ul>
 
 
       
@@ -462,8 +822,8 @@
 
     <div id="navigation">
         
+        <a class="nav nav-prev" href="/week2/"> <i class="fa fa-chevron-left"></i></a>
         
-        <a class="nav nav-next" href="/setup-windows/chrome" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
     </div>
 
     </section>
@@ -484,7 +844,4 @@
 
   </body>
 </html>
-
-
-
 

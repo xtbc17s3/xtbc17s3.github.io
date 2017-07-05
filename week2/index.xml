@@ -383,6 +383,10 @@ export default App
 
 &lt;h2 id=&#34;lecture-videos&#34;&gt;Lecture Videos&lt;/h2&gt;
 
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=DjSzM3AcNII&amp;amp;list=PLuT2TqJuwaY_yOPNQJLn2Ya_hfes8g2fv&amp;amp;index=67&#34;&gt;Day 6, part 1&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
 &lt;p&gt;Pending&lt;/p&gt;
 
 &lt;h2 id=&#34;topics&#34;&gt;Topics&lt;/h2&gt;
@@ -742,7 +746,7 @@ yarn start
 &lt;h2 id=&#34;projects&#34;&gt;Projects&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;Noteherder &lt;a href=&#34;https://github.com/xtbc17s3/noteherder/tree/26ce21771d9ebc84a4db4ca83e330f20748ca10a&#34;&gt;morning&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Noteherder &lt;a href=&#34;https://github.com/xtbc17s3/noteherder/tree/26ce21771d9ebc84a4db4ca83e330f20748ca10a&#34;&gt;morning&lt;/a&gt; | &lt;a href=&#34;https://github.com/xtbc17s3/noteherder/tree/61c72605e11b80c7e2226f0698797b6728cf263a&#34;&gt;afternoon&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&#34;day-7-homework&#34;&gt;Day 7 Homework&lt;/h2&gt;

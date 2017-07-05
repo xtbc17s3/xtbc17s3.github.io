@@ -1,6 +1,3 @@
-
-
-
 <!DOCTYPE html>
 <html lang="en" class="js csstransforms3d">
   <head>
@@ -13,7 +10,7 @@
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 
     
-    <title>Prerequisites</title>
+    <title>Day 6: React</title>
     <link href="http://xternbootcamp17.github.io//css/nucleus.css" rel="stylesheet">
     <link href="http://xternbootcamp17.github.io//css/font-awesome.min.css" rel="stylesheet">
     
@@ -28,7 +25,7 @@
     <link href="/css/prism.css" rel="stylesheet">
 <link href="/css/xtern.css" rel="stylesheet">
   </head>
-  <body class="" data-url="/prereqs/">
+  <body class="" data-url="/week2/day6/">
     
     <nav id="sidebar">
   <div id="header-wrapper">
@@ -46,7 +43,7 @@
       
       
 
-      <li class="dd-item active parent" data-nav-id="/prereqs/">
+      <li class="dd-item  " data-nav-id="/prereqs/">
         <a href="/prereqs/">
           <span>
             
@@ -363,7 +360,7 @@
       
       
 
-      <li class="dd-item  " data-nav-id="/week2/">
+      <li class="dd-item  parent" data-nav-id="/week2/">
         <a href="/week2/">
           <span>
             
@@ -385,7 +382,7 @@
           
           
           
-            <li class="dd-item " data-nav-id="/week2/day6/">
+            <li class="dd-item active" data-nav-id="/week2/day6/">
               <a href="/week2/day6/">
                 <span>Day 6: React     </i></span>
               </a>
@@ -420,15 +417,19 @@
                       </a>
                   </span>
                 
+                <span id="toc-menu"><a href=""><i class="fa fa-list-alt"></i></a></span>
+                
                 
                   
                   
                   
                     
                     
+                <a href="/week2/" itemprop="url"><span itemprop="title">Week Two</span></a> <i class="fa fa-angle-right"></i>
+                    
                   
                 
-                <span itemprop="title"> Prerequisites</span>
+                <span itemprop="title"> Day 6: React</span>
               </div>
               
                   <div class="progress">
@@ -437,12 +438,39 @@
 <ul>
 <li>
 <ul>
-<li>
+<li><a href="#lecture-videos">Lecture Videos</a></li>
+<li><a href="#topics">Topics</a>
 <ul>
-<li><a href="#before-you-start">Before you start</a></li>
+<li><a href="#react-https-facebook-github-io-react"><a href="https://facebook.github.io/react/">React</a></a></li>
+<li><a href="#javascript">JavaScript</a></li>
+<li><a href="#package-managers">Package Managers</a></li>
+</ul></li>
+<li><a href="#examples">Examples</a>
+<ul>
+<li><a href="#react">React</a>
+<ul>
+<li><a href="#using-map-with-components">Using <code>map</code> with Components</a></li>
+<li><a href="#stateless-functional-components">Stateless Functional Components</a></li>
+</ul></li>
+<li><a href="#javascript-es6">JavaScript (ES6+)</a>
+<ul>
+<li><a href="#named-and-default-exports-and-imports">Named and default exports and imports</a></li>
+</ul></li>
+<li><a href="#package-managers-1">Package Managers</a>
+<ul>
+<li><a href="#node-package-manager-npm">Node Package Manager (npm)</a></li>
+<li><a href="#yarn">Yarn</a></li>
 </ul></li>
 </ul></li>
-<li><a href="#prerequisites">Prerequisites</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#day-7-homework">Day 7 Homework</a>
+<ul>
+<li><a href="#bonus-credit">Bonus Credit</a></li>
+<li><a href="#super-mega-bonus-credit">Super Mega Bonus Credit</a></li>
+<li><a href="#super-mega-bonus-credit-hyper-fighting">Super Mega Bonus Credit Hyper Fighting</a></li>
+<li><a href="#links-that-may-help-you">Links that may help you</a></li>
+</ul></li>
+</ul></li>
 </ul>
 </nav>
     </div>
@@ -452,23 +480,412 @@
 
             </div>
             
-              <div id="chapter">
-            
               <div id="body-inner">
+                
+                <h1>Day 6: React</h1>
                 
 
 
 
-<h3 id="before-you-start">Before you start</h3>
+<p><date>Wednesday, July 5, 2017</date></p>
 
-<h1 id="prerequisites">Prerequisites</h1>
+<h2 id="lecture-videos">Lecture Videos</h2>
 
-<p>Three weeks is not a whole lot of time, so the more you know about the fundamentals of the Web&mdash;HTML, CSS, and JavaScript&mdash;the better prepared we&rsquo;ll be to jump right into React.</p>
+<p>Pending</p>
+
+<h2 id="topics">Topics</h2>
+
+<h3 id="react-https-facebook-github-io-react"><a href="https://facebook.github.io/react/">React</a></h3>
+
+<ul>
+<li>Using <code>map</code> with components</li>
+<li>Stateless Functional Components
+
+<ul>
+<li><a href="http://javascriptplayground.com/blog/2017/03/functional-stateless-components-react/">Functional Stateless Components in React</a></li>
+<li><a href="https://tylermcginnis.com/functional-components-vs-stateless-functional-components-vs-stateless-components/">Functional Components vs. Stateless Functional Components vs. Stateless Components</a></li>
+<li><a href="https://hackernoon.com/react-stateless-functional-components-nine-wins-you-might-have-overlooked-997b0d933dbc">Nine Wins You Might Have Overlooked</a></li>
+</ul></li>
+</ul>
+
+<h3 id="javascript">JavaScript</h3>
+
+<ul>
+<li>Named and default exports</li>
+<li>Named and default imports</li>
+</ul>
+
+<h3 id="package-managers">Package Managers</h3>
+
+<ul>
+<li><a href="https://www.npmjs.com/">NPM</a> - Node Package Manager</li>
+<li><a href="https://code.facebook.com/posts/1840075619545360">Yarn</a> - Facebook&rsquo;s version of npm</li>
+</ul>
+
+<h2 id="examples">Examples</h2>
+
+<h3 id="react">React</h3>
+
+<h4 id="using-map-with-components">Using <code>map</code> with Components</h4>
+
+<p><strong><a href="https://codepen.io/dstrus/pen/gWZVOQ?editors=0010#0">See this example live on CodePen →</a></strong></p>
+
+<p><strong>Person.js</strong></p>
+
+
+<pre class="line-numbers language-jsx" rel="jsx">
+<code class="language-jsx">
+
+class Person extends React.Component {
+  render() {
+    return (
+      &lt;li&gt;Hello, {this.props.person.name}!&lt;/li&gt;
+    )
+  }
+}
+
+export default Person
+
+</code>
+</pre>
+
+
+
+<p><strong>PersonList.js</strong></p>
+
+
+<pre class="line-numbers language-jsx" rel="jsx">
+<code class="language-jsx">
+
+import Person from './Person'
+
+class PersonList extends React.Component {
+  render() {
+    const people = [
+      { name: 'Seth', hair: 'blonde' },
+      { name: 'Nichole', hair: 'long' },
+      { name: 'Davey', hair: 'long gone' }
+    ]
+    return (
+      &lt;div&gt;
+        &lt;h2&gt;People&lt;/h2&gt;
+        {
+          people.map((person => &lt;Person person={person} /&gt;))
+        }
+      &lt;/div&gt;
+    )
+  }
+}
+
+export default PersonList
+
+</code>
+</pre>
+
+
+
+<h4 id="stateless-functional-components">Stateless Functional Components</h4>
+
+<p>Not every React Component needs to have state.  Many simply render a bit of <code>props</code> and UI.  For such components, we don&rsquo;t need to instantiate a whole class that inherits from <code>React.Component</code>, we can simply write a function that accepts <code>props</code> as an argument and returns the markup we need.</p>
+
+<p>For instance, in the previous example, the <code>Person</code> component can easily be re-written as a Stateless Functional Component.</p>
+
+
+<pre class="line-numbers language-jsx" rel="jsx">
+<code class="language-jsx">
+
+function Person (props) {
+  return (
+    &lt;li&gt;Hello, {props.person.name}!&lt;/li&gt;
+  )
+}
+
+// Or...
+
+const Person = (props) => &lt;li&gt;Hello, {props.person.name}!&lt;/li&gt;
+
+</code>
+</pre>
+
+
+
+<h3 id="javascript-es6">JavaScript (ES6+)</h3>
+
+<h4 id="named-and-default-exports-and-imports">Named and default exports and imports</h4>
+
+<p>Prior to ES6, there were many competing ways to export and import JavaScript modules.  The most common were <a href="https://webpack.github.io/docs/commonjs.html">CommonJS</a> and <a href="http://requirejs.org/docs/whyamd.html">AMD</a>.  Luckily ES6 defined a specification for standardizing module export and import.</p>
+
+<p>There are two types of exports from any JS file - <em>named</em> and <em>default</em>.  The important thing to remember is that there can only be <em>one</em> default export per module, but there can be as many named exports as you want.</p>
+
+<p><strong>myModule.js</strong>
+
+<pre class="line-numbers language-js" rel="js">
+<code class="language-js">
+
+export const myNumber = 8
+
+export function sayHi () {
+  console.log('hello')
+}
+
+export default class MyClass {
+  add (a, b) {
+    return a + b
+  }
+}
+
+</code>
+</pre>
+
+</p>
+
+<p>The main difference is how they are imported.  Default exports get the most concise syntax:</p>
+
+
+<pre class="line-numbers language-js" rel="js">
+<code class="language-js">
+
+import MyClass from 'myModule'
+
+const classInstance = new MyClass()
+classInstance.add(1, 2) // => 3
+
+</code>
+</pre>
+
+
+
+
+  <div class="aside aside-info">
+  
+    <h4>Default import naming</h4>
+    
+  
+  <div class="body">
+  <p>Since there can be only one default export per module, the name by which you import the default export is not important - you can name it whatever you want.  For instance, instead of importing as <code>MyClass</code>, we could have said <code>import LuftBallons from 'myModule'</code>, and it would have worked just fine.  To read more about default and named exports, click <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export">here</a>.</p>
+
+  </div>
+</div>
+
+
+<p>Named exports get a slightly more verbose syntax for importing, and the names <em>are</em> important (otherwise it can&rsquo;t determine what you want to import).</p>
+
+
+<pre class="line-numbers language-js" rel="js">
+<code class="language-js">
+
+import { myNumber, sayHi } from 'myModule'
+
+console.log(myNumber) // => 8
+
+sayHi() // => 'hello'
+
+</code>
+</pre>
+
+
+
+<p>If you need to import a named export under a different name&mdash;if, for example, you have another import or local variable with the same name&mdash;you can specifiy a different name using <em>as</em>.</p>
+
+
+<pre class="line-numbers language-js" rel="js">
+<code class="language-js">
+
+import { myNumber as num, sayHi as yo } from 'myModule'
+
+console.log(num) // => 8
+
+yo() // => 'hello'
+
+</code>
+</pre>
+
+
+
+<p>You can also combine default and named imports in the same line.</p>
+
+
+<pre class="line-numbers language-js" rel="js">
+<code class="language-js">
+
+import MyClass, { myNumber, sayHi } from 'myModule'
+
+</code>
+</pre>
+
+
+
+<h3 id="package-managers-1">Package Managers</h3>
+
+<h4 id="node-package-manager-npm">Node Package Manager (npm)</h4>
+
+<p>Node Package Manager hosts almost half a million packages of free, reusable JavaScript code and is the largest software registry in the world. It allows you to easily add any module to your project, and it will install the requested package, as well as any required dependencies of that package.</p>
+
+
+
+
+
+
+
+
+<div class="shell macos">
+<div class="bar">
+  <div class="controls">
+    <div class="windows icon">
+      <img src="/images/git-bash.png" alt="">
+    </div>
+    <div class="dot red">
+    </div>
+    <div class="dot yellow">
+    </div>
+    <div class="dot green">
+    </div>
+  </div>
+  user@localhost ~
+  <div class="windows-controls">
+    &nbsp;
+  </div>
+</div>
+<div class="shell-body">
+
+<pre><span class="terminal-commands"
+><span class="command-line-prompt"><span data-prompt="$"></span></span>npm install react
+</span></pre>
+
+</div>
+</div>
+
+<h4 id="yarn">Yarn</h4>
+
+<p><a href="https://code.facebook.com/posts/1840075619545360">Yarn</a> is Facebook&rsquo;s version of npm, designed to improve performance and resolve several important issues.  The key differences are:</p>
+
+<ul>
+<li>Deterministic installation - packages will always install in the same order on every machine</li>
+<li><code>yarn.lock</code> - this lockfile locks dependency versions for consistency and security</li>
+<li>Local cache of downloaded packages - faster and can still work with no internet connection after initial installation</li>
+<li>Parallel installation - Dependency installation can happen in parallel, greatly increasing speed</li>
+</ul>
+
+<p>To install yarn (npm was already installed as part of setup instructions), type the following command (Mac):</p>
+
+
+
+
+
+
+
+
+<div class="shell macos">
+<div class="bar">
+  <div class="controls">
+    <div class="windows icon">
+      <img src="/images/git-bash.png" alt="">
+    </div>
+    <div class="dot red">
+    </div>
+    <div class="dot yellow">
+    </div>
+    <div class="dot green">
+    </div>
+  </div>
+  user@localhost ~
+  <div class="windows-controls">
+    &nbsp;
+  </div>
+</div>
+<div class="shell-body">
+
+<pre><span class="terminal-commands"
+><span class="command-line-prompt"><span data-prompt="$"></span></span>brew install yarn
+</span></pre>
+
+</div>
+</div>
+
+<p>Or on Windows, <a href="https://yarnpkg.com/latest.msi">download the installer</a>.</p>
+
+<p>Once installed, you can use yarn with following commands:</p>
+
+
+
+
+
+
+
+
+<div class="shell macos">
+<div class="bar">
+  <div class="controls">
+    <div class="windows icon">
+      <img src="/images/git-bash.png" alt="">
+    </div>
+    <div class="dot red">
+    </div>
+    <div class="dot yellow">
+    </div>
+    <div class="dot green">
+    </div>
+  </div>
+  user@localhost ~
+  <div class="windows-controls">
+    &nbsp;
+  </div>
+</div>
+<div class="shell-body">
+
+<pre><span class="terminal-commands"
+><span class="command-line-prompt"><span data-prompt="$"></span><span data-prompt="$"></span><span data-prompt="$"></span><span data-prompt="$"></span><span data-prompt="$"></span><span data-prompt="$"></span><span data-prompt="$"></span><span data-prompt="$"></span></span>yarn
+# installs all packages and dependencies listed in your project&#39;s package.json
+
+yarn add {package_name}
+# installs a new package and adds it to package.json
+
+yarn start
+# starts your local development web server (in project from create-react-app)
+</span></pre>
+
+</div>
+</div>
+
+<h2 id="projects">Projects</h2>
+
+<ul>
+<li>Noteherder <a href="https://github.com/xtbc17s3/noteherder/tree/26ce21771d9ebc84a4db4ca83e330f20748ca10a">morning</a></li>
+</ul>
+
+<h2 id="day-7-homework">Day 7 Homework</h2>
+
+<ul>
+<li>Load data in the form when a note is clicked in the list.</li>
+</ul>
+
+<h3 id="bonus-credit">Bonus Credit</h3>
+
+<ul>
+<li>Add a note to the list when the form is submitted.</li>
+</ul>
+
+<h3 id="super-mega-bonus-credit">Super Mega Bonus Credit</h3>
+
+<ul>
+<li>Make the <em>delete</em> button work.</li>
+</ul>
+
+<h3 id="super-mega-bonus-credit-hyper-fighting">Super Mega Bonus Credit Hyper Fighting</h3>
+
+<ul>
+<li>Make the &ldquo;+&rdquo; button in the sidebar clear out the form so a new note can be added.</li>
+</ul>
+
+<h3 id="links-that-may-help-you">Links that may help you</h3>
+
+<ul>
+<li><a href="https://facebook.github.io/react/docs/forms.html">Controlled</a> vs <a href="https://facebook.github.io/react/docs/uncontrolled-components.html">Uncontrolled</a> Forms</li>
+<li><a href="https://goshakkk.name/controlled-vs-uncontrolled-inputs-react/">Controlled and uncontrolled form inputs in React don&rsquo;t have to be complicated</a></li>
+</ul>
 
 
       
-      
-        </div> 
       
       </div>
     </div>
@@ -477,8 +894,8 @@
 
     <div id="navigation">
         
+        <a class="nav nav-prev" href="/week2/day5/"> <i class="fa fa-chevron-left"></i></a>
         
-        <a class="nav nav-next" href="/prereqs/codewars" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
     </div>
 
     </section>
@@ -499,7 +916,4 @@
 
   </body>
 </html>
-
-
-
 

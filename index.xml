@@ -6,10 +6,23 @@
     <description>Recent content on XTERN Bootcamp 2017</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 26 Jun 2017 10:57:12 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 10 Jul 2017 09:16:42 -0400</lastBuildDate>
     
 	<atom:link href="http://xternbootcamp17.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Day 8: Firebase Authentication</title>
+      <link>http://xternbootcamp17.github.io/week3/day8/</link>
+      <pubDate>Mon, 10 Jul 2017 09:16:42 -0400</pubDate>
+      
+      <guid>http://xternbootcamp17.github.io/week3/day8/</guid>
+      <description>Monday, July 10, 2017
+Lecture Videos Morning: Day 8, part 1
+Afternoon: Day 8, part 1
+Topics Firebase Authentication  &amp;lsquo;firebase/auth&amp;rsquo; authWithPopup signing in and out handling auth state changes database rules  Examples Authentication Firebase isn&amp;rsquo;t just a real-time database. It can also provide authentication services via email/password, phone, or common third-party services like Github, Facebook, and Google. For Noteherder, we set up authentication via Google.
+Step 1: Enable Google authentication in Firebase Go to your Firebase console and click on the &amp;ldquo;Authentication&amp;rdquo; tab in the &amp;ldquo;Develop&amp;rdquo; sidebar, then click on &amp;ldquo;Sign-in method&amp;rdquo;.</description>
+    </item>
     
     <item>
       <title>Day 1: Introduction</title>
@@ -333,6 +346,15 @@ Enter your info, and hit the green &#34;Create an account&#34; button. On the ne
       <guid>http://xternbootcamp17.github.io/tools/github-desktop/</guid>
       <description>GitHub.cls-1{fill:#fff;}github-logo &amp;nbsp;Desktop
  GitHub Desktop is my favorite of the free GUIs for Git. It&amp;rsquo;s made by GitHub, but there&amp;rsquo;s nothing tying it to their service. It&amp;rsquo;s just a Git client, and it will work fine with any host, or just locally. Check out GitHub&amp;rsquo;s guide: Getting your project on GitHub.</description>
+    </item>
+    
+    <item>
+      <title>Week Three</title>
+      <link>http://xternbootcamp17.github.io/week3/</link>
+      <pubDate>Mon, 10 Jul 2017 09:16:34 -0400</pubDate>
+      
+      <guid>http://xternbootcamp17.github.io/week3/</guid>
+      <description>Week Three Authentication, Firebase, Routing, and HTTP Requests</description>
     </item>
     
     <item>

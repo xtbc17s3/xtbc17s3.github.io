@@ -1,3 +1,6 @@
+
+
+
 <!DOCTYPE html>
 <html lang="en" class="js csstransforms3d">
   <head>
@@ -10,7 +13,7 @@
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 
     
-    <title>Day 7: Props and Destructuring</title>
+    <title>Week Three</title>
     <link href="http://xternbootcamp17.github.io//css/nucleus.css" rel="stylesheet">
     <link href="http://xternbootcamp17.github.io//css/font-awesome.min.css" rel="stylesheet">
     
@@ -25,7 +28,7 @@
     <link href="/css/prism.css" rel="stylesheet">
 <link href="/css/xtern.css" rel="stylesheet">
   </head>
-  <body class="" data-url="/week2/day7/">
+  <body class="" data-url="/week3/">
     
     <nav id="sidebar">
   <div id="header-wrapper">
@@ -360,7 +363,7 @@
       
       
 
-      <li class="dd-item  parent" data-nav-id="/week2/">
+      <li class="dd-item  " data-nav-id="/week2/">
         <a href="/week2/">
           <span>
             
@@ -390,7 +393,7 @@
           
           
           
-            <li class="dd-item active" data-nav-id="/week2/day7/">
+            <li class="dd-item " data-nav-id="/week2/day7/">
               <a href="/week2/day7/">
                 <span>Day 7: Props and Destructuring     </i></span>
               </a>
@@ -405,7 +408,7 @@
       
       
 
-      <li class="dd-item  " data-nav-id="/week3/">
+      <li class="dd-item active parent" data-nav-id="/week3/">
         <a href="/week3/">
           <span>
             
@@ -454,59 +457,22 @@
                       </a>
                   </span>
                 
-                <span id="toc-menu"><a href=""><i class="fa fa-list-alt"></i></a></span>
-                
                 
                   
                   
                   
                     
                     
-                <a href="/week2/" itemprop="url"><span itemprop="title">Week Two</span></a> <i class="fa fa-angle-right"></i>
-                    
                   
                 
-                <span itemprop="title"> Day 7: Props and Destructuring</span>
+                <span itemprop="title"> Week Three</span>
               </div>
               
                   <div class="progress">
     <div class="wrapper">
 <nav id="TableOfContents">
 <ul>
-<li>
-<ul>
-<li><a href="#lecture-videos">Lecture Videos</a></li>
-<li><a href="#topics">Topics</a>
-<ul>
-<li><a href="#react-https-facebook-github-io-react"><a href="https://facebook.github.io/react/">React</a></a></li>
-<li><a href="#javascript">JavaScript</a></li>
-<li><a href="#firebase-firebase">Firebase <a href="#firebase">↓</a></a></li>
-</ul></li>
-<li><a href="#examples">Examples</a>
-<ul>
-<li><a href="#react">React</a>
-<ul>
-<li><a href="#methods-as-props">Methods as props</a></li>
-<li><a href="#component-lifecycle-methods">Component lifecycle methods</a></li>
-</ul></li>
-<li><a href="#javascript-es6">JavaScript (ES6+)</a>
-<ul>
-<li><a href="#destructuring-assignment">Destructuring assignment</a></li>
-<li><a href="#spread-operator">Spread operator</a></li>
-<li><a href="#property-initializers">Property initializers</a></li>
-<li><a href="#property-initializers-arrow-functions">Property initializers + arrow functions</a></li>
-</ul></li>
-<li><a href="#firebase">Firebase</a>
-<ul>
-<li><a href="#getting-started">Getting Started</a></li>
-</ul></li>
-</ul></li>
-<li><a href="#projects">Projects</a></li>
-<li><a href="#homework">Homework</a>
-<ul>
-<li><a href="#practice">Practice!</a></li>
-</ul></li>
-</ul></li>
+<li><a href="#week-three">Week Three</a></li>
 </ul>
 </nav>
     </div>
@@ -516,414 +482,21 @@
 
             </div>
             
+              <div id="chapter">
+            
               <div id="body-inner">
                 
-                <h1>Day 7: Props and Destructuring</h1>
-                
 
 
 
-<p><date>Thursday, July 6, 2017</date></p>
+<h1 id="week-three">Week Three</h1>
 
-<h2 id="lecture-videos">Lecture Videos</h2>
-
-<p>Morning: <a href="https://www.youtube.com/watch?v=GZirEkQ9Mp0&amp;list=PLuT2TqJuwaY882Figl-Tr-VXWweaeS45B&amp;index=77">Day 7, part 1</a></p>
-
-<p>Afternoon: <a href="https://www.youtube.com/watch?v=xc0dCoiMP3s&amp;list=PLuT2TqJuwaY_yOPNQJLn2Ya_hfes8g2fv&amp;index=84">Day 7, part 1</a></p>
-
-<h2 id="topics">Topics</h2>
-
-<h3 id="react-https-facebook-github-io-react"><a href="https://facebook.github.io/react/">React</a></h3>
-
-<ul>
-<li>Methods as props</li>
-<li><a href="https://facebook.github.io/react/docs/forms.html">Controlled</a> vs <a href="https://facebook.github.io/react/docs/uncontrolled-components.html">Uncontrolled</a> Forms</li>
-<li><a href="https://goshakkk.name/controlled-vs-uncontrolled-inputs-react/">Controlled and uncontrolled form inputs in React don&rsquo;t have to be complicated</a></li>
-<li>Component lifecycle methods (<a href="https://facebook.github.io/react/docs/react-component.html">Docs</a>)
-
-<ul>
-<li><a href="https://facebook.github.io/react/docs/react-component.html#componentdidmount"><code>componentDidMount()</code></a></li>
-</ul></li>
-</ul>
-
-<h3 id="javascript">JavaScript</h3>
-
-<ul>
-<li>Destructuring assignment</li>
-<li>Spread operator</li>
-<li>Property initializers (and arrow functions)</li>
-</ul>
-
-<h3 id="firebase-firebase">Firebase <a href="#firebase">↓</a></h3>
-
-<ul>
-<li>Getting started</li>
-<li>Re-base for syncing React state with Firebase</li>
-</ul>
-
-<h2 id="examples">Examples</h2>
-
-<h3 id="react">React</h3>
-
-<h4 id="methods-as-props">Methods as props</h4>
-
-<p>Sometimes one component needs to update another component&rsquo;s state. It can&rsquo;t do that directly, but it can call a method from that other component if it&rsquo;s available via a prop.</p>
-
-<p><a href="https://codepen.io/dstrus/pen/bWzWew?editors=1010"><strong>Try this example live on CodePen</strong></a></p>
-
-
-  <pre class="language-jsx line-numbers "
-       
-       
-       data-line="5,23"
-       rel="jsx"
-  ><code class="language-jsx">
-  
-import React from 'react'
-import ReactDOM from 'react-dom'
-
-const PartyButton = ({ celebrate, celebrations }) =&gt; {
-  return &lt;button onClick={celebrate}&gt;Party! {celebrations}&lt;/button&gt;
-}
-
-class App extends React.Component {
-  constructor() {
-    super()
-    this.state = {
-      celebrations: 0,
-    }
-    this.celebrate = this.celebrate.bind(this)
-  }
-
-  celebrate() {
-    const celebrations = this.state.celebrations + 1
-    this.setState({ celebrations })
-  }
-
-  render() {
-    return &lt;PartyButton celebrate={this.celebrate} celebrations={this.state.celebrations} /&gt;
-  }
-}
-
-ReactDOM.render(&lt;App /&gt;, document.querySelector('main'))
-
-  </code>
-  </pre>
-
-
-
-<h4 id="component-lifecycle-methods">Component lifecycle methods</h4>
-
-<p><strong><code>componentDidMount()</code></strong> is invoked immediately after a component is mounted. Initialization that requires DOM nodes should go here.</p>
-
-
-<pre class="line-numbers language-jsx" rel="jsx">
-<code class="language-jsx">
-
-import React, { Component } from 'react'
-
-class MyComponent extends Component {
-  componentDidMount() {
-    this.nameInput.focus()
-  }
-
-  render() {
-    return (
-      &lt;input 
-        ref={(input) =&gt; { this.nameInput = input; }} 
-        defaultValue="will focus"
-      /&gt;
-    )
-  }
-}
-
-</code>
-</pre>
-
-
-
-<h3 id="javascript-es6">JavaScript (ES6+)</h3>
-
-<h4 id="destructuring-assignment">Destructuring assignment</h4>
-
-<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment">Destructuring assignment</a> syntax is a JavaScript expression that makes it possible to unpack values from arrays, or properties from objects, into distinct variables.</p>
-
-
-<pre class="line-numbers language-js" rel="js">
-<code class="language-js">
-
-const myObj = {
-  a: true,
-  b: 'Destructuring!'
-}
-
-let { a, b } = myObj
-
-console.log(a) // => true
-console.log(b) // => 'Destructuring!'
-
-</code>
-</pre>
-
-
-
-<h4 id="spread-operator">Spread operator</h4>
-
-<p>The <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_operator"><em>spread operator</em></a> was added in ES6 to allow an expression to be expanded in places where multiple arguments (for function calls) or multiple elements (for array literals) or multiple variables (for destructuring assignment) are expected.</p>
-
-
-<pre class="line-numbers language-js" rel="js">
-<code class="language-js">
-
-function myFunc (x, y, z) {
-  console.log(x)
-  console.log(y)
-  console.log(z)
-}
-const args = [1, 2, 3]
-
-myFunc(...args) // the spread '...args' applies the items in args to the three arguments in myFunc
-// => 1
-// => 2
-// => 3
-
-</code>
-</pre>
-
-
-
-<p>It is also an easy way to make copies of iterable objects</p>
-
-
-<pre class="line-numbers language-js" rel="js">
-<code class="language-js">
-
-const ary = [1, 2, 3]
-const aryCopy = [...ary] // makes a copy of ary
-
-</code>
-</pre>
-
-
-
-<p>If you are in a project using Babel (like a React project created with <code>create-react-app</code>), you can also use the <code>object-rest-spread-transform</code> to apply this same method to objects.</p>
-
-
-<pre class="line-numbers language-js" rel="js">
-<code class="language-js">
-
-this.state = {'a': true, party: 'hard'}
-const stateCopy = {...this.state} // makes a copy of this.state
-
-</code>
-</pre>
-
-
-
-<h4 id="property-initializers">Property initializers</h4>
-
-<p>From the proposal:</p>
-
-<blockquote>
-<p>&ldquo;Class instance fields&rdquo; describe properties intended to exist on instances of a class (and may optionally include initializer expressions for said properties).</p>
-</blockquote>
-
-<p>We can take advantage of this in React.</p>
-
-<p><a href="https://babeljs.io/blog/2015/06/07/react-on-es6-plus"><strong>Read more: Using ES7 property initializers in React</strong></a></p>
-
-<p>We can use a property initializer to set the initial value of state without writing a constructor:</p>
-
-
-<pre class="line-numbers language-jsx" rel="jsx">
-<code class="language-jsx">
-
-class Song extends React.Component {
-  state = {
-    versesRemaining: 5,
-  }
-}
-
-</code>
-</pre>
-
-
-
-<p>We can even set default props and use those in the initial state:</p>
-
-
-<pre class="line-numbers language-jsx" rel="jsx">
-<code class="language-jsx">
-
-class Song extends React.Component {
-  static defaultProps = {
-    autoPlay: false,
-    verseCount: 10,
-  }
-  state = {
-    versesRemaining: this.props.verseCount,
-  }
-}
-
-</code>
-</pre>
-
-
-
-
-  <div class="aside aside-danger">
-  
-    <h4>Subject to  minor changes</h4>
-    
-  
-  <div class="body">
-  <p><a href="https://github.com/tc39/proposal-class-public-fields">Property initializers</a> are a <a href="https://tc39.github.io/process-document/">Stage 2 proposal</a> for ECMAScript, meaning that it&rsquo;s still a <em>draft</em> and is subject to minor changes before becoming standardized. Facebook itself is already using these techniques in production, however.</p>
-
-  </div>
-</div>
-
-
-<h4 id="property-initializers-arrow-functions">Property initializers + arrow functions</h4>
-
-<p>Combining property initializers and arrow functions gives us a convenient way to auto-bind <code>this</code>, since arrow functions inherit <code>this</code> from the scope in which they are declared (lexical scoping):</p>
-
-
-<pre class="line-numbers language-jsx" rel="jsx">
-<code class="language-jsx">
-
-class Something extends React.Component {
-  handleButtonClick = (ev) => {
-    // `this` is bound correctly!
-    this.setState({ buttonWasClicked: true });
-  }
-}
-
-</code>
-</pre>
-
-
-
-<h3 id="firebase">Firebase</h3>
-
-<h4 id="getting-started">Getting Started</h4>
-
-<p><a href="https://firebase.google.com/">Firebase</a> is a real-time database hosted by Google.  In addition to the database, it also provides features of authentication, analytics, cloud storage, and hosting.  For <em>Noteherder</em>, we synced the <code>state</code> of our app to our database on Firebase.  This allowed all of our data to be persisted, even after page refreshes.</p>
-
-<p><a href="https://github.com/tylermcginnis/re-base">Re-base</a> is an open source package that allows easy syncing of local state with a Firebase database. Add rebase to your project with one of the following commands:</p>
-
-
-
-
-
-
-
-
-<div class="shell macos">
-<div class="bar">
-  <div class="controls">
-    <div class="windows icon">
-      <img src="/images/git-bash.png" alt="">
-    </div>
-    <div class="dot red">
-    </div>
-    <div class="dot yellow">
-    </div>
-    <div class="dot green">
-    </div>
-  </div>
-  user@localhost ~
-  <div class="windows-controls">
-    &nbsp;
-  </div>
-</div>
-<div class="shell-body">
-
-<pre><span class="terminal-commands"
-><span class="command-line-prompt"><span data-prompt="$"></span><span data-prompt="$"></span></span>yarn add re-base               # add package using yarn
-npm install re-base            # add package using npm
-</span></pre>
-
-</div>
-</div>
-
-<p>Once you have re-base installed, setup is easy!  First, create a new project on Firebase, then click on &ldquo;Add to a web app&rdquo; to see your JavaScript config object.  Next, initialize a Firebase app and database in your project using the config object, and provide the database to re-base.</p>
-
-
-<pre class="line-numbers language-js" rel="js">
-<code class="language-js">
-
-import Rebase from 're-base'
-import firebase from 'firebase/app'
-import database from 'firebase/database'
-
-const app = firebase.initializeApp({
-  apiKey: "YOURAPIKEY",
-  authDomain: "YOURAUTHDOMAIN",
-  databaseURL: "YOURDATABASEURL",
-  projectId: "YOURPROJECTID",
-  storageBucket: "YOURSTORAGEBUCKET",
-  messagingSenderId: "YOURSENDERID"
-})
-
-const db = database(app)
-const base = Rebase.createClass(db)
-
-export default base
-
-</code>
-</pre>
-
-
-
-<p>Finally, call <code>base.syncState</code> to sync your app&rsquo;s local state with Firebase.  The first argument to <code>syncState</code> is the name of the Firebase endpoint you want to sync, and the second is a configuration object.</p>
-
-
-<pre class="line-numbers language-js" rel="js">
-<code class="language-js">
-
-base.syncState('myFavoriteEndpoint', {
-  context: this,
-  state: 'items'
-})
-
-</code>
-</pre>
-
-
-
-<p>Now, any time we update the state of our app, the changes will sync with Firebase in real time.</p>
-
-
-  <div class="aside aside-info">
-  
-    <h4>More Re-base Options</h4>
-    
-  
-  <div class="body">
-  <p>Re-base can do much more than just syncing state.  There are methods for <code>fetch</code>, <code>push</code>, <code>post</code>, etc.  To find out more about what all you can do with re-base, check out the <a href="https://github.com/tylermcginnis/re-base#re-base">README</a></p>
-
-  </div>
-</div>
-
-
-<h2 id="projects">Projects</h2>
-
-<ul>
-<li>Noteherder <a href="https://github.com/xtbc17s3/noteherder/tree/e67f31206646aa16a64c7c6fae982d620cf64fc6">morning</a> | <a href="https://github.com/xtbc17s3/noteherder/tree/60c7f78c25f54c47a3a7ce6d87560779507f2efe">afternoon</a></li>
-</ul>
-
-<h2 id="homework">Homework</h2>
-
-<h3 id="practice">Practice!</h3>
-
-<ul>
-<li>Finish any levels of homework for the week that are not yet complete.<br /></li>
-<li>Re-watch any lecture videos about concepts you are not 100% clear on.<br /></li>
-<li>Try out the React tutorial at <a href="https://reacttraining.com/">https://reacttraining.com/</a>.</li>
-</ul>
+<p>Authentication, Firebase, Routing, and HTTP Requests</p>
 
 
       
+      
+        </div> 
       
       </div>
     </div>
@@ -932,8 +505,8 @@ base.syncState('myFavoriteEndpoint', {
 
     <div id="navigation">
         
-        <a class="nav nav-prev" href="/week2/day6/"> <i class="fa fa-chevron-left"></i></a>
-        <a class="nav nav-next" href="/week3" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+        <a class="nav nav-prev" href="/week2/day7"> <i class="fa fa-chevron-left"></i></a>
+        <a class="nav nav-next" href="/week3/day8" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
     </div>
 
     </section>
@@ -954,4 +527,7 @@ base.syncState('myFavoriteEndpoint', {
 
   </body>
 </html>
+
+
+
 

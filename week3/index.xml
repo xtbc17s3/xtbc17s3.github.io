@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Week3s on XTERN Bootcamp 2017</title>
+    <link>http://xternbootcamp17.github.io/week3/</link>
+    <description>Recent content in Week3s on XTERN Bootcamp 2017</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 10 Jul 2017 09:16:34 -0400</lastBuildDate>
+    
+	<atom:link href="http://xternbootcamp17.github.io/week3/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Week Three</title>
+      <link>http://xternbootcamp17.github.io/week3/</link>
+      <pubDate>Mon, 10 Jul 2017 09:16:34 -0400</pubDate>
+      
+      <guid>http://xternbootcamp17.github.io/week3/</guid>
+      <description>Week Three Authentication, Firebase, Routing, and HTTP Requests</description>
+    </item>
+    
+    <item>
+      <title>Day 8: Firebase Authentication</title>
+      <link>http://xternbootcamp17.github.io/week3/day8/</link>
+      <pubDate>Mon, 10 Jul 2017 09:16:42 -0400</pubDate>
+      
+      <guid>http://xternbootcamp17.github.io/week3/day8/</guid>
+      <description>Monday, July 10, 2017
+Lecture Videos Morning: Day 8, part 1
+Afternoon: Day 8, part 1
+Topics Firebase Authentication  &amp;lsquo;firebase/auth&amp;rsquo; authWithPopup signing in and out handling auth state changes database rules  Examples Authentication Firebase isn&amp;rsquo;t just a real-time database. It can also provide authentication services via email/password, phone, or common third-party services like Github, Facebook, and Google. For Noteherder, we set up authentication via Google.
+Step 1: Enable Google authentication in Firebase Go to your Firebase console and click on the &amp;ldquo;Authentication&amp;rdquo; tab in the &amp;ldquo;Develop&amp;rdquo; sidebar, then click on &amp;ldquo;Sign-in method&amp;rdquo;.</description>
+    </item>
+    
+  </channel>
+</rss>

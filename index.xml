@@ -1984,7 +1984,7 @@ div.appendChild(heading)
 &lt;p&gt;Afternoon:&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;[Day 9, part 1]()&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=gTbojf2H55E&amp;amp;index=107&amp;amp;list=PLuT2TqJuwaY_yOPNQJLn2Ya_hfes8g2fv&#34;&gt;Day 9, part 1&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&#34;topics&#34;&gt;Topics&lt;/h2&gt;
@@ -2376,7 +2376,7 @@ fetch(&#39;https://api.mywebsite.com/users&#39;)    // fetch users data from &#3
 
 &lt;ul&gt;
 &lt;li&gt;Noteherder &lt;a href=&#34;https://github.com/xtbc17s3/noteherder/tree/065eaa988e6aea91e094fada7d87f83c9c1cb32c&#34;&gt;morning&lt;/a&gt; | &lt;a href=&#34;https://github.com/xtbc17s3/noteherder/tree/afternoon&#34;&gt;afternoon&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;API Party &lt;a href=&#34;https://github.com/xtbc17s3/api-party/tree/09f544985caee14d628493c16a646f4109079717&#34;&gt;morning&lt;/a&gt; | [afternoon]&lt;/li&gt;
+&lt;li&gt;API Party &lt;a href=&#34;https://github.com/xtbc17s3/api-party/tree/6383ffdf020958cad75c7562282aceb17ac03de0&#34;&gt;morning&lt;/a&gt; | [afternoon]&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&#34;homework&#34;&gt;Homework&lt;/h2&gt;

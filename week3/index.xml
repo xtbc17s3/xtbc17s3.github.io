@@ -2,14 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Week3s on XTERN Bootcamp 2017</title>
-    <link>http://xternbootcamp17.github.io/week3/</link>
+    <link>http://xternbootcamp17.github.io/week3/index.xml</link>
     <description>Recent content in Week3s on XTERN Bootcamp 2017</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 10 Jul 2017 09:16:34 -0400</lastBuildDate>
-    
-	<atom:link href="http://xternbootcamp17.github.io/week3/index.xml" rel="self" type="application/rss+xml" />
-    
+    <atom:link href="http://xternbootcamp17.github.io/week3/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Week Three</title>
@@ -17,7 +15,12 @@
       <pubDate>Mon, 10 Jul 2017 09:16:34 -0400</pubDate>
       
       <guid>http://xternbootcamp17.github.io/week3/</guid>
-      <description>Week Three Authentication, Firebase, Routing, and HTTP Requests</description>
+      <description>
+
+&lt;h1 id=&#34;week-three&#34;&gt;Week Three&lt;/h1&gt;
+
+&lt;p&gt;Authentication, Firebase, Routing, and HTTP Requests&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -26,11 +29,719 @@
       <pubDate>Mon, 10 Jul 2017 09:16:42 -0400</pubDate>
       
       <guid>http://xternbootcamp17.github.io/week3/day8/</guid>
-      <description>Monday, July 10, 2017
-Lecture Videos Morning: Day 8, part 1
-Afternoon: Day 8, part 1
-Topics Firebase Authentication  &amp;lsquo;firebase/auth&amp;rsquo; authWithPopup signing in and out handling auth state changes database rules  Examples Authentication Firebase isn&amp;rsquo;t just a real-time database. It can also provide authentication services via email/password, phone, or common third-party services like Github, Facebook, and Google. For Noteherder, we set up authentication via Google.
-Step 1: Enable Google authentication in Firebase Go to your Firebase console and click on the &amp;ldquo;Authentication&amp;rdquo; tab in the &amp;ldquo;Develop&amp;rdquo; sidebar, then click on &amp;ldquo;Sign-in method&amp;rdquo;.</description>
+      <description>
+
+&lt;p&gt;&lt;date&gt;Monday, July 10, 2017&lt;/date&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;lecture-videos&#34;&gt;Lecture Videos&lt;/h2&gt;
+
+&lt;p&gt;Morning: &lt;a href=&#34;https://www.youtube.com/watch?v=FE55eeOqMrs&amp;amp;list=PLuT2TqJuwaY882Figl-Tr-VXWweaeS45B&amp;amp;index=87&#34;&gt;Day 8, part 1&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Afternoon: &lt;a href=&#34;https://www.youtube.com/watch?v=C33IfJfRhU8&amp;amp;index=95&amp;amp;list=PLuT2TqJuwaY_yOPNQJLn2Ya_hfes8g2fv&#34;&gt;Day 8, part 1&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;topics&#34;&gt;Topics&lt;/h2&gt;
+
+&lt;h3 id=&#34;firebase-authentication&#34;&gt;Firebase Authentication&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&amp;lsquo;firebase/auth&amp;rsquo;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;authWithPopup&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;signing in and out&lt;/li&gt;
+&lt;li&gt;handling auth state changes&lt;/li&gt;
+&lt;li&gt;database rules&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;examples&#34;&gt;Examples&lt;/h2&gt;
+
+&lt;h3 id=&#34;authentication&#34;&gt;Authentication&lt;/h3&gt;
+
+&lt;p&gt;Firebase isn&amp;rsquo;t just a real-time database.  It can also provide authentication services via email/password, phone, or common third-party services like Github, Facebook, and Google. For &lt;em&gt;Noteherder&lt;/em&gt;, we set up authentication via Google.&lt;/p&gt;
+
+&lt;h4 id=&#34;step-1-enable-google-authentication-in-firebase&#34;&gt;Step 1: Enable Google authentication in Firebase&lt;/h4&gt;
+
+&lt;p&gt;Go to your Firebase console and click on the &amp;ldquo;Authentication&amp;rdquo; tab in the &amp;ldquo;Develop&amp;rdquo; sidebar, then click on &amp;ldquo;Sign-in method&amp;rdquo;.  You&amp;rsquo;ll see a list of the authentication methods allowed by Firebase.  Click on &amp;ldquo;Google&amp;rdquo; and then enable the toggle switch.&lt;/p&gt;
+
+&lt;div class=&#34;img firebase-enable-google&#34;&gt;&lt;span&gt;Click the switch to enable.  Whew!  That was difficult.&lt;/span&gt;&lt;/div&gt;
+
+&lt;h4 id=&#34;step-2-add-firebase-auth-to-your-app&#34;&gt;Step 2: Add Firebase auth to your app&lt;/h4&gt;
+
+&lt;p&gt;&lt;em&gt;Note: This step assumes you already have your Firebase database added to your app.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Import &lt;code&gt;firebase/auth&lt;/code&gt; into your app&amp;rsquo;s firebase setup.  Enable firebase auth and also create an instance of &lt;code&gt;GoogleAuthProvider&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;base.js&lt;/strong&gt;&lt;/p&gt;
+
+
+  &lt;pre class=&#34;language-js line-numbers &#34;
+       
+       
+       data-line=&#34;4,17,18&#34;
+       rel=&#34;js&#34;
+  &gt;&lt;code class=&#34;language-js&#34;&gt;
+  
+import Rebase from &#39;re-base&#39;
+import firebase from &#39;firebase/app&#39;
+import database from &#39;firebase/database&#39;
+import &#39;firebase/auth&#39;
+
+const app = firebase.initializeApp({
+  apiKey: &#34;YOURAPIKEY&#34;,
+  authDomain: &#34;YOURAUTHDOMAIN&#34;,
+  databaseURL: &#34;YOURDATABASEURL&#34;,
+  projectId: &#34;YOURPROJECTID&#34;,
+  storageBucket: &#34;YOURSTORAGEBUCKET&#34;,
+  messagingSenderId: &#34;YOURSENDERID&#34;
+})
+
+const db = database(app)
+
+export const auth = app.auth()
+export const googleProvider = new firebase.auth.GoogleAuthProvider()
+
+export default Rebase.createClass(db)
+
+  &lt;/code&gt;
+  &lt;/pre&gt;
+
+
+
+&lt;h4 id=&#34;step-3-set-up-the-signin-component&#34;&gt;Step 3: Set up the SignIn Component&lt;/h4&gt;
+
+&lt;p&gt;Import &lt;code&gt;auth&lt;/code&gt; and the &lt;code&gt;googleProvider&lt;/code&gt; into whatever component handles the sign-in process.  Call &lt;code&gt;signInWithPopup&lt;/code&gt; on the &lt;code&gt;auth&lt;/code&gt; object, passing the provider as a parameter.  This will launch a popup screen that will prompt the user to sign in using the provider you have specified.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;SignIn.js&lt;/strong&gt;&lt;/p&gt;
+
+
+&lt;pre class=&#34;line-numbers language-jsx&#34; rel=&#34;jsx&#34;&gt;
+&lt;code class=&#34;language-jsx&#34;&gt;
+
+import React from &#39;react&#39;
+import { auth, googleProvider } from &#39;./base&#39;
+
+const SignIn = () =&gt; {
+  const authenticate = (provider) =&gt; {
+    auth.signInWithPopup(provider)
+  }
+
+  return (
+    &amp;lt;button className=&#34;SignIn&#34; onClick={() =&gt; authenticate(googleProvider)}&amp;gt;
+      Sign In With Google
+    &amp;lt;/button&amp;gt;
+  )
+}
+
+export default SignIn
+
+&lt;/code&gt;
+&lt;/pre&gt;
+
+
+
+&lt;h4 id=&#34;step-4-handling-auth-state-changes-and-page-refreshes&#34;&gt;Step 4: Handling auth state changes (and page refreshes)&lt;/h4&gt;
+
+&lt;p&gt;Once the user has authenticated via the popup, the state of our authorization has changed (we now have an authenticated user).  Other events that can cause auth state changes are signing out, timeouts, and page refreshes.  We should probably set up something to listen for these events.  In the &lt;code&gt;componentWillMount&lt;/code&gt; lifecycle hook that runs when the Component is first getting loaded, we can call the &lt;code&gt;onAuthStateChanged&lt;/code&gt; method provided on the global &lt;code&gt;auth&lt;/code&gt; object to set up such a listener.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;App.js&lt;/strong&gt;&lt;/p&gt;
+
+
+&lt;pre class=&#34;line-numbers language-js&#34; rel=&#34;js&#34;&gt;
+&lt;code class=&#34;language-js&#34;&gt;
+
+// ...
+
+componentWillMount() {
+  auth.onAuthStateChanged(
+    (user) =&gt; {
+      if (user) {
+        // finish signing in
+        this.authHandler(user)
+      } else {
+        // finished signing out
+        this.setState({ uid: null })
+      }
+    }
+  )
+}
+
+// ...
+
+&lt;/code&gt;
+&lt;/pre&gt;
+
+
+
+&lt;h4 id=&#34;step-5-finishing-sign-in&#34;&gt;Step 5: Finishing sign-in&lt;/h4&gt;
+
+&lt;p&gt;What the &lt;code&gt;authHandler&lt;/code&gt; callback does is up to you, but for &lt;em&gt;Noteherder&lt;/em&gt;, we had it do pretty typical things - save the user ID to state, and initialize syncing our local state for &amp;lsquo;notes&amp;rsquo; with the data stored on Firebase.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;App.js&lt;/strong&gt;&lt;/p&gt;
+
+
+&lt;pre class=&#34;line-numbers language-js&#34; rel=&#34;js&#34;&gt;
+&lt;code class=&#34;language-js&#34;&gt;
+
+// ...
+
+authHandler = (user) =&gt; {
+  this.setState(
+    { uid: user.uid },
+    this.syncNotes
+  )
+}
+
+// ...
+
+&lt;/code&gt;
+&lt;/pre&gt;
+
+
+
+&lt;h4 id=&#34;step-6-signing-out&#34;&gt;Step 6: Signing out&lt;/h4&gt;
+
+&lt;p&gt;Signing out when using Firebase for authentication is also simple - just call &lt;code&gt;auth.signOut()&lt;/code&gt;!  Once the promise returned by &lt;code&gt;signOut&lt;/code&gt; has resolved, you can handle any additional cleanup.  In &lt;em&gt;Noteherder&lt;/em&gt;, we stop syncing with Firebase and set &lt;code&gt;state.notes&lt;/code&gt; back to an empty object.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;App.js&lt;/strong&gt;&lt;/p&gt;
+
+
+&lt;pre class=&#34;line-numbers language-js&#34; rel=&#34;js&#34;&gt;
+&lt;code class=&#34;language-js&#34;&gt;
+
+// ...
+
+signOut = () =&gt; {
+  auth
+    .signOut()
+    .then(
+      () =&gt; {
+        // stop syncing with Firebase
+        base.removeBinding(this.ref)
+        this.setState({ notes: {} })
+      }
+    )
+}
+
+// ...
+
+&lt;/code&gt;
+&lt;/pre&gt;
+
+
+
+&lt;h3 id=&#34;rules&#34;&gt;Rules&lt;/h3&gt;
+
+&lt;p&gt;For your Firebase database, you can set up rules (written in JSON) that specify the conditions under which data is allowed to be read or written.  By default, a newly generated project will require that a user be authenticated to read or write &lt;em&gt;any&lt;/em&gt; data.&lt;/p&gt;
+
+
+&lt;pre class=&#34;line-numbers language-js&#34; rel=&#34;js&#34;&gt;
+&lt;code class=&#34;language-js&#34;&gt;
+
+{
+  &#34;rules&#34;: {
+    &#34;.read&#34;: &#34;auth != null&#34;,
+    &#34;.write&#34;: &#34;auth != null&#34;
+  }
+}
+
+&lt;/code&gt;
+&lt;/pre&gt;
+
+
+
+&lt;p&gt;If you do not have authentication set up yet, these values can be set to &lt;code&gt;true&lt;/code&gt;.  This allows &lt;em&gt;anyone&lt;/em&gt; to read or write any data in the database.  This can be convenient, but probably not a good idea long-term (and you &lt;em&gt;will&lt;/em&gt; get a warning if you do that).&lt;/p&gt;
+
+&lt;p&gt;Additional rules can be applied per endpoint:&lt;/p&gt;
+
+
+&lt;pre class=&#34;line-numbers language-js&#34; rel=&#34;js&#34;&gt;
+&lt;code class=&#34;language-js&#34;&gt;
+
+{
+  &#34;rules&#34;: {
+    &#34;emails&#34;: {
+      &#34;.read&#34;: true,
+      &#34;.write&#34;: &#34;auth != null&#34;
+    },
+    &#34;texts&#34;: {
+      &#34;.read&#34;: true,
+      &#34;.write&#34;: &#34;auth != null&#34;
+    },
+    &#34;users&#34;: {
+      &#34;$userId&#34;: {
+        &#34;.read&#34;: &#34;auth != null &amp;&amp; auth.uid == $userId&#34;,
+        &#34;.write&#34;: &#34;auth != null &amp;&amp; auth.uid == $userId&#34;
+      }
+    }
+  }
+}
+
+&lt;/code&gt;
+&lt;/pre&gt;
+
+
+
+&lt;p&gt;The above rules translate to:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;texts and emails can be read by anyone, but only written by authenticated users&lt;/li&gt;
+&lt;li&gt;users data can be read and written only by an authenticated user whose &lt;code&gt;uid&lt;/code&gt; matches the &lt;code&gt;$userId&lt;/code&gt; of that item&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;projects&#34;&gt;Projects&lt;/h2&gt;
+
+&lt;p&gt;Noteherder: &lt;a href=&#34;https://github.com/xtbc17s3/noteherder/tree/7a281036a303ed63a69163d938ad9db7b257ad39&#34;&gt;Morning&lt;/a&gt; | [Afternoon]()&lt;/p&gt;
+
+&lt;h2 id=&#34;homework&#34;&gt;Homework&lt;/h2&gt;
+
+&lt;p&gt;Add another authentication method through Firebase (like Github, Facebook, or Twitter)&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Day 9: Routing and Fetching</title>
+      <link>http://xternbootcamp17.github.io/week3/day9/</link>
+      <pubDate>Tue, 30 May 2017 09:40:47 -0400</pubDate>
+      
+      <guid>http://xternbootcamp17.github.io/week3/day9/</guid>
+      <description>
+
+&lt;p&gt;&lt;date&gt;Tuesday, July 11, 2017&lt;/date&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;lecture-videos&#34;&gt;Lecture Videos&lt;/h2&gt;
+
+&lt;p&gt;Morning:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=TvDN8nil0Iw&amp;amp;index=100&amp;amp;list=PLuT2TqJuwaY882Figl-Tr-VXWweaeS45B&#34;&gt;Day 9, part 1&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Afternoon:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;[Day 9, part 1]()&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;topics&#34;&gt;Topics&lt;/h2&gt;
+
+&lt;h3 id=&#34;firebase-authentication&#34;&gt;Firebase Authentication&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Signing in with GitHub&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;routing&#34;&gt;Routing&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;React Router v4
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;Router /&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Links and NavLinks&lt;/li&gt;
+&lt;li&gt;Routes&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;history&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;fetching-data&#34;&gt;Fetching Data&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;The Fetch API&lt;/li&gt;
+&lt;li&gt;Promises&lt;/li&gt;
+&lt;li&gt;Parsing the response&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;examples&#34;&gt;Examples&lt;/h2&gt;
+
+&lt;h3 id=&#34;signing-in-with-github&#34;&gt;Signing in with GitHub&lt;/h3&gt;
+
+&lt;h4 id=&#34;step-1-get-your-authorization-callback-url-from-firebase&#34;&gt;Step 1: Get your authorization callback URL from Firebase&lt;/h4&gt;
+
+&lt;p&gt;Navigate to your project in Firebase console.  Click on the &amp;lsquo;Authenticate&amp;rsquo; tab on the left and then on the GitHub logo.  Copy the authorization callback URL.&lt;/p&gt;
+
+
+  &lt;div class=&#34;aside aside-info&#34;&gt;
+  
+    &lt;h4&gt;Copying the callback URL&lt;/h4&gt;
+    
+  
+  &lt;div class=&#34;body&#34;&gt;
+  &lt;p&gt;Use the &lt;em&gt;copy to clipboard&lt;/em&gt; button in the Firebase console. If you try to manually highlight the callback URL, you are likely to accidentally select some hidden elements, and your authentication will not work.&lt;/p&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;div class=&#34;img firebase-enable-github&#34;&gt;&lt;span&gt;The data for the Client ID and Client Secret will be generated in the next step.&lt;/span&gt;&lt;/div&gt;
+
+&lt;h4 id=&#34;step-2-register-your-app-in-github&#34;&gt;Step 2: Register your app in Github&lt;/h4&gt;
+
+&lt;p&gt;Log in to GitHub and click on &amp;lsquo;Settings&amp;rsquo;.  On the left hand side, click on &amp;lsquo;OAuth Applications&amp;rsquo; under the &amp;lsquo;Developer settings&amp;rsquo; menu.  Register a new app and fill out the form.&lt;/p&gt;
+
+&lt;div class=&#34;img github-oauth-new-registration&#34;&gt;&lt;span&gt;Use the Authorization callback URL from step 1&lt;/span&gt;&lt;/div&gt;
+
+&lt;p&gt;After successfully registering the app, you&amp;rsquo;ll be taken to your new app&amp;rsquo;s settings page.&lt;/p&gt;
+
+&lt;div class=&#34;img github-oauth-secrets&#34;&gt;&lt;span&gt;Seeeeecrets...  (Don&#39;t worry, this app has been deleted. Never post your app secrets publicly.)&lt;/span&gt;&lt;/div&gt;
+
+&lt;h4 id=&#34;step-3-enable-github-authentication-in-firebase&#34;&gt;Step 3: Enable Github authentication in Firebase&lt;/h4&gt;
+
+&lt;p&gt;Go back to the GitHub authentication tab in Firebase and fill in the Client ID and Client Secret that you got from registering your app with GitHub.&lt;/p&gt;
+
+&lt;div class=&#34;img firebase-github-secrets&#34;&gt;&lt;span&gt;More Seeeeecrets...  (But seriously, don&#39;t share your secrets)&lt;/span&gt;&lt;/div&gt;
+
+&lt;h4 id=&#34;step-4-add-the-github-auth-provider-to-your-app&#34;&gt;Step 4: Add the GitHub auth provider to your app&lt;/h4&gt;
+
+&lt;p&gt;&lt;em&gt;Note: This step assumes you already have Firebase auth configured in your app.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Create and export an instance of &lt;code&gt;GithubAuthProvider&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;base.js&lt;/strong&gt;&lt;/p&gt;
+
+
+  &lt;pre class=&#34;language-js  &#34;
+       
+       
+       data-line=&#34;19&#34;
+       rel=&#34;js&#34;
+  &gt;&lt;code class=&#34;language-js&#34;&gt;
+  
+import Rebase from &#39;re-base&#39;
+import firebase from &#39;firebase/app&#39;
+import database from &#39;firebase/database&#39;
+import &#39;firebase/auth&#39;
+
+const app = firebase.initializeApp({
+  apiKey: &#34;YOURAPIKEY&#34;,
+  authDomain: &#34;YOURAUTHDOMAIN&#34;,
+  databaseURL: &#34;YOURDATABASEURL&#34;,
+  projectId: &#34;YOURPROJECTID&#34;,
+  storageBucket: &#34;YOURSTORAGEBUCKET&#34;,
+  messagingSenderId: &#34;YOURSENDERID&#34;
+})
+
+const db = database(app)
+
+export const auth = app.auth()
+export const googleProvider = new firebase.auth.GoogleAuthProvider()
+export const githubProvider = new firebase.auth.GithubAuthProvider()
+
+export default Rebase.createClass(db)
+
+  &lt;/code&gt;
+  &lt;/pre&gt;
+
+
+
+&lt;h4 id=&#34;step-5-set-up-the-signin-component&#34;&gt;Step 5: Set up the SignIn Component&lt;/h4&gt;
+
+&lt;p&gt;Add the &lt;code&gt;githubProvider&lt;/code&gt; to the imports in your &lt;code&gt;SignIn&lt;/code&gt; component. Call &lt;code&gt;signInWithPopup&lt;/code&gt; on the &lt;code&gt;auth&lt;/code&gt; object, passing the provider as a parameter.  This will launch a popup screen that will prompt the user to sign in using the specified provider.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;SignIn.js&lt;/strong&gt;&lt;/p&gt;
+
+
+  &lt;pre class=&#34;language-jsx  &#34;
+       
+       
+       data-line=&#34;2,5,6,7,15,16,17&#34;
+       rel=&#34;jsx&#34;
+  &gt;&lt;code class=&#34;language-jsx&#34;&gt;
+  
+import React from &#39;react&#39;
+import { auth, googleProvider, githubProvider } from &#39;./base&#39;
+
+const SignIn = () =&gt; {
+  const authenticate = (provider) =&gt; {
+    auth.signInWithPopup(provider)
+  }
+
+  return (
+    &amp;lt;div className=&#34;SignIn&#34;&amp;gt;
+      &amp;lt;button onClick={() =&gt; authenticate(googleProvider)}&amp;gt;
+        Sign In With Google
+      &amp;lt;/button&amp;gt;
+
+      &amp;lt;button onClick={() =&gt; authenticate(githubProvider)}&amp;gt;
+        Sign In With GitHub
+      &amp;lt;/button&amp;gt;
+    &amp;lt;/div&amp;gt;
+  )
+}
+
+export default SignIn
+
+  &lt;/code&gt;
+  &lt;/pre&gt;
+
+
+
+&lt;h3 id=&#34;routing-1&#34;&gt;Routing&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/ReactTraining/react-router&#34;&gt;React Router&lt;/a&gt; provides a routing solution that allows us to change what UI we render based on the current URL.  The router is a &lt;em&gt;Higher Order Component&lt;/em&gt; that wraps a React app and allows us to navigate without additional requests and responses to and from the server.&lt;/p&gt;
+
+&lt;h4 id=&#34;router-setup&#34;&gt;Router Setup&lt;/h4&gt;
+
+&lt;p&gt;Setting up React Router is easy.  For web projects, install &lt;code&gt;react-router-dom&lt;/code&gt;&lt;/p&gt;
+
+
+
+
+
+
+
+
+&lt;div class=&#34;shell macos&#34;&gt;
+&lt;div class=&#34;bar&#34;&gt;
+  &lt;div class=&#34;controls&#34;&gt;
+    &lt;div class=&#34;windows icon&#34;&gt;
+      &lt;img src=&#34;http://xternbootcamp17.github.io/images/git-bash.png&#34; alt=&#34;&#34;&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;dot red&#34;&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;dot yellow&#34;&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;dot green&#34;&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  user@localhost ~
+  &lt;div class=&#34;windows-controls&#34;&gt;
+    &amp;nbsp;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;shell-body&#34;&gt;
+
+&lt;pre&gt;&lt;span class=&#34;terminal-commands&#34;
+&gt;&lt;span class=&#34;command-line-prompt&#34;&gt;&lt;span data-prompt=&#34;$&#34;&gt;&lt;/span&gt;&lt;/span&gt;yarn add react-router-dom  # install react router with yarn
+&lt;/span&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;or&lt;/p&gt;
+
+
+
+
+
+
+
+
+&lt;div class=&#34;shell macos&#34;&gt;
+&lt;div class=&#34;bar&#34;&gt;
+  &lt;div class=&#34;controls&#34;&gt;
+    &lt;div class=&#34;windows icon&#34;&gt;
+      &lt;img src=&#34;http://xternbootcamp17.github.io/images/git-bash.png&#34; alt=&#34;&#34;&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;dot red&#34;&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;dot yellow&#34;&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;dot green&#34;&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  user@localhost ~
+  &lt;div class=&#34;windows-controls&#34;&gt;
+    &amp;nbsp;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;shell-body&#34;&gt;
+
+&lt;pre&gt;&lt;span class=&#34;terminal-commands&#34;
+&gt;&lt;span class=&#34;command-line-prompt&#34;&gt;&lt;span data-prompt=&#34;$&#34;&gt;&lt;/span&gt;&lt;/span&gt;npm install --save react-router-dom  # install react router with npm
+&lt;/span&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Then, in your &lt;code&gt;ReactDOM.render&lt;/code&gt; call, attach the Router as your base element, wrapping the root-level &lt;code&gt;&amp;lt;App /&amp;gt;&lt;/code&gt; component.  The whole app is now contained within the Router component, so we can take advantage of it anywhere.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;index.js&lt;/strong&gt;&lt;/p&gt;
+
+
+&lt;pre class=&#34;line-numbers language-jsx&#34; rel=&#34;jsx&#34;&gt;
+&lt;code class=&#34;language-jsx&#34;&gt;
+
+import React from &#39;react&#39;
+import ReactDOM from &#39;react-dom&#39;
+import { BrowserRouter as Router } from &#39;react-router-dom&#39;
+import App from &#39;./App&#39;
+
+ReactDOM.render(
+  &amp;lt;Router&amp;gt;
+    &amp;lt;App /&amp;gt;
+  &amp;lt;/Router&amp;gt;,
+  document.getElementById(&#39;root&#39;)
+)
+
+&lt;/code&gt;
+&lt;/pre&gt;
+
+
+
+&lt;h4 id=&#34;routes&#34;&gt;Routes&lt;/h4&gt;
+
+&lt;p&gt;The core of React Router is the &lt;code&gt;&amp;lt;Route /&amp;gt;&lt;/code&gt; component.  It allows you to specify what UI to render when a particular URL is matched.  For instance, if we wanted to render a &lt;code&gt;&amp;lt;Users /&amp;gt;&lt;/code&gt; component when we matched a &lt;code&gt;/users&lt;/code&gt; URL, we could make the following Route:&lt;/p&gt;
+
+
+&lt;pre class=&#34;line-numbers language-jsx&#34; rel=&#34;jsx&#34;&gt;
+&lt;code class=&#34;language-jsx&#34;&gt;
+
+&amp;lt;Route path=&#39;/users&#39; component={Users} /&amp;gt;
+
+&lt;/code&gt;
+&lt;/pre&gt;
+
+
+
+&lt;p&gt;If you don&amp;rsquo;t want to render a whole component, a Route can alternatively accept a &lt;code&gt;render&lt;/code&gt; prop, which accepts a function that returns JSX:&lt;/p&gt;
+
+
+&lt;pre class=&#34;line-numbers language-jsx&#34; rel=&#34;jsx&#34;&gt;
+&lt;code class=&#34;language-jsx&#34;&gt;
+
+&amp;lt;Route path=&#39;/users&#39; render={() =&gt; &amp;lt;h1&amp;gt;Users Path!&amp;lt;/h1&amp;gt;} /&amp;gt;
+
+&lt;/code&gt;
+&lt;/pre&gt;
+
+
+
+&lt;p&gt;One important thing to keep in mind is that if we define a Route&amp;rsquo;s path as &lt;code&gt;/users&lt;/code&gt;, that will match both &lt;code&gt;/users&lt;/code&gt; &lt;em&gt;and&lt;/em&gt; &lt;code&gt;/users/123&lt;/code&gt;, because both begin with &lt;code&gt;/users&lt;/code&gt;.  If we want the Route to match only when the path is &lt;em&gt;exactly&lt;/em&gt; &lt;code&gt;/users&lt;/code&gt;, we can add the prop &lt;code&gt;exact&lt;/code&gt; to our Route component.&lt;/p&gt;
+
+
+&lt;pre class=&#34;line-numbers language-jsx&#34; rel=&#34;jsx&#34;&gt;
+&lt;code class=&#34;language-jsx&#34;&gt;
+
+&amp;lt;Route exact path=&#39;/users&#39; component={Users} /&amp;gt;
+
+&lt;/code&gt;
+&lt;/pre&gt;
+
+
+
+&lt;h4 id=&#34;links&#34;&gt;Links&lt;/h4&gt;
+
+&lt;p&gt;React Router also provides &lt;code&gt;&amp;lt;Link /&amp;gt;&lt;/code&gt; and &lt;code&gt;&amp;lt;NavLink /&amp;gt;&lt;/code&gt; components to make it easy to generate links to Routes. If we want to generate a Link that goes to &lt;code&gt;/about&lt;/code&gt;, we can do the following:&lt;/p&gt;
+
+
+&lt;pre class=&#34;line-numbers language-jsx&#34; rel=&#34;jsx&#34;&gt;
+&lt;code class=&#34;language-jsx&#34;&gt;
+
+&amp;lt;Link to=&#39;/about&#39;&amp;gt;About&amp;lt;/Link&amp;gt;
+
+&lt;/code&gt;
+&lt;/pre&gt;
+
+
+
+&lt;p&gt;NavLinks are similar, but provide some additional functionality.  The main difference is that they will add an &lt;code&gt;activeClassName&lt;/code&gt; to the rendered link if the current URL matches the &lt;code&gt;to&lt;/code&gt; property of the NavLink.  This allows active links to be styled differently than inactive links.&lt;/p&gt;
+
+
+&lt;pre class=&#34;line-numbers language-jsx&#34; rel=&#34;jsx&#34;&gt;
+&lt;code class=&#34;language-jsx&#34;&gt;
+
+&amp;lt;NavLink to=&#39;/&#39;&amp;gt;Home&amp;lt;/NavLink&amp;gt;    // rendered link tag will have &#39;.active&#39; class when URL is &#39;/&#39;
+
+&lt;/code&gt;
+&lt;/pre&gt;
+
+
+
+&lt;h4 id=&#34;history&#34;&gt;History&lt;/h4&gt;
+
+&lt;p&gt;The &lt;code&gt;history&lt;/code&gt; object is maintained and updated by the Router to keep track of where the user has navigated within the app.  It is passed to every component contained within the Router as part of the component&amp;rsquo;s &lt;code&gt;props&lt;/code&gt;.  It has a variety of helpful properties and methods that provide information and navigation. Here are just a few:&lt;/p&gt;
+
+
+&lt;pre class=&#34;line-numbers language-js&#34; rel=&#34;js&#34;&gt;
+&lt;code class=&#34;language-js&#34;&gt;
+
+history.length             // number of history entries
+history.location           // provides the current location
+history.push(path)         // navigates to a new path
+history.go(n)              // navigates n steps through history stack
+history.goBack()           // go back one step (history.go(-1))
+history.goForward()        // go forward one step (history.go(1))
+history.block(prompt)      // block navigation
+
+&lt;/code&gt;
+&lt;/pre&gt;
+
+
+
+&lt;h3 id=&#34;fetch&#34;&gt;Fetch&lt;/h3&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;The Fetch API provides a JavaScript interface for accessing and manipulating parts of the HTTP pipeline, such as requests and responses.  It also provides a global &lt;code&gt;fetch()&lt;/code&gt; method that provides an easy, logical way to fetch resources asynchronously across the network.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch&#34;&gt;&lt;em&gt;MDN - Using Fetch&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;If we need to get data from a remote server (or send some to one), there are several ways to do it.  In vanilla JS, there is &lt;code&gt;XMLHttpRequest&lt;/code&gt;, jQuery provides &lt;code&gt;$.ajax&lt;/code&gt;, and there are a variety of other packages and libraries that provide their own version.  Luckily, there is a new kid in vanilla JS town - the &lt;em&gt;Fetch API&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;fetch()&lt;/code&gt; is a globally available, easy to use way to asynchronously send and receive data.  The simplest usage of fetch is to simply provide it with the URL of the request, and it will perform a &lt;code&gt;GET&lt;/code&gt; request by default.  The &lt;code&gt;fetch()&lt;/code&gt; function returns a promise that resolves when the data is received.  Once it is received, we can process and use the data with functions provided to the promise&amp;rsquo;s &lt;code&gt;.then()&lt;/code&gt; callbacks.&lt;/p&gt;
+
+
+&lt;pre class=&#34;line-numbers language-js&#34; rel=&#34;js&#34;&gt;
+&lt;code class=&#34;language-js&#34;&gt;
+
+fetch(&#39;https://api.mywebsite.com/users&#39;)    // fetch users data from &#39;mywebsite&#39; api
+  .then(response =&gt; response.json())        // parse the response json into JavaScript object(s)
+  .then(users =&gt; console.log(users))        // log the parsed users to the console
+  .catch(error =&gt; console.warn(error))      // if any errors occur, log them to the console
+
+&lt;/code&gt;
+&lt;/pre&gt;
+
+
+
+
+  &lt;div class=&#34;aside aside-info&#34;&gt;
+  
+    &lt;h4&gt;Fetch does more than just fetch&lt;/h4&gt;
+    
+  
+  &lt;div class=&#34;body&#34;&gt;
+  &lt;p&gt;If no second argument is provided to &lt;code&gt;fetch()&lt;/code&gt;, it defaults to a standard &lt;code&gt;GET&lt;/code&gt; request.  However, the second argument can be a configuration object, allowing it to use different HTTP methods, set Headers, include Credentials, etc.  To find out more, check out &lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API&#34;&gt;the docs&lt;/a&gt;&lt;/p&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;h2 id=&#34;projects&#34;&gt;Projects&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Noteherder &lt;a href=&#34;https://github.com/xtbc17s3/noteherder/tree/065eaa988e6aea91e094fada7d87f83c9c1cb32c&#34;&gt;morning&lt;/a&gt; | &lt;a href=&#34;https://github.com/xtbc17s3/noteherder/tree/afternoon&#34;&gt;afternoon&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;API Party &lt;a href=&#34;https://github.com/xtbc17s3/api-party/tree/09f544985caee14d628493c16a646f4109079717&#34;&gt;morning&lt;/a&gt; | [afternoon]&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;homework&#34;&gt;Homework&lt;/h2&gt;
+
+&lt;p&gt;Extend the API-Party app by adding at least one additional route that gets data from a public API.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;A link to the route should appear in the header along with the &amp;lsquo;Github&amp;rsquo; and &amp;lsquo;NASA&amp;rsquo; links&lt;/li&gt;
+&lt;li&gt;When the link is clicked, it should be styled to show that it is active&lt;/li&gt;
+&lt;li&gt;The new component should fetch data from a public API&lt;/li&gt;
+&lt;li&gt;Some interesting data from the API should be presented&lt;/li&gt;
+&lt;li&gt;The data should look pretty (style it with CSS)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;bonus-credit&#34;&gt;Bonus Credit&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Accept user input to refine the data you request from the API&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;super-mega-bonus-credit&#34;&gt;Super Mega Bonus Credit&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Add additional routes and APIs&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;super-mega-bonus-credit-hyper-fighting&#34;&gt;Super Mega Bonus Credit Hyper Fighting&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Figure out something interesting to do with the data on your own.  Make a graph, render a map, add child routes, go nuts!&lt;/li&gt;
+&lt;/ul&gt;
+</description>
     </item>
     
   </channel>

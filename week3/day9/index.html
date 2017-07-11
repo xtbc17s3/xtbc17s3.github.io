@@ -10,7 +10,7 @@
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 
     
-    <title>VS Code Keybindings</title>
+    <title>Day 9: Routing and Fetching</title>
     <link href="http://xternbootcamp17.github.io//css/nucleus.css" rel="stylesheet">
     <link href="http://xternbootcamp17.github.io//css/font-awesome.min.css" rel="stylesheet">
     
@@ -25,7 +25,7 @@
     <link href="/css/prism.css" rel="stylesheet">
 <link href="/css/xtern.css" rel="stylesheet">
   </head>
-  <body class="" data-url="/tools/code-keybindings/">
+  <body class="" data-url="/week3/day9/">
     
     <nav id="sidebar">
   <div id="header-wrapper">
@@ -262,7 +262,7 @@
       
       
 
-      <li class="dd-item  parent" data-nav-id="/tools/">
+      <li class="dd-item  " data-nav-id="/tools/">
         <a href="/tools/">
           <span>
             
@@ -284,7 +284,7 @@
           
           
           
-            <li class="dd-item active" data-nav-id="/tools/code-keybindings/">
+            <li class="dd-item " data-nav-id="/tools/code-keybindings/">
               <a href="/tools/code-keybindings/">
                 <span>VS Code Keybindings     </i></span>
               </a>
@@ -405,7 +405,7 @@
       
       
 
-      <li class="dd-item  " data-nav-id="/week3/">
+      <li class="dd-item  parent" data-nav-id="/week3/">
         <a href="/week3/">
           <span>
             
@@ -427,7 +427,7 @@
           
           
           
-            <li class="dd-item " data-nav-id="/week3/day9/">
+            <li class="dd-item active" data-nav-id="/week3/day9/">
               <a href="/week3/day9/">
                 <span>Day 9: Routing and Fetching     </i></span>
               </a>
@@ -470,11 +470,11 @@
                   
                     
                     
-                <a href="/tools/" itemprop="url"><span itemprop="title">Tools</span></a> <i class="fa fa-angle-right"></i>
+                <a href="/week3/" itemprop="url"><span itemprop="title">Week Three</span></a> <i class="fa fa-angle-right"></i>
                     
                   
                 
-                <span itemprop="title"> VS Code Keybindings</span>
+                <span itemprop="title"> Day 9: Routing and Fetching</span>
               </div>
               
                   <div class="progress">
@@ -483,11 +483,38 @@
 <ul>
 <li>
 <ul>
-<li><a href="#custom-keybindings-for-vs-code">Custom Keybindings for VS Code</a>
+<li><a href="#lecture-videos">Lecture Videos</a></li>
+<li><a href="#topics">Topics</a>
 <ul>
-<li><a href="#emmet">Emmet</a></li>
-<li><a href="#esquotes">ESQuotes</a></li>
-<li><a href="#embrace">Embrace</a></li>
+<li><a href="#firebase-authentication">Firebase Authentication</a></li>
+<li><a href="#routing">Routing</a></li>
+<li><a href="#fetching-data">Fetching Data</a></li>
+</ul></li>
+<li><a href="#examples">Examples</a>
+<ul>
+<li><a href="#signing-in-with-github">Signing in with GitHub</a>
+<ul>
+<li><a href="#step-1-get-your-authorization-callback-url-from-firebase">Step 1: Get your authorization callback URL from Firebase</a></li>
+<li><a href="#step-2-register-your-app-in-github">Step 2: Register your app in Github</a></li>
+<li><a href="#step-3-enable-github-authentication-in-firebase">Step 3: Enable Github authentication in Firebase</a></li>
+<li><a href="#step-4-add-the-github-auth-provider-to-your-app">Step 4: Add the GitHub auth provider to your app</a></li>
+<li><a href="#step-5-set-up-the-signin-component">Step 5: Set up the SignIn Component</a></li>
+</ul></li>
+<li><a href="#routing-1">Routing</a>
+<ul>
+<li><a href="#router-setup">Router Setup</a></li>
+<li><a href="#routes">Routes</a></li>
+<li><a href="#links">Links</a></li>
+<li><a href="#history">History</a></li>
+</ul></li>
+<li><a href="#fetch">Fetch</a></li>
+</ul></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#homework">Homework</a>
+<ul>
+<li><a href="#bonus-credit">Bonus Credit</a></li>
+<li><a href="#super-mega-bonus-credit">Super Mega Bonus Credit</a></li>
+<li><a href="#super-mega-bonus-credit-hyper-fighting">Super Mega Bonus Credit Hyper Fighting</a></li>
 </ul></li>
 </ul></li>
 </ul>
@@ -501,226 +528,448 @@
             
               <div id="body-inner">
                 
-                <h1>VS Code Keybindings</h1>
+                <h1>Day 9: Routing and Fetching</h1>
                 
 
 
 
-<div class="page-heading"><div>
+<p><date>Tuesday, July 11, 2017</date></p>
+
+<h2 id="lecture-videos">Lecture Videos</h2>
+
+<p>Morning:</p>
+
+<ul>
+<li><a href="https://www.youtube.com/watch?v=TvDN8nil0Iw&amp;index=100&amp;list=PLuT2TqJuwaY882Figl-Tr-VXWweaeS45B">Day 9, part 1</a></li>
+</ul>
+
+<p>Afternoon:</p>
+
+<ul>
+<li>[Day 9, part 1]()</li>
+</ul>
+
+<h2 id="topics">Topics</h2>
+
+<h3 id="firebase-authentication">Firebase Authentication</h3>
+
+<ul>
+<li>Signing in with GitHub</li>
+</ul>
+
+<h3 id="routing">Routing</h3>
+
+<ul>
+<li>React Router v4
+
+<ul>
+<li><code>&lt;Router /&gt;</code></li>
+<li>Links and NavLinks</li>
+<li>Routes</li>
+<li><code>history</code></li>
+</ul></li>
+</ul>
+
+<h3 id="fetching-data">Fetching Data</h3>
+
+<ul>
+<li>The Fetch API</li>
+<li>Promises</li>
+<li>Parsing the response</li>
+</ul>
+
+<h2 id="examples">Examples</h2>
+
+<h3 id="signing-in-with-github">Signing in with GitHub</h3>
+
+<h4 id="step-1-get-your-authorization-callback-url-from-firebase">Step 1: Get your authorization callback URL from Firebase</h4>
+
+<p>Navigate to your project in Firebase console.  Click on the &lsquo;Authenticate&rsquo; tab on the left and then on the GitHub logo.  Copy the authorization callback URL.</p>
 
 
-<svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   role="img"
-   viewBox="0 0 500 516.8125"
-   id="vs-logo-svg"
-   aria-labelledby="vs-svg-title"
-   version="1.2">
-  <title id="vs-svg-title">Visual Studio Code</title>
-  <defs
-     id="defs4" />
-  <sodipodi:namedview
-     id="base"
-     pagecolor="#2d2c31"
-     bordercolor="#666666"
-     borderopacity="1.0"
-     inkscape:pageopacity="0"
-     inkscape:pageshadow="2"
-     inkscape:zoom="0.5"
-     inkscape:cx="26.033824"
-     inkscape:cy="342.90908"
-     inkscape:document-units="px"
-     inkscape:current-layer="layer1"
-     showgrid="false"
-     inkscape:window-width="1920"
-     inkscape:window-height="1018"
-     inkscape:window-x="1912"
-     inkscape:window-y="-8"
-     inkscape:window-maximized="1"
-     fit-margin-top="0"
-     fit-margin-left="0"
-     fit-margin-right="0"
-     fit-margin-bottom="0" />
-  <metadata
-     id="metadata7">
-    <rdf:RDF>
-      <cc:Work
-         rdf:about="">
-        <dc:format>image/svg+xml</dc:format>
-        <dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-      </cc:Work>
-    </rdf:RDF>
-  </metadata>
-  <g
-     inkscape:label="Ebene 1"
-     inkscape:groupmode="layer"
-     id="layer1"
-     style="display:inline"
-     transform="translate(0,-538.375)">
-    <path
-       style="fill:#ffffff;stroke:none"
-       d="M 483.29234,602.44472 372.10411,557.87392 178.02375,746.87661 61.150238,657.90867 l -44.44058,22.35039 -0.04444,233.31307 44.23249,22.18974 116.777852,-88.89395 194.55776,188.82908 111.10146,-44.39718 z"
-       id="path2998"
-       inkscape:connector-curvature="0" />
-    <path
-       style="fill:#373277;stroke:none"
-       d="m 361.0373,713.50273 -111.05802,83.02234 111.10146,83.67329 z"
-       id="path3000"
-       inkscape:connector-curvature="0" />
-    <path
-       style="fill:#373277;stroke:none"
-       d="m 72.191838,746.97093 0.0667,99.85788 55.483402,-50.26641 z"
-       id="path3002"
-       inkscape:connector-curvature="0" />
-  </g>
-</svg>
+  <div class="aside aside-info">
+  
+    <h4>Copying the callback URL</h4>
+    
+  
+  <div class="body">
+  <p>Use the <em>copy to clipboard</em> button in the Firebase console. If you try to manually highlight the callback URL, you are likely to accidentally select some hidden elements, and your authentication will not work.</p>
+
+  </div>
+</div>
+
+
+<div class="img firebase-enable-github"><span>The data for the Client ID and Client Secret will be generated in the next step.</span></div>
+
+<h4 id="step-2-register-your-app-in-github">Step 2: Register your app in Github</h4>
+
+<p>Log in to GitHub and click on &lsquo;Settings&rsquo;.  On the left hand side, click on &lsquo;OAuth Applications&rsquo; under the &lsquo;Developer settings&rsquo; menu.  Register a new app and fill out the form.</p>
+
+<div class="img github-oauth-new-registration"><span>Use the Authorization callback URL from step 1</span></div>
+
+<p>After successfully registering the app, you&rsquo;ll be taken to your new app&rsquo;s settings page.</p>
+
+<div class="img github-oauth-secrets"><span>Seeeeecrets...  (Don't worry, this app has been deleted. Never post your app secrets publicly.)</span></div>
+
+<h4 id="step-3-enable-github-authentication-in-firebase">Step 3: Enable Github authentication in Firebase</h4>
+
+<p>Go back to the GitHub authentication tab in Firebase and fill in the Client ID and Client Secret that you got from registering your app with GitHub.</p>
+
+<div class="img firebase-github-secrets"><span>More Seeeeecrets...  (But seriously, don't share your secrets)</span></div>
+
+<h4 id="step-4-add-the-github-auth-provider-to-your-app">Step 4: Add the GitHub auth provider to your app</h4>
+
+<p><em>Note: This step assumes you already have Firebase auth configured in your app.</em></p>
+
+<p>Create and export an instance of <code>GithubAuthProvider</code>.</p>
+
+<p><strong>base.js</strong></p>
+
+
+  <pre class="language-js  "
+       
+       
+       data-line="19"
+       rel="js"
+  ><code class="language-js">
+  
+import Rebase from 're-base'
+import firebase from 'firebase/app'
+import database from 'firebase/database'
+import 'firebase/auth'
+
+const app = firebase.initializeApp({
+  apiKey: "YOURAPIKEY",
+  authDomain: "YOURAUTHDOMAIN",
+  databaseURL: "YOURDATABASEURL",
+  projectId: "YOURPROJECTID",
+  storageBucket: "YOURSTORAGEBUCKET",
+  messagingSenderId: "YOURSENDERID"
+})
+
+const db = database(app)
+
+export const auth = app.auth()
+export const googleProvider = new firebase.auth.GoogleAuthProvider()
+export const githubProvider = new firebase.auth.GithubAuthProvider()
+
+export default Rebase.createClass(db)
+
+  </code>
+  </pre>
 
 
 
-<p>VS Code Keybindings</p>
+<h4 id="step-5-set-up-the-signin-component">Step 5: Set up the SignIn Component</h4>
+
+<p>Add the <code>githubProvider</code> to the imports in your <code>SignIn</code> component. Call <code>signInWithPopup</code> on the <code>auth</code> object, passing the provider as a parameter.  This will launch a popup screen that will prompt the user to sign in using the specified provider.</p>
+
+<p><strong>SignIn.js</strong></p>
 
 
-</div></div>
+  <pre class="language-jsx  "
+       
+       
+       data-line="2,5,6,7,15,16,17"
+       rel="jsx"
+  ><code class="language-jsx">
+  
+import React from 'react'
+import { auth, googleProvider, githubProvider } from './base'
 
-<p>It&rsquo;s worth your time to get to know the keyboard shortcuts for whatever editor you use. We&rsquo;ve gone a step further and added some custom keybindings for some of the commands we use most.</p>
+const SignIn = () => {
+  const authenticate = (provider) => {
+    auth.signInWithPopup(provider)
+  }
 
-<h2 id="custom-keybindings-for-vs-code">Custom Keybindings for VS Code</h2>
+  return (
+    &lt;div className="SignIn"&gt;
+      &lt;button onClick={() => authenticate(googleProvider)}&gt;
+        Sign In With Google
+      &lt;/button&gt;
 
-<p>Open your Keyboard Shortcuts from the menu (<kbd>Code &gt; Preferences &gt; Keyboard Shortcuts</kbd>) or by using (what else?) the keyboard shortcut (<kbd>⌘</kbd>+<kbd>K</kbd>, <kbd>⌘</kbd>+<kbd>S</kbd>). From there, you can see all of the current keyboard shortcuts and customize them.</p>
+      &lt;button onClick={() => authenticate(githubProvider)}&gt;
+        Sign In With GitHub
+      &lt;/button&gt;
+    &lt;/div&gt;
+  )
+}
 
-<p>For serious customization, click the link to open <em>keybindings.js</em>. That opens two panes: the default keybindings, and your custom bindings. My keybindings appear below. I&rsquo;ll talk about a few of them.</p>
+export default SignIn
+
+  </code>
+  </pre>
+
+
+
+<h3 id="routing-1">Routing</h3>
+
+<p><a href="https://github.com/ReactTraining/react-router">React Router</a> provides a routing solution that allows us to change what UI we render based on the current URL.  The router is a <em>Higher Order Component</em> that wraps a React app and allows us to navigate without additional requests and responses to and from the server.</p>
+
+<h4 id="router-setup">Router Setup</h4>
+
+<p>Setting up React Router is easy.  For web projects, install <code>react-router-dom</code></p>
+
+
+
+
+
+
+
+
+<div class="shell macos">
+<div class="bar">
+  <div class="controls">
+    <div class="windows icon">
+      <img src="/images/git-bash.png" alt="">
+    </div>
+    <div class="dot red">
+    </div>
+    <div class="dot yellow">
+    </div>
+    <div class="dot green">
+    </div>
+  </div>
+  user@localhost ~
+  <div class="windows-controls">
+    &nbsp;
+  </div>
+</div>
+<div class="shell-body">
+
+<pre><span class="terminal-commands"
+><span class="command-line-prompt"><span data-prompt="$"></span></span>yarn add react-router-dom  # install react router with yarn
+</span></pre>
+
+</div>
+</div>
+
+<p>or</p>
+
+
+
+
+
+
+
+
+<div class="shell macos">
+<div class="bar">
+  <div class="controls">
+    <div class="windows icon">
+      <img src="/images/git-bash.png" alt="">
+    </div>
+    <div class="dot red">
+    </div>
+    <div class="dot yellow">
+    </div>
+    <div class="dot green">
+    </div>
+  </div>
+  user@localhost ~
+  <div class="windows-controls">
+    &nbsp;
+  </div>
+</div>
+<div class="shell-body">
+
+<pre><span class="terminal-commands"
+><span class="command-line-prompt"><span data-prompt="$"></span></span>npm install --save react-router-dom  # install react router with npm
+</span></pre>
+
+</div>
+</div>
+
+<p>Then, in your <code>ReactDOM.render</code> call, attach the Router as your base element, wrapping the root-level <code>&lt;App /&gt;</code> component.  The whole app is now contained within the Router component, so we can take advantage of it anywhere.</p>
+
+<p><strong>index.js</strong></p>
+
+
+<pre class="line-numbers language-jsx" rel="jsx">
+<code class="language-jsx">
+
+import React from 'react'
+import ReactDOM from 'react-dom'
+import { BrowserRouter as Router } from 'react-router-dom'
+import App from './App'
+
+ReactDOM.render(
+  &lt;Router&gt;
+    &lt;App /&gt;
+  &lt;/Router&gt;,
+  document.getElementById('root')
+)
+
+</code>
+</pre>
+
+
+
+<h4 id="routes">Routes</h4>
+
+<p>The core of React Router is the <code>&lt;Route /&gt;</code> component.  It allows you to specify what UI to render when a particular URL is matched.  For instance, if we wanted to render a <code>&lt;Users /&gt;</code> component when we matched a <code>/users</code> URL, we could make the following Route:</p>
+
+
+<pre class="line-numbers language-jsx" rel="jsx">
+<code class="language-jsx">
+
+&lt;Route path='/users' component={Users} /&gt;
+
+</code>
+</pre>
+
+
+
+<p>If you don&rsquo;t want to render a whole component, a Route can alternatively accept a <code>render</code> prop, which accepts a function that returns JSX:</p>
+
+
+<pre class="line-numbers language-jsx" rel="jsx">
+<code class="language-jsx">
+
+&lt;Route path='/users' render={() => &lt;h1&gt;Users Path!&lt;/h1&gt;} /&gt;
+
+</code>
+</pre>
+
+
+
+<p>One important thing to keep in mind is that if we define a Route&rsquo;s path as <code>/users</code>, that will match both <code>/users</code> <em>and</em> <code>/users/123</code>, because both begin with <code>/users</code>.  If we want the Route to match only when the path is <em>exactly</em> <code>/users</code>, we can add the prop <code>exact</code> to our Route component.</p>
+
+
+<pre class="line-numbers language-jsx" rel="jsx">
+<code class="language-jsx">
+
+&lt;Route exact path='/users' component={Users} /&gt;
+
+</code>
+</pre>
+
+
+
+<h4 id="links">Links</h4>
+
+<p>React Router also provides <code>&lt;Link /&gt;</code> and <code>&lt;NavLink /&gt;</code> components to make it easy to generate links to Routes. If we want to generate a Link that goes to <code>/about</code>, we can do the following:</p>
+
+
+<pre class="line-numbers language-jsx" rel="jsx">
+<code class="language-jsx">
+
+&lt;Link to='/about'&gt;About&lt;/Link&gt;
+
+</code>
+</pre>
+
+
+
+<p>NavLinks are similar, but provide some additional functionality.  The main difference is that they will add an <code>activeClassName</code> to the rendered link if the current URL matches the <code>to</code> property of the NavLink.  This allows active links to be styled differently than inactive links.</p>
+
+
+<pre class="line-numbers language-jsx" rel="jsx">
+<code class="language-jsx">
+
+&lt;NavLink to='/'&gt;Home&lt;/NavLink&gt;    // rendered link tag will have '.active' class when URL is '/'
+
+</code>
+</pre>
+
+
+
+<h4 id="history">History</h4>
+
+<p>The <code>history</code> object is maintained and updated by the Router to keep track of where the user has navigated within the app.  It is passed to every component contained within the Router as part of the component&rsquo;s <code>props</code>.  It has a variety of helpful properties and methods that provide information and navigation. Here are just a few:</p>
 
 
 <pre class="line-numbers language-js" rel="js">
 <code class="language-js">
 
-// Place your key bindings in this file to overwrite the defaults
-[
-  {
-    "key": "alt+cmd+.",
-    "command": "editor.emmet.action.matchingPair"
-  },
-
-  {
-    "key": "shift+cmd+a",
-    "command": "editor.emmet.action.wrapWithAbbreviation"
-  },
-
-  {
-    "key": "cmd+'",
-    "command": "esQuotes.transformBetweenSingleDoubleQuotes"
-  },
-
-  {
-    "key": "ctrl+space",
-    "command": "editor.emmet.action.expandAbbreviation",
-    "when": "editorTextFocus && !editorHasMultipleSelections && !editorHasSelection && !editorReadonly"
-  },
-
-  {
-      "key": "ctrl+shift+space",
-      "command": "editor.emmet.action.splitJoinTag",
-      "when": "editorTextFocus && !editorHasMultipleSelections && !editorHasSelection && !editorReadonly"
-  },
-
-  {
-      "key": "ctrl+k ctrl+e",
-      "command": "extension.embraceParenthesis",
-      "when": "editorHasSelection && editorTextFocus"
-  },
-
-  {
-      "key": "ctrl+k ctrl+[",
-      "command": "extension.embraceSquareBrackets",
-      "when": "editorHasSelection && editorTextFocus"
-  },
-
-  {
-      "key": "ctrl+k ctrl+l",
-      "command": "extension.embraceCurlyBrackets",
-      "when": "editorHasSelection && editorTextFocus"
-  },
-
-  {
-      "key": "ctrl+k ctrl+a",
-      "command": "extension.embraceAngleBrackets",
-      "when": "editorHasSelection && editorTextFocus"
-  },
-
-  {
-      "key": "ctrl+k ctrl+'",
-      "command": "extension.embraceSingleQuotes",
-      "when": "editorHasSelection && editorTextFocus"
-  },
-
-  {
-      "key": "ctrl+k ctrl+o",
-      "command": "extension.embraceDoubleQuotes",
-      "when": "editorHasSelection && editorTextFocus"
-  }
-]
+history.length             // number of history entries
+history.location           // provides the current location
+history.push(path)         // navigates to a new path
+history.go(n)              // navigates n steps through history stack
+history.goBack()           // go back one step (history.go(-1))
+history.goForward()        // go forward one step (history.go(1))
+history.block(prompt)      // block navigation
 
 </code>
 </pre>
 
 
 
-<h3 id="emmet">Emmet</h3>
+<h3 id="fetch">Fetch</h3>
 
-<p><a href="https://emmet.io/">Emmet</a> is a wonderful tool for expanding CSS selector-like snippets into HTML elements. For example, type <code>.container&gt;.row&gt;.col-xs-12&gt;p</code>, and Emmet will expand it into this:</p>
+<blockquote>
+<p>The Fetch API provides a JavaScript interface for accessing and manipulating parts of the HTTP pipeline, such as requests and responses.  It also provides a global <code>fetch()</code> method that provides an easy, logical way to fetch resources asynchronously across the network.</p>
+</blockquote>
 
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch"><em>MDN - Using Fetch</em></a></p>
 
-<pre class="line-numbers language-html" rel="html">
-<code class="language-html">
+<p>If we need to get data from a remote server (or send some to one), there are several ways to do it.  In vanilla JS, there is <code>XMLHttpRequest</code>, jQuery provides <code>$.ajax</code>, and there are a variety of other packages and libraries that provide their own version.  Luckily, there is a new kid in vanilla JS town - the <em>Fetch API</em>.</p>
 
-&lt;div class=&quot;container&quot;&gt;
-  &lt;div class=&quot;row&quot;&gt;
-    &lt;div class=&quot;col-xs-12&quot;&gt;
-      &lt;p&gt;&lt;/p&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-
-</code>
-</pre>
+<p><code>fetch()</code> is a globally available, easy to use way to asynchronously send and receive data.  The simplest usage of fetch is to simply provide it with the URL of the request, and it will perform a <code>GET</code> request by default.  The <code>fetch()</code> function returns a promise that resolves when the data is received.  Once it is received, we can process and use the data with functions provided to the promise&rsquo;s <code>.then()</code> callbacks.</p>
 
 
+<pre class="line-numbers language-js" rel="js">
+<code class="language-js">
 
-<p>It will even put your cursor inside the <code>&lt;p&gt;&lt;/p&gt;</code> tags. And if you use it within JSX, it will use <code>className</code> instead of class, just as it should.</p>
-
-<p>By default, IntelliSense will suggest Emmet expansion just like any other autocompletion. Sometimes that&rsquo;s fine, but other times it can be a real pain in the neck. Thus, I prefer to set a custom shortcut: <kbd>ctrl</kbd>+<kbd>space</kbd>.</p>
-
-<p>When Emmet expands an abbreviation for a React component, it adds both a closing and opening tag.  Sometimes, we just want a single, self-closing tag.  In the keybindings listed in the previous section, we added one for <code>&quot;editor.emmet.action.splitJoinTag&quot;</code>.  This toggles between the open / closing tag and self-closing tag by pressing <kbd>ctrl</kbd>+<kbd>shift</kbd>+<kbd>space</kbd></p>
-
-<p>There&rsquo;s another really handy Emmet feature to which I&rsquo;ve assigned a shortcut: <em>wrap with abbreviation</em>. It allows you to wrap a selection inside an HTML element identified by an Emmet abbreviation. Select the text you want to wrap and hit the shortcut. You&rsquo;ll be presented with a box to type the abbreviation into. Magic! I&rsquo;ve assigned this command to <kbd>shift</kbd>+<kbd>⌘</kbd>+<kbd>A</kbd>.</p>
-
-<p>To make sure Emmet will work with JSX files suffixed with <code>.js</code>, add the following lines to your VSCode settings (<kbd>Code &gt; Preferences &gt; Settings</kbd>):</p>
-
-
-<pre class="line-numbers language-json" rel="json">
-<code class="language-json">
-
-"emmet.syntaxProfiles": {
-    "javascript": "jsx"
-}
+fetch('https://api.mywebsite.com/users')    // fetch users data from 'mywebsite' api
+  .then(response => response.json())        // parse the response json into JavaScript object(s)
+  .then(users => console.log(users))        // log the parsed users to the console
+  .catch(error => console.warn(error))      // if any errors occur, log them to the console
 
 </code>
 </pre>
 
 
 
-<h3 id="esquotes">ESQuotes</h3>
 
-<p>I mentioned the ECMAScript Quotes Transformer extension earlier. This begs for a keyboard shortcut to quickly switch between single and double quotes: <kbd>⌘</kbd>+<kbd>&lsquo;</kbd>.</p>
+  <div class="aside aside-info">
+  
+    <h4>Fetch does more than just fetch</h4>
+    
+  
+  <div class="body">
+  <p>If no second argument is provided to <code>fetch()</code>, it defaults to a standard <code>GET</code> request.  However, the second argument can be a configuration object, allowing it to use different HTTP methods, set Headers, include Credentials, etc.  To find out more, check out <a href="https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API">the docs</a></p>
 
-<h3 id="embrace">Embrace</h3>
+  </div>
+</div>
 
-<p>As mentioned on the previous page, the Embrace extension does not assign any keybindings by default, so I configured some. My shortcuts vary slightly from the recommended shortcuts on the extension&rsquo;s page (in particular, I prefer <kbd>ctrl</kbd>+<kbd>K</kbd>, <kbd>ctrl</kbd>+<kbd>[</kbd> for wrapping with square brackets).</p>
+
+<h2 id="projects">Projects</h2>
+
+<ul>
+<li>Noteherder <a href="https://github.com/xtbc17s3/noteherder/tree/065eaa988e6aea91e094fada7d87f83c9c1cb32c">morning</a> | <a href="https://github.com/xtbc17s3/noteherder/tree/afternoon">afternoon</a></li>
+<li>API Party <a href="https://github.com/xtbc17s3/api-party/tree/09f544985caee14d628493c16a646f4109079717">morning</a> | [afternoon]</li>
+</ul>
+
+<h2 id="homework">Homework</h2>
+
+<p>Extend the API-Party app by adding at least one additional route that gets data from a public API.</p>
+
+<ul>
+<li>A link to the route should appear in the header along with the &lsquo;Github&rsquo; and &lsquo;NASA&rsquo; links</li>
+<li>When the link is clicked, it should be styled to show that it is active</li>
+<li>The new component should fetch data from a public API</li>
+<li>Some interesting data from the API should be presented</li>
+<li>The data should look pretty (style it with CSS)</li>
+</ul>
+
+<h3 id="bonus-credit">Bonus Credit</h3>
+
+<ul>
+<li>Accept user input to refine the data you request from the API</li>
+</ul>
+
+<h3 id="super-mega-bonus-credit">Super Mega Bonus Credit</h3>
+
+<ul>
+<li>Add additional routes and APIs</li>
+</ul>
+
+<h3 id="super-mega-bonus-credit-hyper-fighting">Super Mega Bonus Credit Hyper Fighting</h3>
+
+<ul>
+<li>Figure out something interesting to do with the data on your own.  Make a graph, render a map, add child routes, go nuts!</li>
+</ul>
 
 
       
@@ -732,8 +981,8 @@
 
     <div id="navigation">
         
-        <a class="nav nav-prev" href="/tools/code-extensions"> <i class="fa fa-chevron-left"></i></a>
-        <a class="nav nav-next" href="/tools/github-desktop" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+        <a class="nav nav-prev" href="/week3/day8"> <i class="fa fa-chevron-left"></i></a>
+        
     </div>
 
     </section>

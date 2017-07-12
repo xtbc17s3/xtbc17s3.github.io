@@ -53,7 +53,7 @@ Lecture Videos Morning:
       <guid>http://xternbootcamp17.github.io/week3/day10/</guid>
       <description>Wednesday, July 12, 2017
 Lecture Videos Morning: Day 10, part 1
-Afternoon: Coming soon&amp;hellip;
+Afternoon: Day 10, part 1
 Topics React Router  Redirect component Passing props to components in Routes  Deployment of React app with routing  github pages firebase  Examples React Router Redirect component The Redirect component provided by React Router allows us to cause the user to navigate to a new location. Just drop in a Redirect component and pass it a to prop to tell it where to redirect, and you&amp;rsquo;re good to go!</description>
     </item>
     

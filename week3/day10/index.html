@@ -1,6 +1,3 @@
-
-
-
 <!DOCTYPE html>
 <html lang="en" class="js csstransforms3d">
   <head>
@@ -13,7 +10,7 @@
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 
     
-    <title>Week One</title>
+    <title>Day 10: Routing in Noteherder</title>
     <link href="http://xternbootcamp17.github.io//css/nucleus.css" rel="stylesheet">
     <link href="http://xternbootcamp17.github.io//css/font-awesome.min.css" rel="stylesheet">
     
@@ -28,7 +25,7 @@
     <link href="/css/prism.css" rel="stylesheet">
 <link href="/css/xtern.css" rel="stylesheet">
   </head>
-  <body class="" data-url="/week1/">
+  <body class="" data-url="/week3/day10/">
     
     <nav id="sidebar">
   <div id="header-wrapper">
@@ -310,7 +307,7 @@
       
       
 
-      <li class="dd-item active parent" data-nav-id="/week1/">
+      <li class="dd-item  " data-nav-id="/week1/">
         <a href="/week1/">
           <span>
             
@@ -408,7 +405,7 @@
       
       
 
-      <li class="dd-item  " data-nav-id="/week3/">
+      <li class="dd-item  parent" data-nav-id="/week3/">
         <a href="/week3/">
           <span>
             
@@ -438,7 +435,7 @@
           
           
           
-            <li class="dd-item " data-nav-id="/week3/day10/">
+            <li class="dd-item active" data-nav-id="/week3/day10/">
               <a href="/week3/day10/">
                 <span>Day 10: Routing in Noteherder     </i></span>
               </a>
@@ -473,22 +470,52 @@
                       </a>
                   </span>
                 
+                <span id="toc-menu"><a href=""><i class="fa fa-list-alt"></i></a></span>
+                
                 
                   
                   
                   
                     
                     
+                <a href="/week3/" itemprop="url"><span itemprop="title">Week Three</span></a> <i class="fa fa-angle-right"></i>
+                    
                   
                 
-                <span itemprop="title"> Week One</span>
+                <span itemprop="title"> Day 10: Routing in Noteherder</span>
               </div>
               
                   <div class="progress">
     <div class="wrapper">
 <nav id="TableOfContents">
 <ul>
-<li><a href="#week-one">Week One</a></li>
+<li>
+<ul>
+<li><a href="#lecture-videos">Lecture Videos</a></li>
+<li><a href="#topics">Topics</a>
+<ul>
+<li><a href="#react-router">React Router</a></li>
+<li><a href="#deployment-of-react-app-with-routing">Deployment of React app with routing</a></li>
+</ul></li>
+<li><a href="#examples">Examples</a>
+<ul>
+<li><a href="#react-router-1">React Router</a>
+<ul>
+<li><a href="#redirect-component">Redirect component</a></li>
+<li><a href="#passing-props-to-routed-components">Passing props to routed components</a></li>
+</ul></li>
+<li><a href="#deployment-of-a-react-app-with-routing">Deployment of a React app with routing</a>
+<ul>
+<li><a href="#github-pages">Github Pages</a></li>
+<li><a href="#firebase">Firebase</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#homework">Homework</a>
+<ul>
+<li><a href="#super-mega-bonus-credit">Super Mega Bonus Credit</a></li>
+</ul></li>
+</ul></li>
 </ul>
 </nav>
     </div>
@@ -498,21 +525,264 @@
 
             </div>
             
-              <div id="chapter">
-            
               <div id="body-inner">
+                
+                <h1>Day 10: Routing in Noteherder</h1>
                 
 
 
 
-<h1 id="week-one">Week One</h1>
+<p><date>Wednesday, July 12, 2017</date></p>
 
-<p>An overview of the course and web technologies, some vanilla JavaScript, and basic DOM manipulation.</p>
+<h2 id="lecture-videos">Lecture Videos</h2>
+
+<p>Morning: <a href="https://www.youtube.com/watch?v=1Q0aR_l_3ss&amp;index=107&amp;list=PLuT2TqJuwaY882Figl-Tr-VXWweaeS45B">Day 10, part 1</a></p>
+
+<p>Afternoon: Coming soon&hellip;</p>
+
+<h2 id="topics">Topics</h2>
+
+<h3 id="react-router">React Router</h3>
+
+<ul>
+<li>Redirect component</li>
+<li>Passing props to components in <code>Route</code>s</li>
+</ul>
+
+<h3 id="deployment-of-react-app-with-routing">Deployment of React app with routing</h3>
+
+<ul>
+<li>github pages</li>
+<li>firebase</li>
+</ul>
+
+<h2 id="examples">Examples</h2>
+
+<h3 id="react-router-1">React Router</h3>
+
+<h4 id="redirect-component">Redirect component</h4>
+
+<p>The <code>Redirect</code> component provided by React Router allows us to cause the user to navigate to a new location.  Just drop in a <code>Redirect</code> component and pass it a <code>to</code> prop to tell it where to redirect, and you&rsquo;re good to go!</p>
+
+
+<pre class="line-numbers language-jsx" rel="jsx">
+<code class="language-jsx">
+
+&lt;Redirect to='/widgets' /&gt;
+
+</code>
+</pre>
+
+
+
+<p>A common use case for a <code>Redirect</code> is to send a user to different locations based on whether they are logged in or not.</p>
+
+
+<pre class="line-numbers language-jsx" rel="jsx">
+<code class="language-jsx">
+
+import { Route, Redirect } from 'react-router'
+
+&lt;Route exact path="/" render={() => (
+  loggedIn ? (
+    &lt;Redirect to="/dashboard"/&gt;
+  ) : (
+    &lt;PublicHomePage/&gt;
+  )
+)}/&gt;
+
+</code>
+</pre>
+
+
+
+<p>The code above translates to: &ldquo;If the path is at the root route (&lsquo;/&rsquo;), redirect to &lsquo;/dashboard&rsquo; if the user is logged in.  Otherwise, render the PublicHomePage.&rdquo;</p>
+
+<h4 id="passing-props-to-routed-components">Passing props to routed components</h4>
+
+<p>Here&rsquo;s a basic <code>Route</code> that renders a <code>Stuff</code> component when the path matches <code>'/stuff'</code>:</p>
+
+
+<pre class="line-numbers language-jsx" rel="jsx">
+<code class="language-jsx">
+
+&lt;Route path="/stuff" component={Stuff} /&gt;
+
+</code>
+</pre>
+
+
+
+<p>When <code>Stuff</code> is rendered, it will automatically receive <code>props</code> from the router that include <code>match</code>, <code>history</code>, and <code>location</code>.  But what if we want to pass additional props to <code>Stuff</code>?  It turns out, we can use the <code>render</code> prop for <code>Route</code> instead, which allows us to pass additional props when the anonymous function returns some JSX.</p>
+
+
+<pre class="line-numbers language-jsx" rel="jsx">
+<code class="language-jsx">
+
+&lt;Route path="/stuff" render={(props) => (
+  &lt;Stuff name="Bob" {...props} /&gt;
+)} /&gt;
+
+</code>
+</pre>
+
+
+
+<p>In this example, the anonymous function in the <code>render</code> for the <code>Route</code> receives an argument of <code>props</code> (which includes <code>match</code>, <code>history</code>, and <code>location</code>).  Our <code>render</code> method returns some JSX - specifically, the <code>&lt;Stuff /&gt;</code> component.  We pass along our existing <code>props</code> to <code>Stuff</code> via Object spread, as well as an additional <code>name</code> prop.</p>
+
+<h3 id="deployment-of-a-react-app-with-routing">Deployment of a React app with routing</h3>
+
+<p>Now that Noteherder has routing, deployment gets a bit more complicated.  Our app is a single-page application, so the server that our app is deployed to needs to always return <code>index.html</code> (the one page in our single-page app).  However, if we type <code>https://{yourdomainhere}/notes</code> in the address bar, the server will try to find a file called <code>notes.html</code> to send back (which it won&rsquo;t find, of course).  So how do we get it to always respond with <code>index.html</code> and let our client-side router handle the routing?  There are a few options:</p>
+
+<ol>
+<li>Configure the server to always return <code>index.html</code>, no matter what is requested. (ideal solution)</li>
+<li>Use <code>HashRouter</code> instead of <code>BrowserRouter</code></li>
+<li>Make a custom <code>404</code> page that is a copy of <code>index.html</code>.</li>
+</ol>
+
+<h4 id="github-pages">Github Pages</h4>
+
+<p>Github Pages does not allow for server configuration, so option #1 is out.  We <em>can</em>, however, do options #2 or 3. For our in-class example, we chose to use <code>HashRouter</code> to solve this problem. Simply swap out <code>BrowserRouter</code> for <code>HashRouter</code> in <code>index.js</code> and re-deploy.  This will make your in-app routes appear after a <code>#</code> in the URL, which prevents the server from trying to respond with a different page.  For example, <code>https://myusername.github.io/noteherder/notes</code> becomes <code>https://myusername.github.io/noteherder/#/notes</code> when using <code>HashRouter</code>.</p>
+
+<p><strong>index.js</strong></p>
+
+
+  <pre class="language-jsx  "
+       
+       
+       data-line="3"
+       rel="jsx"
+  ><code class="language-jsx">
+  
+import React from 'react'
+import ReactDOM from 'react-dom'
+import { HashRouter as Router, Route } from 'react-router-dom'
+
+
+import './index.css'
+import App from './App'
+import registerServiceWorker from './registerServiceWorker'
+
+ReactDOM.render(
+  &lt;Router&gt;
+    &lt;Route component={App} /&gt;
+  &lt;/Router&gt;, 
+  document.getElementById('root')
+)
+registerServiceWorker()
+
+  </code>
+  </pre>
+
+
+
+<h4 id="firebase">Firebase</h4>
+
+<p>Firebase <em>does</em> allow for the server to be configured to always return <code>index.html</code>, so that is the option we chose during class.  To do so, we first need to install Firebase&rsquo;s CLI tools.</p>
+
+
+
+
+
+
+
+
+<div class="shell macos">
+<div class="bar">
+  <div class="controls">
+    <div class="windows icon">
+      <img src="/images/git-bash.png" alt="">
+    </div>
+    <div class="dot red">
+    </div>
+    <div class="dot yellow">
+    </div>
+    <div class="dot green">
+    </div>
+  </div>
+  user@localhost ~
+  <div class="windows-controls">
+    &nbsp;
+  </div>
+</div>
+<div class="shell-body">
+
+<pre><span class="terminal-commands"
+><span class="command-line-prompt"><span data-prompt="$"></span></span>npm install -g firebase-tools
+</span></pre>
+
+</div>
+</div>
+
+<p>Once the Firebase tools are installed, we can use them to login, initialize a firebase project, and deploy.  (Note, make sure you have made a production build with <code>npm run build</code> before deploying)</p>
+
+
+
+
+
+
+
+
+<div class="shell macos">
+<div class="bar">
+  <div class="controls">
+    <div class="windows icon">
+      <img src="/images/git-bash.png" alt="">
+    </div>
+    <div class="dot red">
+    </div>
+    <div class="dot yellow">
+    </div>
+    <div class="dot green">
+    </div>
+  </div>
+  user@localhost ~
+  <div class="windows-controls">
+    &nbsp;
+  </div>
+</div>
+<div class="shell-body">
+
+<pre><span class="terminal-commands"
+><span class="command-line-prompt"><span data-prompt="$"></span><span data-prompt="$"></span><span data-prompt="$"></span></span>firebase login
+firebase init
+firebase deploy
+</span></pre>
+
+</div>
+</div>
+
+
+  <div class="aside aside-info">
+  
+    <h4>Firebase Init</h4>
+    
+  
+  <div class="body">
+  <p><code>firebase init</code> will prompt you to answer a bunch of questions about how you want to configure the app you are deploying.  For more information about how to answer those questions, check out the <code>create-react-app</code> README <a href="https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md#firebase">here</a></p>
+
+  </div>
+</div>
+
+
+<h2 id="projects">Projects</h2>
+
+<p>Noteherder: <a href="https://github.com/xtbc17s3/noteherder/tree/5f0ff6fab2950f638672fdffba0fb726a6d0794a">Morning</a> | <a href="https://github.com/xtbc17s3/noteherder/tree/3bfcc65f56dd8291c1793fd126fdc1cb62642e85">Afternoon</a></p>
+
+<h2 id="homework">Homework</h2>
+
+<ul>
+<li>Add an <code>updatedAt</code> field to notes (updating its value every time you save the note).</li>
+</ul>
+
+<h3 id="super-mega-bonus-credit">Super Mega Bonus Credit</h3>
+
+<ul>
+<li>Sort the notes in the list with the most recently updated at the top.</li>
+</ul>
 
 
       
-      
-        </div> 
       
       </div>
     </div>
@@ -521,8 +791,8 @@
 
     <div id="navigation">
         
+        <a class="nav nav-prev" href="/week3/day9"> <i class="fa fa-chevron-left"></i></a>
         
-        <a class="nav nav-next" href="/week1/day1" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
     </div>
 
     </section>
@@ -543,7 +813,4 @@
 
   </body>
 </html>
-
-
-
 
